@@ -4,11 +4,13 @@ import './Styles/App.css'
 // Pages
 import LandingPage from './Pages/Landing'
 import AboutPage from './Pages/About'
+import Navbar from './Components/Navbar'
 
 function App() {
 
   return (
-    <div>
+    <div className="app">
+      <Navbar />
       <LandingPage />
       <AboutPage/>
     </div>

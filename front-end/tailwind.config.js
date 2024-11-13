@@ -11,6 +11,7 @@ export default {
         secondary: '',
         third: '',
         bg: '',
+        primaryText: '#F9F8FF' 
       },
     },
   },
