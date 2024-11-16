@@ -9,7 +9,7 @@ import Navbar from './Components/Navbar'
 function App() {
 
   return (
-    <div className="app">
+    <div className="app test">
       <Navbar />
       <LandingPage />
       <AboutPage/>
