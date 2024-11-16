@@ -10,7 +10,6 @@ export default {
         primary: '',
         secondary: '#FFE996', //Yellow used on buttons
         third: '#2B0E6C', //Purple text used on buttons
-        whiteTextHeader: '#F9F8FF',
         bg: '',
         primaryText: '#F9F8FF' 
       },
