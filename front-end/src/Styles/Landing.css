@@ -1,0 +1,13 @@
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinning-image {
+    animation: spin 15s linear infinite; 
+  }
+  

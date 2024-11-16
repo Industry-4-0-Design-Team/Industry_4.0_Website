@@ -1,3 +1,5 @@
+import '../Styles/Landing.css'
+
 const LandingPage = () => {
     return (
         <div className="flex flex-col items-center w-full h-screen">
