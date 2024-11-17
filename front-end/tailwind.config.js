@@ -8,10 +8,10 @@ export default {
     extend: {
       colors: {
         primary: '',
-        secondary: '#FFE996', //Yellow used on buttons
+        secondary: '#FDE37F', //Yellow/Gold used on buttons
         third: '#2B0E6C', //Purple text used on buttons
         bg: '',
-        primaryText: '#F9F8FF' 
+        primaryText: '#F9F8FF'
       },
     },
   },
