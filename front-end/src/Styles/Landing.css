@@ -11,3 +11,7 @@
     animation: spin 15s linear infinite; 
   }
   
+  .spinning-image2 {
+    animation: spin 120s linear infinite; 
+  }
+  
