@@ -22,5 +22,6 @@
   background-image: url(./diagmonds-bg.png);
   background-color: black;
   filter: brightness(100%);
+  background-repeat: repeat;
 }
 

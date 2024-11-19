@@ -8,7 +8,7 @@ import Navbar from './Components/Navbar'
 function App() {
 
   return (
-    <div className="app bg-diamonds">
+    <div className="app bg-diamonds h-fit">
       <Navbar />
       <LandingPage />
     </div>
