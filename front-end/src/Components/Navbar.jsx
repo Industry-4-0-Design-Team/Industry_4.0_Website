@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-buttons hidden custom-lg:flex justify-center gap-7 items-center flex-grow">
-                {['ABOUT', 'TEAM', 'SPONSORS', 'EVENTS', 'STORIES', 'SIGN&nbsp;UP'].map((item) => {
+                {['ABOUT', 'EVENTS','SPONSORS','STORIES','TEAM','SIGN&nbsp;UP'].map((item) => {
                     const isSignUp = item.includes('SIGN&nbsp;UP');
                     return (
                         <button
@@ -111,7 +111,7 @@ const Navbar = () => {
             >
                 <div className="flex flex-col items-center pt-24">
                     <ul className="text-white">
-                        {['ABOUT', 'TEAM', 'SPONSORS', 'EVENTS', 'STORIES', 'SIGN&nbsp;UP'].map((item) => (
+                        {['ABOUT', 'EVENTS','SPONSORS','STORIES','TEAM','SIGN&nbsp;UP'].map((item) => (
                             <li key={item} className="py-4 text-xl">
                                 <button
                                     onClick={() => scrollToSection(item.toLowerCase().replace(/&nbsp;/g, '-').replace(' ', '-'))}

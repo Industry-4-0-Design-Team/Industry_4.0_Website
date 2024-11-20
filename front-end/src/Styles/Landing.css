@@ -13,7 +13,7 @@
 }
 
 .spinning-image2 {
-  animation: spin 120s linear infinite;
+  animation: spin 180s linear infinite;
   clip-path: circle(100%);
 }
 
