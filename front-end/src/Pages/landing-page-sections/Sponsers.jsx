@@ -2,7 +2,7 @@ import Button from "../../Components/Button";
 
 const SponserPage = () => {
     return (
-        <div className="h-dvh relative">
+        <div id="sponsors" className="h-dvh relative">
             <div className="relative z-10 flex justify-center items-center mx-[128px]">
                 <div className="flex">
                     <div className="flex flex-col items-center justify-center ml-auto">
@@ -21,7 +21,7 @@ const SponserPage = () => {
                         </div>
                         <h2 className="body text-center text-3xl mt-4 z-10 max-w-[850px]">
                             With the support of our incredible sponsors, we are broadening opportunities for students,
-                            providing them with the tools and resources needed to overcome challenges and create meaningful
+                            providing them with the tools & resources needed to create meaningful
                             solutions in the tech-driven world.
                         </h2>
                         <div className="mt-6">

@@ -1,8 +1,8 @@
 const AboutPage = () => {
     return (
-        <div className="absolute relative z-[10]">
+        <div id="about" className="absolute relative z-[10]">
             <div className="flex flex-col items-center justify-center">
-                <div className="flex items-center mt-[-15rem]">
+                <div className="flex items-center mt-[-4rem]">
                     <h1 className='subtitle text-center text-3xl mt-10 z-10'>
                         Ab
                     </h1>

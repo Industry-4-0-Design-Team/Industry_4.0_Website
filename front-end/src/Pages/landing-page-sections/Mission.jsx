@@ -19,7 +19,7 @@ const AboutPage = () => {
                                 draggable="false"
                             />
                             <h1 className="subtitle text-center text-3xl mt-10 z-10">
-                                n and Vision
+                                n </h1><h1 className="subtitle text-center text-3xl ml-4 mt-10 z-10"> and Vision
                             </h1>
                         </div>
                         <h2 className="body text-right text-3xl mt-4 z-10 max-w-[550px]">
