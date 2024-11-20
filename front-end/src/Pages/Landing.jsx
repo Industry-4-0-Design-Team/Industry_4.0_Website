@@ -2,13 +2,13 @@ import '../Styles/Landing.css'
 
 const LandingPage = () => {
     return (
-        <div className="flex flex-col items-center w-full h-fit">
+        <div className="flex flex-col bg-diamonds items-center w-full h-fit">
             <div className="flex flex-col gap-2">
                 <h1 className='w-full text-center text-8xl mt-24 text-primaryText relative z-[10] font-900'>
                     INDUSTRY 4.
                     <img src="/Gears/yellow_gear_in_4.0.svg" className="spinning-image ml-1 w-20 h-20 inline-block relative -top-2" draggable="false" />
                 </h1>
-    <div className='mr-[70rem] relative z-[10]'>
+    <div className='mr-[44.75rem] relative z-[10]'>
                 <h1 className="text-white relative z-[10] font-900 text-4xl w-full text-right">
                     GEAR UP TO GO BEYOND
                     </h1>
@@ -21,11 +21,11 @@ const LandingPage = () => {
                     </button>
                     </div>
                 </div>
-                <div className="mt-[14rem] h-72 relative">
+                <div className="mt-[18rem] h-72 relative">
                     <img
                         src="/Vector.svg"
                         alt="gear"
-                        className="bg-transparent -z-[0] spinning-image2 align-center mt-[-46rem] max-w-[3100px]"
+                        className="bg-transparent -z-[-1] spinning-image2 align-center mt-[-24rem] max-w-[3100px]"
                     />
                 </div>
             </div>

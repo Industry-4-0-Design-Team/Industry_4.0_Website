@@ -2,7 +2,7 @@ const AboutPage = () => {
     return (
         <div className="bg-diamonds absolute relative z-[10]">
             <div className="flex flex-col items-center justify-center">
-                <div className="flex items-center mt-[-12rem]">
+                <div className="flex items-center mt-[-14rem]">
                     <h1 className='subtitle text-center text-3xl mt-10 z-10'>
                         Ab
                     </h1>
