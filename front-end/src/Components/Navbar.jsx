@@ -1,9 +1,9 @@
 const Navbar = () => {
     return (
         <div className="w-full flex items-center py-8 pl-32 pr-32 text-primaryText gap-52 font-medium tracking-wide text-sm">
-            <div className="w-7/12 flex navbar-text justify-evenly gap-7 items-center">
+            <div className="w-7/12 flex navbar-text justify-evenly gap-4 items-center">
                 <img src='/Gears/I4_Gear_Logo.png' alt="I4 Logo" className="w-10 h-10" />
-                <div className="navbar-buttons hidden custom-lg:flex justify-evenly gap-7 items-center">
+                <div className="navbar-buttons custom-lg:flex justify-evenly gap-7 items-center">
                     <button className="navbar-text hover:bg-[#FDE37F] hover:text-black transition-colors duration-300 px-4 py-2 rounded-[60px] whitespace-nowrap flex-shrink-0">
                         ABOUT
                     </button>
