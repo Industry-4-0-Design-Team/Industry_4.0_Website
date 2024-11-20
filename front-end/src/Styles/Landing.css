@@ -15,3 +15,6 @@
     animation: spin 120s linear infinite; 
   }
   
+  .font-black {
+    font-weight: 900 !important;
+  }

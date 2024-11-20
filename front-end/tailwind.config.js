@@ -13,6 +13,9 @@ export default {
         bg: '',
         primaryText: '#F9F8FF'
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'], // Make sure it's in the config
+      },
     },
   },
   plugins: [],
