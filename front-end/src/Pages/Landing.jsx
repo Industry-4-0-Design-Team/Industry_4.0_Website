@@ -41,7 +41,7 @@ const LandingPage = () => {
                     alt="gear"
                     className="bg-transparent spinning-image2 align-center mt-[-24rem]"
                     style={{
-                        maxWidth: 'clamp(2900px, 40vw + 3300px, 4900px)',
+                        maxWidth: 'clamp(900px, 40vw + 3300px, 4900px)',
                     }}
                 />
             </div>

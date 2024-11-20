@@ -69,7 +69,7 @@ const Navbar = () => {
                             }
                             className={`navbar-text transition-colors duration-300 px-4 py-2 ${isSignUp
                                     ? 'hover:bg-yellow-300/20 border border-white rounded-[60px]'
-                                    : 'hover:bg-secondary'
+                                    : 'hover:bg-secondary hover:text-black rounded-[60px]'
                                 }`}
                             dangerouslySetInnerHTML={{ __html: item }}
                         />
