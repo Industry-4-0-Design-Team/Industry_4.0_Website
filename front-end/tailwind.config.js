@@ -17,7 +17,7 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'], 
       },
       screens: {
-        'custom-lg': '1500px', // Custom breakpoint
+        'custom-lg': '1200px', // Custom breakpoint
     },
     },
   },
