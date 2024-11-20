@@ -19,7 +19,7 @@ const SponserPage = () => {
                                 rs
                             </h1>
                         </div>
-                        <h2 className="body text-center text-3xl mt-8 z-10 max-w-[850px]">
+                        <h2 className="body text-center text-3xl mt-4 z-10 max-w-[850px]">
                             With the support of our incredible sponsors, we are broadening opportunities for students,
                             providing them with the tools and resources needed to overcome challenges and create meaningful
                             solutions in the tech-driven world.

@@ -3,7 +3,7 @@ import Button from '../Components/Button';
 
 const LandingPage = () => {
     return (
-        <div className="flex flex-col bg-diamonds items-center w-full h-fit">
+        <div className="flex flex-col items-center w-full h-fit">
             <div className="flex flex-col gap-2">
                 <h1 className='w-full text-center text-8xl mt-24 text-primaryText relative z-[10] font-900'>
                     INDUSTRY 4.

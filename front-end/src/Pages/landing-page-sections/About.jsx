@@ -1,6 +1,6 @@
 const AboutPage = () => {
     return (
-        <div className="bg-diamonds absolute relative z-[10]">
+        <div className="absolute relative z-[10]">
             <div className="flex flex-col items-center justify-center">
                 <div className="flex items-center mt-[-22rem]">
                     <h1 className='subtitle text-center text-3xl mt-10 z-10'>
@@ -11,7 +11,7 @@ const AboutPage = () => {
                         ut Us
                     </h1>
                 </div>
-                <h2 className="body text-center text-3xl mt-2 z-10 max-w-[700px]">
+                <h2 className="body text-center text-3xl mt-4 z-10 max-w-[700px]">
                     We are an organization committed to empowering students in
                     Management Sciences by fostering a hands-on learning environment.
                     Through case studies, workshops, and leadership events, we provide real-world

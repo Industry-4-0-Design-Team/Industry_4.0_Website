@@ -13,11 +13,13 @@ function App() {
 
   return (
     <div className="app bg-[#1b1b1b] min-h-screen overflow-x-hidden overflow-y-hidden">
+      <div className='bg-diamonds'>
       <Navbar />
       <LandingPage />
       <AboutPage />
       <MissionPage />
       <SponserPage/>
+      </div>
     </div>
   )
 }

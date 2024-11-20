@@ -22,7 +22,7 @@ const AboutPage = () => {
                                 n and Vision
                             </h1>
                         </div>
-                        <h2 className="body text-right text-3xl mt-8 z-10 max-w-[550px]">
+                        <h2 className="body text-right text-3xl mt-4 z-10 max-w-[550px]">
                         At Industry 4.0, we strive to create a dynamic learning environment where students gain
                             early access to industry-relevant skills, knowledge, and connections. Through mentorship,
                             career-enhancing workshops, and a supportive community, we prepare students to excel in the
