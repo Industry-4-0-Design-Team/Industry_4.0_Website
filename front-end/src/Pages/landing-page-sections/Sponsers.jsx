@@ -2,7 +2,7 @@ import Button from "../../Components/Button";
 
 const SponserPage = () => {
     return (
-        <div className="bg-diamonds h-dvh relative">
+        <div className="h-dvh relative">
             <div className="relative z-10 flex justify-center items-center mx-[128px]">
                 <div className="flex">
                     <div className="flex flex-col items-center justify-center ml-auto">

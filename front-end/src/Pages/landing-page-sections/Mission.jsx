@@ -1,6 +1,6 @@
 const AboutPage = () => {
     return (
-        <div className="bg-diamonds h-dvh relative">
+        <div className="mt-[-2rem] h-dvh relative">
             <div className="relative z-10 flex justify-center items-center mx-[128px] pt-48">
                 <div className="flex">
                     <img

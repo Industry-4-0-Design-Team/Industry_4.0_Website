@@ -7,20 +7,24 @@ const LandingPage = () => {
             <div className="flex flex-col gap-2">
                 <h1 className='w-full text-center text-8xl mt-24 text-primaryText relative z-[10] font-900'>
                     INDUSTRY 4.
-                    <img src="/Gears/yellow_gear_in_4.0.svg" className="spinning-image ml-1 w-20 h-20 inline-block relative -top-2" draggable="false" />
+                    <img
+                        src="/Gears/yellow_gear_in_4.0.svg"
+                        className="spinning-image ml-1 w-20 h-20 inline-block relative -top-2" // Apply the clip-top-half class
+                        draggable="false"
+                    />
                 </h1>
-    <div className='mr-[44.75rem] relative z-[10]'>
-                <h1 className="text-[#EEE6FF] relative z-[10] font-900 text-4xl w-full text-right">
-                    GEAR UP TO GO BEYOND
+                <div className='mr-[44.75rem] relative z-[10]'>
+                    <h1 className="text-[#EEE6FF] relative z-[10] font-900 text-4xl w-full text-right">
+                        GEAR UP TO GO BEYOND
                     </h1>
-                <div className="mt-6 flex gap-5 justify-end ">
-                    <Button text="SIGN UP"/>
-                    <button className="text-secondary font-900 border border-secondary px-4 py-1 rounded-full text-lg w-40 h-14 transition-colors duration-300 hover:bg-yellow-300/20">
-                        SPONSORS
-                    </button>
+                    <div className="mt-6 flex gap-5 justify-end">
+                        <Button text="SIGN UP" />
+                        <button className="text-secondary font-900 border border-secondary px-4 py-1 rounded-full text-lg w-40 h-14 transition-colors duration-300 hover:bg-yellow-300/20">
+                            SPONSORS
+                        </button>
                     </div>
                 </div>
-                <div className="mt-[18rem] h-72 relative">
+                <div className="mt-[22rem] h-72 relative clip-top-half">
                     <img
                         src="/Vector.svg"
                         alt="gear"
@@ -30,6 +34,6 @@ const LandingPage = () => {
             </div>
         </div>
     );
-}
+};
 
 export default LandingPage;

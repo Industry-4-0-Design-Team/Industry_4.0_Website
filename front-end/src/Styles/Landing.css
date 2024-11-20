@@ -17,6 +17,10 @@
   clip-path: circle(100%);
 }
 
+.clip-top-half {
+  clip-path: polygon(0px 400px, 4000px 400px, 100% calc(100% - 100000px), 0px 0px);
+}
+
 html {
   overflow-x: initial !important;
 }

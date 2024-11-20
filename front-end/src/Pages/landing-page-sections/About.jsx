@@ -2,11 +2,15 @@ const AboutPage = () => {
     return (
         <div className="absolute relative z-[10]">
             <div className="flex flex-col items-center justify-center">
-                <div className="flex items-center mt-[-22rem]">
+                <div className="flex items-center mt-[-15rem]">
                     <h1 className='subtitle text-center text-3xl mt-10 z-10'>
                         Ab
                     </h1>
-                    <img src="/Gears/yellow_gear_in_4.0.svg" className="ml-1 mr-1 mt-[4.1rem] w-8 h-8 inline-block relative -top-2" draggable="false" />
+                    <img
+                        src="/Gears/yellow_gear_in_4.0.svg"
+                        className="ml-1 mr-1 mt-[4.1rem] w-8 h-8 inline-block relative -top-2 clip-top-half" // Apply the clip-top-half class here too
+                        draggable="false"
+                    />
                     <h1 className='subtitle text-center text-3xl mt-10 z-10'>
                         ut Us
                     </h1>
@@ -20,6 +24,6 @@ const AboutPage = () => {
             </div>
         </div>
     );
-}
+};
 
 export default AboutPage;
