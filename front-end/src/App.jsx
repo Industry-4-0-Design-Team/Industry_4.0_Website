@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar'
 
 import AboutPage from './Pages/landing-page-sections/About'
 import MissionPage from './Pages/landing-page-sections/Mission';
+import SponserPage from './Pages/landing-page-sections/Sponsers';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <LandingPage />
       <AboutPage />
       <MissionPage />
+      <SponserPage/>
     </div>
   )
 }

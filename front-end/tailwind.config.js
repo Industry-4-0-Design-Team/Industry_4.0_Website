@@ -14,8 +14,11 @@ export default {
         primaryText: '#F9F8FF'
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'], // Make sure it's in the config
+        montserrat: ['Montserrat', 'sans-serif'], 
       },
+      screens: {
+        'custom-lg': '1500px', // Custom breakpoint
+    },
     },
   },
   plugins: [],

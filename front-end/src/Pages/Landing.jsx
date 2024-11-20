@@ -1,4 +1,5 @@
 import '../Styles/Landing.css'
+import Button from '../Components/Button';
 
 const LandingPage = () => {
     return (
@@ -9,13 +10,11 @@ const LandingPage = () => {
                     <img src="/Gears/yellow_gear_in_4.0.svg" className="spinning-image ml-1 w-20 h-20 inline-block relative -top-2" draggable="false" />
                 </h1>
     <div className='mr-[44.75rem] relative z-[10]'>
-                <h1 className="text-white relative z-[10] font-900 text-4xl w-full text-right">
+                <h1 className="text-[#EEE6FF] relative z-[10] font-900 text-4xl w-full text-right">
                     GEAR UP TO GO BEYOND
                     </h1>
-                <div className="mt-4 flex gap-5 justify-end ">
-                    <button className="text-third font-900 bg-secondary px-4 py-1 rounded-full mr-2 text-lg w-40 h-14 transition-colors duration-300 hover:bg-[#9d904c]">
-                        SIGN UP
-                    </button>
+                <div className="mt-6 flex gap-5 justify-end ">
+                    <Button text="SIGN UP"/>
                     <button className="text-secondary font-900 border border-secondary px-4 py-1 rounded-full text-lg w-40 h-14 transition-colors duration-300 hover:bg-yellow-300/20">
                         SPONSORS
                     </button>
