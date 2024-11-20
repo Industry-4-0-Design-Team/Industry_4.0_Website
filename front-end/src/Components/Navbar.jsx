@@ -59,14 +59,23 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-buttons hidden custom-lg:flex justify-center gap-7 items-center flex-grow">
-                {['ABOUT', 'TEAM', 'SPONSORS', 'EVENTS', 'STORIES', 'SIGN&nbsp;UP'].map((item) => (
-                    <button
-                        key={item}
-                        onClick={() => scrollToSection(item.toLowerCase().replace(/&nbsp;/g, '-').replace(' ', '-'))}
-                        className="navbar-text hover:bg-secondary hover:text-black transition-colors duration-300 px-4 py-2 rounded-[60px]"
-                        dangerouslySetInnerHTML={{ __html: item }}
-                    />
-                ))}
+                {['ABOUT', 'TEAM', 'SPONSORS', 'EVENTS', 'STORIES', 'SIGN&nbsp;UP'].map((item) => {
+                    const isSignUp = item.includes('SIGN&nbsp;UP');
+                    return (
+                        <button
+                            key={item}
+                            onClick={() =>
+                                scrollToSection(item.toLowerCase().replace(/&nbsp;/g, '-').replace(' ', '-'))
+                            }
+                            className={`navbar-text transition-colors duration-300 px-4 py-2 ${isSignUp
+                                    ? 'hover:bg-yellow-300/20 border border-white rounded-[60px]'
+                                    : 'hover:bg-secondary'
+                                }`}
+                            dangerouslySetInnerHTML={{ __html: item }}
+                        />
+                    );
+                })}
+
             </div>
 
             {/* Social Media Icons */}
