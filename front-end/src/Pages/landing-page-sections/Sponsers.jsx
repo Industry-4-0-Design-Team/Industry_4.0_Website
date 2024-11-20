@@ -27,6 +27,23 @@ const SponserPage = () => {
                         <div className="mt-6">
                             <Button text="BECOME A SPONSER" />
                         </div>
+                        <div className="flex items-center mt-12 gap-12 justify-center space-x-4">
+                            <img
+                                src="/Sponsers/WEEF.svg"
+                                className="h-lg inline-block relative -top-2"
+                                draggable="false"
+                            />
+                            <img
+                                src="/Sponsers/MGMT.svg"
+                                className="h-lg inline-block relative -top-2"
+                                draggable="false"
+                            />
+                            <img
+                                src="/Sponsers/TOYOTA.svg"
+                                className="h-lg inline-block relative -top-2"
+                                draggable="false"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
