@@ -4,21 +4,29 @@ const LandingPage = () => {
     return (
         <div className="flex flex-col items-center w-full h-fit">
             <div className="flex flex-col gap-2">
-                <h1 className='w-full text-center text-8xl mt-20 text-primaryText font-black font-montserrat'>
+                <h1 className='w-full text-center text-8xl mt-24 text-primaryText relative z-[10] font-900'>
                     INDUSTRY 4.
                     <img src="/Gears/yellow_gear_in_4.0.svg" className="spinning-image ml-1 w-20 h-20 inline-block relative -top-2" draggable="false" />
                 </h1>
-                <h1 className="text-purple-200 font-black text-4xl w-full text-right">GEAR UP TO GO BEYOND</h1>
-                <div className="mt-4 flex gap-5 justify-end">
-                    <button className="text-third font-black font-bold bg-secondary px-4 py-1 rounded-full mr-2 text-lg w-40 h-14">
+    <div className='mr-[70rem] relative z-[10]'>
+                <h1 className="text-white relative z-[10] font-900 text-4xl w-full text-right">
+                    GEAR UP TO GO BEYOND
+                    </h1>
+                <div className="mt-4 flex gap-5 justify-end ">
+                    <button className="text-third font-900 bg-secondary px-4 py-1 rounded-full mr-2 text-lg w-40 h-14 transition-colors duration-300 hover:bg-[#9d904c]">
                         SIGN UP
                     </button>
-                    <button className="text-secondary font-black font-bold border border-secondary px-4 py-1 rounded-full text-lg w-40 h-14">
+                    <button className="text-secondary font-900 border border-secondary px-4 py-1 rounded-full text-lg w-40 h-14 transition-colors duration-300 hover:bg-yellow-300/20">
                         SPONSORS
                     </button>
+                    </div>
                 </div>
-                <div className="mt-14 w-full h-72">
-                    <img src="/Vector2.png" alt="gear" className='absolute right-0 bg-transparent -z-10 spinning-image2 w-full' />
+                <div className="mt-[14rem] h-72 relative">
+                    <img
+                        src="/Vector.svg"
+                        alt="gear"
+                        className="bg-transparent -z-[0] spinning-image2 align-center mt-[-46rem] max-w-[3100px]"
+                    />
                 </div>
             </div>
         </div>

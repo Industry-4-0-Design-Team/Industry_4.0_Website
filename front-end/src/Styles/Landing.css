@@ -1,20 +1,48 @@
 @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-  
-  .spinning-image {
-    animation: spin 15s linear infinite; 
+
+  to {
+    transform: rotate(360deg);
   }
-  
-  .spinning-image2 {
-    animation: spin 120s linear infinite; 
-  }
-  
-  .font-black {
-    font-weight: 900 !important;
-  }
+}
+
+.spinning-image {
+  animation: spin 15s linear infinite;
+}
+
+.spinning-image2 {
+  animation: spin 120s linear infinite;
+  clip-path: circle(100%);
+}
+
+.font-900 {
+  font-weight: 900 !important;
+}
+
+.subtitle {
+  /* Subtitle */
+  font-size: 58px;
+  font-weight: 600 !important;
+  line-height: normal;
+  letter-spacing: 2.9px !important;
+  color: white;
+}
+
+.body {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 25px !important;
+  width: 805px;
+  color: #D3D3D3;
+}
+
+.navbar-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+  text-transform: uppercase;
+}

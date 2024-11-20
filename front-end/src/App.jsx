@@ -4,15 +4,18 @@ import './Styles/App.css'
 // Pages
 import LandingPage from './Pages/Landing'
 import Navbar from './Components/Navbar'
-import AboutPage from './Pages/About'
+
+import AboutPage from './Pages/landing-page-sections/About'
+import MissionPage from './Pages/landing-page-sections/Mission';
 
 function App() {
 
   return (
-    <div className="app bg-diamonds h-fit">
+    <div className="app bg-[#1b1b1b] h-fit">
       <Navbar />
       <LandingPage />
       <AboutPage />
+      <MissionPage />
     </div>
   )
 }
