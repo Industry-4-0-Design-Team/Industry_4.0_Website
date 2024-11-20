@@ -13,5 +13,6 @@
   
   .spinning-image2 {
     animation: spin 120s linear infinite; 
+    width: 100%;
   }
   
