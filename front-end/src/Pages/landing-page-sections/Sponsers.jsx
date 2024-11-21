@@ -12,14 +12,14 @@ const SponserPage = () => {
                             </h1>
                             <img
                                 src="/Gears/yellow_gear_in_4.0.svg"
-                                className="ml-1 mr-1 mt-[4.1rem] w-8 h-8 inline-block relative -top-2"
+                                className="ml-1 mr-1 mt-[4.1rem] w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block relative -top-2"
                                 draggable="false"
                             />
                             <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
                                 rs
                             </h1>
                         </div>
-                        <h2 className="body custom-lg:text-[24px] md:text-[16px] text-[20px] text-center mt-4 z-10 max-w-[850px]">
+                        <h2 className="body custom-lg:text-[24px] md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[850px]">
                             With the support of our incredible sponsors, we are broadening opportunities for students,
                             providing them with the tools & resources needed to create meaningful
                             solutions in the tech-driven world.

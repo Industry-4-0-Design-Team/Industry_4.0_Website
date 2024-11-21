@@ -1,7 +1,7 @@
 const MissionPage = () => {
     return (
         <div className="mt-[-2rem] h-dvh relative">
-            <div className="relative z-10 flex justify-center items-center mx-[128px] pt-48">
+            <div className="relative z-10 flex justify-center items-center mx-[12px] pt-48">
                 <div className="flex flex-col custom-lg:flex-row">
                     <img
                         src="/Gears/MissionGear.svg"
@@ -20,13 +20,13 @@ const MissionPage = () => {
                                 Our Missi
                                 <img
                                     src="/Gears/yellow_gear_in_4.0.svg"
-                                    className="w-8 h-8 inline-block align-middle mx-1"
+                                    className="w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block align-middle mx-1"
                                     draggable="false"
                                 />
                                 n and Vision
                             </h1>
                         </div>
-                        <h2 className="body custom-lg:text-[24px] md:text-[16px]
+                        <h2 className="body custom-lg:text-[24px] md:text-[20px]
                             text-center custom-lg:text-right 
                             text-xl
                             mt-4 z-10 max-w-[520px] 

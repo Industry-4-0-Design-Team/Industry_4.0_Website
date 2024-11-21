@@ -42,21 +42,32 @@ const Navbar = () => {
     // Scroll to the section with the specified ID
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
+    
+        // Define offsets for specific sections
+        const offsets = {
+            about: 90, // Custom offset for "about" section
+            events: -180, // Custom offset for "events" section
+            sponsors: 120, // Custom offset for "sponsors" section
+            stories: 60, // Custom offset for "stories" section
+            team: 100, // Custom offset for "team" section
+        };
+    
         if (section) {
-            const offsetTop = section.offsetTop - 100; // Adjust for navbar height
-            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            const offsetTop = section.offsetTop - (offsets[id] || 100); // Default to 100 if no specific offset is defined
+            window.scrollTo({ top: offsetTop, behavior: "smooth" });
             setIsMenuOpen(false);
         }
     };
+    
 
     return (
         <div
-            className={`w-full flex items-center pb-0 pt-10 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${isScrolled ? 'fixed top-0 bg-black/30 backdrop-blur-lg' : 'fixed'
+            className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${isScrolled ? 'fixed top-0 bg-black/30 backdrop-blur-lg' : 'fixed'
                 } transition-all duration-500`}
         >
             {/* Logo */}
-            <div className="flex items-center pl-2 w-1/12">
-                <img src="/Gears/I4_Gear_Logo.png" alt="I4 Logo" className="w-10 h-10" />
+            <div className="flex items-center pl-2 mr-14">
+                <img src="/Gears/I4_Gear_Logo.png" alt="I4 Logo" className="w-[40px] h-[40px]" />
             </div>
 
             <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
