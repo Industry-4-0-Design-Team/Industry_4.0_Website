@@ -67,9 +67,9 @@ const Navbar = () => {
                             onClick={() =>
                                 scrollToSection(item.toLowerCase().replace(/&nbsp;/g, '-').replace(' ', '-'))
                             }
-                            className={`navbar-text transition-colors duration-300 px-4 py-2 ${isSignUp
+                            className={`navbar-text duration-300 px-4 py-2 ${isSignUp
                                     ? 'hover:bg-yellow-300/20 border border-white rounded-[60px]'
-                                    : 'hover:bg-secondary hover:text-black rounded-[60px]'
+                                    : 'hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-300 hover:scale-105'
                                 }`}
                             dangerouslySetInnerHTML={{ __html: item }}
                         />
@@ -80,16 +80,16 @@ const Navbar = () => {
 
             {/* Social Media Icons */}
             <div className="w-2/12 flex justify-evenly gap-4 hidden custom-lg:flex">
-                <a href="https://www.instagram.com/uwindustry4.0/" target="blank">
+                <a href="https://www.instagram.com/uwindustry4.0/" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                     <img src="/Social-Media-Icons/instagram_icon.svg" alt="Instagram Link" className="w-5 h-5" />
                 </a>
-                <a href="https://www.linkedin.com/company/industry4team/" target="blank">
+                <a href="https://www.linkedin.com/company/industry4team/" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                     <img src="/Social-Media-Icons/linkedin_icon.svg" alt="LinkedIn Link" className="w-5 h-5" />
                 </a>
-                <a href="https://discord.gg/dRtUKaXekc" target="blank">
+                <a href="https://discord.gg/dRtUKaXekc" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                     <img src="/Social-Media-Icons/discord_icon.svg" alt="Discord Link" className="w-5 h-5" />
                 </a>
-                <a href="mailto:industry4team@uwaterloo.ca" target="blank">
+                <a href="mailto:industry4team@uwaterloo.ca" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                     <img src="/Social-Media-Icons/mail_icon.svg" alt="Email Link" className="w-5 h-5" />
                 </a>
             </div>
