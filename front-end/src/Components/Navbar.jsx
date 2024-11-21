@@ -50,15 +50,15 @@ const Navbar = () => {
 
     return (
         <div
-            className={`w-full flex items-center justify-between py-4 px-16 text-primaryText gap-12 font-medium tracking-wide text-sm z-30 ${isScrolled ? 'fixed top-0 backdrop-blur-md bg-opacity-10 bg-black' : 'relative'
+            className={`w-full flex items-center pb-0 pt-10 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${isScrolled ? 'fixed top-0 backdrop-blur-md bg-opacity-10 bg-black' : 'relative'
                 } transition-all duration-300`}
         >
             {/* Logo */}
-            <div className="flex items-center w-3/12">
+            <div className="flex items-center pl-2 w-1/12">
                 <img src="/Gears/I4_Gear_Logo.png" alt="I4 Logo" className="w-10 h-10" />
             </div>
 
-            <div className="navbar-buttons hidden custom-lg:flex justify-center gap-7 items-center flex-grow">
+            <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
                 {['ABOUT', 'EVENTS','SPONSORS','STORIES','TEAM','SIGN&nbsp;UP'].map((item) => {
                     const isSignUp = item.includes('SIGN&nbsp;UP');
                     return (
@@ -79,7 +79,7 @@ const Navbar = () => {
             </div>
 
             {/* Social Media Icons */}
-            <div className="w-3/12 flex justify-evenly hidden custom-lg:flex">
+            <div className="w-2/12 flex justify-evenly gap-4 hidden custom-lg:flex">
                 <a href="https://www.instagram.com/uwindustry4.0/" target="blank">
                     <img src="/Social-Media-Icons/instagram_icon.svg" alt="Instagram Link" className="w-5 h-5" />
                 </a>
