@@ -2,12 +2,12 @@ import Button from "../../Components/Button";
 
 const SponserPage = () => {
     return (
-        <div id="sponsors" className="h-dvh relative">
-            <div className="relative z-10 flex justify-center items-center mx-[128px]">
-                <div className="flex">
+        <div id="sponsors" className="h-full relative">
+            <div className="relative z-10 flex justify-center pt-32 items-center mx-[128px]">
+                <div className="flex flex-col items-center custom-lg:flex-row">
                     <div className="flex flex-col items-center justify-center ml-auto">
-                        <div className="flex items-center">
-                            <h1 className="subtitle text-center text-3xl mt-10 z-10">
+                        <div className="flex items-center custom-lg:justify-start">
+                            <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
                                 Spons
                             </h1>
                             <img
@@ -15,32 +15,34 @@ const SponserPage = () => {
                                 className="ml-1 mr-1 mt-[4.1rem] w-8 h-8 inline-block relative -top-2"
                                 draggable="false"
                             />
-                            <h1 className="subtitle text-center text-3xl mt-10 z-10">
+                            <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
                                 rs
                             </h1>
                         </div>
-                        <h2 className="body text-center text-3xl mt-4 z-10 max-w-[850px]">
+                        <h2 className="body custom-lg:text-[24px] md:text-[16px] text-[20px] text-center mt-4 z-10 max-w-[850px]">
                             With the support of our incredible sponsors, we are broadening opportunities for students,
                             providing them with the tools & resources needed to create meaningful
                             solutions in the tech-driven world.
                         </h2>
-                        <div className="mt-6">
+                        <div className="mt-6 text-center">
                             <Button text="BECOME A SPONSER" />
                         </div>
-                        <div className="flex items-center mt-12 gap-12 justify-center space-x-4">
+                        <div
+                            className="flex flex-col custom-lg:flex-row items-center mt-12 gap-12 justify-center custom-lg:space-x-4"
+                        >
                             <img
                                 src="/Sponsers/WEEF.svg"
-                                className="h-lg inline-block relative -top-2"
+                                className="h-lg inline-block relative -top-2 custom-lg:mt-0"
                                 draggable="false"
                             />
                             <img
                                 src="/Sponsers/MGMT.svg"
-                                className="h-lg inline-block relative -top-2"
+                                className="h-lg inline-block relative -top-2 mt-[-2rem] custom-lg:mt-0"
                                 draggable="false"
                             />
                             <img
                                 src="/Sponsers/TOYOTA.svg"
-                                className="h-lg inline-block relative -top-2"
+                                className="h-lg inline-block relative -top-2 mt-[-1.5rem] custom-lg:mt-0"
                                 draggable="false"
                             />
                         </div>

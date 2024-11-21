@@ -29,9 +29,20 @@ html {
   font-weight: 900 !important;
 }
 
+.navbar {
+  height: 64px; 
+  position: relative;
+  z-index: 30;
+}
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px; 
+}
+
 .subtitle {
   /* Subtitle */
-  font-size: 58px;
   font-weight: 600 !important;
   line-height: normal;
   letter-spacing: 2.9px !important;
@@ -39,9 +50,8 @@ html {
 }
 
 .body {
-  font-size: 24px;
   font-style: normal;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   line-height: 25px !important;
   width: 805px;
   color: #D3D3D3;

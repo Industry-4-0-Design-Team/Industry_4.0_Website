@@ -2,8 +2,8 @@ const AboutPage = () => {
     return (
         <div id="about" className="absolute relative z-[10]">
             <div className="flex flex-col items-center justify-center">
-                <div className="flex items-center mt-[-4rem]">
-                    <h1 className='subtitle text-center text-3xl mt-10 z-10'>
+                <div className="flex items-center">
+                    <h1 className='subtitle text-[48px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10'>
                         Ab
                     </h1>
                     <img
@@ -11,7 +11,7 @@ const AboutPage = () => {
                         className="ml-1 mr-1 mt-[4.1rem] w-8 h-8 inline-block relative -top-2 clip-top-half" // Apply the clip-top-half class here too
                         draggable="false"
                     />
-                    <h1 className='subtitle text-center text-3xl mt-10 z-10'>
+                    <h1 className='subtitle text-[48px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10'>
                         ut Us
                     </h1>
                 </div>

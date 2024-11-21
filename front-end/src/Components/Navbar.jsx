@@ -28,7 +28,8 @@ const Navbar = () => {
     // Update navbar style on scroll
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 0);
+            const scrollThreshold = window.matchMedia('(min-width: 1200px)').matches ? 50 : Infinity;
+            setIsScrolled(window.scrollY > scrollThreshold);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -50,8 +51,11 @@ const Navbar = () => {
 
     return (
         <div
-            className={`w-full flex items-center justify-between py-4 px-16 text-primaryText gap-12 font-medium tracking-wide text-sm z-30 ${isScrolled ? 'fixed top-0 backdrop-blur-md bg-opacity-10 bg-black' : 'relative'
-                } transition-all duration-300`}
+            className={`w-full flex items-center justify-between py-4 px-16 text-primaryText gap-12 font-medium tracking-wide text-sm z-30 
+            ${isScrolled
+                    ? 'fixed top-0 bg-black/30 backdrop-blur-lg'
+                    : 'fixed'
+                } transition-all duration-500`}
         >
             {/* Logo */}
             <div className="flex items-center w-3/12">
@@ -59,7 +63,7 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-buttons hidden custom-lg:flex justify-center gap-7 items-center flex-grow">
-                {['ABOUT', 'EVENTS','SPONSORS','STORIES','TEAM','SIGN&nbsp;UP'].map((item) => {
+                {['ABOUT', 'EVENTS', 'SPONSORS', 'STORIES', 'TEAM', 'SIGN&nbsp;UP'].map((item) => {
                     const isSignUp = item.includes('SIGN&nbsp;UP');
                     return (
                         <button
@@ -68,8 +72,8 @@ const Navbar = () => {
                                 scrollToSection(item.toLowerCase().replace(/&nbsp;/g, '-').replace(' ', '-'))
                             }
                             className={`navbar-text transition-colors duration-300 px-4 py-2 ${isSignUp
-                                    ? 'hover:bg-yellow-300/20 border border-white rounded-[60px]'
-                                    : 'hover:bg-secondary hover:text-black rounded-[60px]'
+                                ? 'hover:bg-yellow-300/20 border border-white rounded-[60px]'
+                                : 'hover:bg-secondary hover:text-black rounded-[60px]'
                                 }`}
                             dangerouslySetInnerHTML={{ __html: item }}
                         />
@@ -106,12 +110,12 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div
                 ref={menuRef}
-                className={`custom-lg:hidden fixed top-0 right-0 bg-transparent backdrop-blur-lg bg-opacity-30 w-72 h-full transition-all transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+                className={`custom-lg:hidden fixed top-0 right-0 bg-black/30 backdrop-blur-lg w-72 h-full transition-all transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
                     } z-40`}
             >
                 <div className="flex flex-col items-center pt-24">
                     <ul className="text-white">
-                        {['ABOUT', 'EVENTS','SPONSORS','STORIES','TEAM','SIGN&nbsp;UP'].map((item) => (
+                        {['ABOUT', 'EVENTS', 'SPONSORS', 'STORIES', 'TEAM', 'SIGN&nbsp;UP'].map((item) => (
                             <li key={item} className="py-4 text-xl">
                                 <button
                                     onClick={() => scrollToSection(item.toLowerCase().replace(/&nbsp;/g, '-').replace(' ', '-'))}
