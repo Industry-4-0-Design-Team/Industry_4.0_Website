@@ -13,6 +13,12 @@ export default {
         bg: '',
         primaryText: '#F9F8FF'
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'], 
+      },
+      screens: {
+        'custom-lg': '1200px', // Custom breakpoint
+    },
     },
   },
   plugins: [],
