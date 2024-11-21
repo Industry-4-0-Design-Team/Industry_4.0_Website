@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,3 +10,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Styling for diamond background */
+.app {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bg-diamonds {
+  background-image: url(./diagmonds-bg.png);
+  background-color: black;
+  filter: brightness(100%);
+}
+
