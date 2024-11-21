@@ -29,6 +29,7 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollThreshold = window.matchMedia('(min-width: 1200px)').matches ? 50 : Infinity;
+            
             setIsScrolled(window.scrollY > scrollThreshold);
         };
 

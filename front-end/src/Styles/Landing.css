@@ -66,6 +66,13 @@ html {
   color: #D3D3D3;
 }
 
+.body-job-position {
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 25px !important;
+  color: #A79BC4;
+}
+
 .navbar-text {
   font-size: 14px;
   font-style: normal;
