@@ -7,13 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '',
-        secondary: '',
-        third: '',
-        bg: '',
+        primary: "",
+        secondary: "",
+        third: "",
+        bg: "",
       },
     },
   },
   plugins: [],
-}
-
+};

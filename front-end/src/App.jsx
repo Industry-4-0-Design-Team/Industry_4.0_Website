@@ -1,18 +1,17 @@
 // Styles
-import './Styles/App.css'
+import "./Styles/App.css";
 
 // Pages
-import LandingPage from './Pages/Landing'
-import AboutPage from './Pages/About'
+import LandingPage from "./Pages/Landing";
+import AboutPage from "./Pages/About";
 
 function App() {
-
   return (
     <div>
       <LandingPage />
-      <AboutPage/>
+      <AboutPage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

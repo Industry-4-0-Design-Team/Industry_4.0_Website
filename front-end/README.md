@@ -5,4 +5,3 @@ Instructions for Development
 3. use integrated terminal to navigate to 'front-end' (~cd front-end)
 4. run ~npm i to install all packages and get node-modules folder
 5. use ~npm run dev to open app to your localhost
-   
