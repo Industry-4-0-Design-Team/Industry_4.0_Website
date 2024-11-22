@@ -1,4 +1,5 @@
-import { useState } from "react";
+// StoriesPage.jsx
+import { useState, useEffect } from "react";
 import Story from "../../Components/Story";
 
 const StoriesPage = () => {
@@ -18,14 +19,87 @@ const StoriesPage = () => {
     ];
 
     const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
+    const [isVisible, setIsVisible] = useState(true);
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+    const [preloadedImages, setPreloadedImages] = useState({});
+
+    useEffect(() => {
+        const preloadImages = async () => {
+            const imageCache = {};
+            const loadPromises = [];
+
+            // Helper function to create image loading promise
+            const createImagePromise = (src) => {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.src = src;
+                    img.onload = () => {
+                        imageCache[src] = img.src;
+                        resolve();
+                    };
+                    img.onerror = () => {
+                        console.warn(`Failed to load image: ${src}`);
+                        imageCache[src] = src; // Fallback to original src
+                        resolve(); // Resolve anyway to prevent blocking
+                    };
+                });
+            };
+
+            // Preload story headshots
+            stories.forEach((story) => {
+                loadPromises.push(createImagePromise(story.headshot));
+            });
+
+            // Preload static images
+            const staticImages = [
+                '/Gears/StoriesGear.svg',
+                '/Gears/yellow_gear_in_4.0.svg',
+                '/arrows/LeftArrow.svg',
+                '/arrows/RightArrow.svg'
+            ];
+
+            staticImages.forEach((src) => {
+                loadPromises.push(createImagePromise(src));
+            });
+
+            try {
+                await Promise.all(loadPromises);
+                setPreloadedImages(imageCache);
+            } catch (error) {
+                console.error("Error preloading images:", error);
+            } finally {
+                setImagesLoaded(true); // Always set loaded to true to prevent infinite loading
+            }
+        };
+
+        preloadImages();
+    }, []);
+
+    const handleTransition = (newIndex) => {
+        setIsVisible(false);
+        setTimeout(() => {
+            setCurrentStoryIndex(newIndex);
+            setIsVisible(true);
+        }, 500);
+    };
 
     const handleNext = () => {
-        setCurrentStoryIndex((prevIndex) => (prevIndex + 1) % stories.length);
+        const newIndex = (currentStoryIndex + 1) % stories.length;
+        handleTransition(newIndex);
     };
 
     const handlePrevious = () => {
-        setCurrentStoryIndex((prevIndex) => (prevIndex - 1 + stories.length) % stories.length);
+        const newIndex = (currentStoryIndex - 1 + stories.length) % stories.length;
+        handleTransition(newIndex);
     };
+
+    if (!imagesLoaded) {
+        return (
+            <div className="h-full flex justify-center items-center">
+                <div className="animate-pulse">Loading stories...</div>
+            </div>
+        );
+    }
 
     return (
         <div id="stories" className="h-full relative mb-[500px]">
@@ -37,7 +111,7 @@ const StoriesPage = () => {
                                 St
                             </h1>
                             <img
-                                src="/Gears/yellow_gear_in_4.0.svg"
+                                src={preloadedImages['/Gears/yellow_gear_in_4.0.svg'] || '/Gears/yellow_gear_in_4.0.svg'}
                                 className="ml-1 mr-1 mt-[4.1rem] w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block relative -top-2"
                                 draggable="false"
                             />
@@ -49,8 +123,12 @@ const StoriesPage = () => {
                             Hear about the success stories from past Industry 4.0 members
                             and participants in our annual I4 competition.
                         </h2>
-                        <div className="mt-6 text-center">
-                            <Story {...stories[currentStoryIndex]} />
+                        <div className="mt-[-2rem] text-center">
+                            <Story 
+                                {...stories[currentStoryIndex]} 
+                                isVisible={isVisible} 
+                                preloadedImages={preloadedImages}
+                            />
                         </div>
                         <div className="mt-[-6rem] ml-[58rem] flex gap-4">
                             <button
@@ -58,7 +136,7 @@ const StoriesPage = () => {
                                 className="bg-[#6F52AF] hover:bg-[#5A4391] border border-[#9B90E8] p-2 rounded-[10px] flex justify-center items-center"
                             >
                                 <img
-                                    src="/arrows/LeftArrow.svg"
+                                    src={preloadedImages['/arrows/LeftArrow.svg'] || '/arrows/LeftArrow.svg'}
                                     className="w-[30px] h-auto"
                                     draggable="false"
                                     alt="Left Arrow"
@@ -69,7 +147,7 @@ const StoriesPage = () => {
                                 className="bg-[#6F52AF] hover:bg-[#5A4391] border border-[#9B90E8] p-2 rounded-[10px] flex justify-center items-center"
                             >
                                 <img
-                                    src="/arrows/RightArrow.svg"
+                                    src={preloadedImages['/arrows/RightArrow.svg'] || '/arrows/RightArrow.svg'}
                                     className="w-[30px] h-auto"
                                     draggable="false"
                                     alt="Right Arrow"
