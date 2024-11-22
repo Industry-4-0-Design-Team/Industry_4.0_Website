@@ -5,7 +5,7 @@ const AboutPage = () => {
                 <div className="flex">
                     <img
                         src="/Gears/MissionGear.svg"
-                        className="w-[320px] h-auto inline-block mt-24"
+                        className="oscillate w-[320px] h-auto inline-block mt-24"
                         draggable="false"
                     />
                     <div className="flex flex-col items-end justify-center ml-auto">

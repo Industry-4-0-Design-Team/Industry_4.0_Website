@@ -1,3 +1,23 @@
+@keyframes growAndGlow {
+  0% {
+    transform: translate(-50px, 0px) rotate(-10deg) scale(0.7);
+    filter: drop-shadow(0 0 5px #2B2AD2); /* Starting small glow */
+    }
+  50% {
+    transform: translate(-100px, 0px) rotate(-30deg) scale(0.9);
+    filter: drop-shadow(0 0 10px #0000ff); /* Larger glow */
+    }
+  100% {
+    transform: translate(-50px, 0px) rotate(-10deg) scale(0.7);
+    filter: drop-shadow(0 0 5px #2B2AD2); /* Back to original */
+  }
+}
+
+.oscillate {
+  animation: growAndGlow 10s infinite ease-in-out;
+  will-change: transform, filter;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
