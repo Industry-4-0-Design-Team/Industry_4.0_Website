@@ -1,4 +1,3 @@
-// StoriesPage.jsx
 import { useState, useEffect } from "react";
 import Story from "../../Components/Story";
 
@@ -100,37 +99,31 @@ const StoriesPage = () => {
             </div>
         );
     }
-
     return (
         <div id="stories" className="h-full relative mb-[500px]">
-            <div className="relative z-10 flex justify-center pt-32 items-center mx-[128px]">
-                <div className="flex flex-col items-center custom-lg:flex-row">
-                    <div className="flex flex-col items-center justify-center ml-auto">
-                        <div className="flex items-center custom-lg:justify-start">
-                            <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
-                                St
-                            </h1>
+            <div className="relative z-10 flex flex-col items-center custom-lg:flex-row justify-center pt-32 mx-[128px]">
+                <div className="flex flex-col items-center justify-center custom-lg:flex-row custom-lg:items-start">    
+                    {/* Text */}
+                    <div className="flex flex-col items-center justify-center mt-6 custom-lg:ml-6 custom-lg:mt-0">
+                        <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center mt-10 z-10">
+                            St
                             <img
                                 src={preloadedImages['/Gears/yellow_gear_in_4.0.svg'] || '/Gears/yellow_gear_in_4.0.svg'}
-                                className="ml-1 mr-1 mt-[4.1rem] w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block relative -top-2"
+                                className="inline-block w-6 h-6 custom-lg:w-8 custom-lg:h-8 mx-1"
                                 draggable="false"
                             />
-                            <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
-                                ries
-                            </h1>
-                        </div>
-                        <h2 className="body custom-lg:text-[24px] md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[850px]">
+                            ries
+                        </h1>
+                        <h2 className="body text-[18px] custom-lg:text-[24px] text-center mt-4 max-w-[550px] custom-lg:max-w-[850px]">
                             Hear about the success stories from past Industry 4.0 members
                             and participants in our annual I4 competition.
                         </h2>
-                        <div className="mt-[-2rem] text-center">
-                            <Story 
-                                {...stories[currentStoryIndex]} 
-                                isVisible={isVisible} 
-                                preloadedImages={preloadedImages}
-                            />
+                        {/* Story Component */}
+                        <div className="mt-6 w-full">
+                            <Story {...stories[currentStoryIndex]} isVisible={isVisible} preloadedImages={preloadedImages} />
                         </div>
-                        <div className="mt-[-6rem] ml-[58rem] flex gap-4">
+                        {/* Navigation Buttons */}
+                        <div className="custom-lg:mt-[-9rem] mt-12 custom-lg:ml-[63rem] flex gap-4 justify-center custom-lg:justify-start z-[1]">
                             <button
                                 onClick={handlePrevious}
                                 className="bg-[#6F52AF] hover:bg-[#5A4391] border border-[#9B90E8] p-2 rounded-[10px] flex justify-center items-center"
@@ -159,6 +152,6 @@ const StoriesPage = () => {
             </div>
         </div>
     );
-};
+}    
 
-export default StoriesPage;
+export default StoriesPage

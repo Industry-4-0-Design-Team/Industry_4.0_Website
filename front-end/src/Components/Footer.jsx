@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         {/* Right Side: Social Media Links */}
-        <div className="flex justify-evenly gap-4 w-full custom-lg:w-2/12 custom-lg:flex-row flex-col custom-lg:items-end">
+        <div className="flex mt-4 custom-lg:mt-0 custom-lg:justify-evenly items-center align-center justify-center gap-4 w-full custom-lg:w-2/12 flex-row custom-lg:items-end">
           <a
             href="https://www.instagram.com/uwindustry4.0/"
             target="blank"
