@@ -5,9 +5,9 @@ const LandingPage = () => {
   return (
     <div className="flex flex-col items-center w-full h-screen justify-center">
       {/* Main content container */}
-      <div className="flex flex-col items-center mt-64">
+      <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[250px]">
         {/* Left side (Industry 4. and gear) */}
-        <div className="flex items-center justify-center w-full">
+        <div className="flex items-center justify-center mt-24 w-full">
           <h1 className="text-center text-8xl text-primaryText font-900">
             INDUSTRY 4.
             <img
