@@ -28,6 +28,16 @@
   }
 }
 
+::selection {
+  background-color: #FDE37F; /* Change background color */
+  color: #2d2d2d; /* Change text color */
+}
+
+::-moz-selection { /* Firefox-specific */
+  background-color: #FDE37F;
+  color: #2d2d2d;
+}
+
 .spinning-image {
   animation: spin 15s linear infinite;
 }
@@ -49,9 +59,20 @@ html {
   font-weight: 900 !important;
 }
 
+.navbar {
+  height: 64px; 
+  position: relative;
+  z-index: 30;
+}
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px; 
+}
+
 .subtitle {
   /* Subtitle */
-  font-size: 58px;
   font-weight: 600 !important;
   line-height: normal;
   letter-spacing: 2.9px !important;
@@ -59,11 +80,9 @@ html {
 }
 
 .body {
-  font-size: 24px;
   font-style: normal;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   line-height: 25px !important;
-  width: 805px;
   color: #D3D3D3;
 }
 
@@ -73,4 +92,65 @@ html {
   font-weight: 600 !important;
   line-height: normal;
   text-transform: uppercase;
+}
+
+
+/* Media Query for screens smaller than custom-lg for landing page heading*/
+@media (max-width: 1024px) {
+  .text-8xl {
+    font-size: 3rem; /* Scale down Industry 4. */
+  }
+
+  .font-900 {
+    font-weight: 600; /* Reduce weight for Industry 4. and Gear Beyond */
+  }
+
+  .small\:text-5xl {
+    font-size: 2.5rem !important;
+  }
+
+  .spinning-image {
+    width: 3rem !important;
+    height: 3rem !important; /* Scale down the yellow gear */
+  }
+
+  .small\:text-2xl {
+    font-size: 1.5rem !important;
+  }
+
+  .small\:font-600 {
+    font-weight: 600 !important;
+  }
+
+  .small\:mt-16 {
+    margin-top: 4rem !important;
+  }
+
+  .small\:ml-0 {
+    margin-left: 2.3rem !important;
+  }
+
+  .small\:flex-col {
+    flex-direction: column !important;
+  }
+
+  .small\:items-center {
+    align-items: center !important;
+  }
+
+  .small\:text-center {
+    text-align: center !important;
+  }
+
+  .small\:w-32 {
+    width: 8rem !important;
+  }
+
+  .small\:h-10 {
+    height: 2.5rem !important;
+  }
+
+  .small\:text-sm {
+    font-size: 0.875rem !important;
+  }
 }
