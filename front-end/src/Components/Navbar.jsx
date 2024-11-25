@@ -107,6 +107,8 @@ const Navbar = () => {
                 </a>
             </div>
 
+            {isMenuOpen && <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='text-gray-200 fixed top-3 right-5 z-50 text-xl'>temp &gt;</button>}
+
             {/* Hamburger Icon for Mobile View */}
             <div className={`custom-lg:hidden ${isMenuOpen ? 'hidden' : ''} ml-auto`}>
                 <button onClick={toggleMenu} className="text-white">
@@ -115,6 +117,7 @@ const Navbar = () => {
                     <div className="w-6 h-0.5 bg-white mb-1"></div>
                 </button>
             </div>
+
 
             {/* Mobile Menu */}
             <div
