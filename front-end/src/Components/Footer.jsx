@@ -3,15 +3,17 @@ const Footer = () => {
     <div className="relative">
       {/* Divider */}
       <div className="nav-gradient-line"></div>
-      
+
       {/* Footer Content */}
       <footer className="flex flex-col custom-lg:flex-row justify-between items-center custom-lg:items-end py-[38px] px-[92px]">
         {/* Left Side: Gear and Contact Email */}
         <div className="flex items-center space-x-4 mb-4 custom-lg:mb-0">
           <img src="Gears/FooterGear.svg" alt="Footer Gear" className="w-6 h-6" />
-          <span className="bg-gray-800 text-white py-1 px-3 rounded-full text-sm">
-            contact@industry40.ca
-          </span>
+          <a href="mailto:industry4team@uwaterloo.ca" target="_blank">
+            <span className="bg-gray-800 text-white py-1 px-3 rounded-full text-sm hover:bg-gray-700 transition-colors">
+              industry4team@uwaterloo.ca
+            </span>
+          </a>
         </div>
 
         {/* Right Side: Social Media Links */}

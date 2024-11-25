@@ -92,6 +92,16 @@ const StoriesPage = () => {
         handleTransition(newIndex);
     };
 
+    // Automatically transition every 4 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNext();
+        }, 3000); // 4 seconds
+
+        // Cleanup interval on component unmount
+        return () => clearInterval(interval);
+    }, [currentStoryIndex]);
+
     if (!imagesLoaded) {
         return (
             <div className="h-full flex justify-center items-center">
@@ -99,6 +109,7 @@ const StoriesPage = () => {
             </div>
         );
     }
+
     return (
         <div id="stories" className="h-full relative mb-[500px]">
             <div className="relative z-10 flex flex-col items-center custom-lg:flex-row justify-center pt-32 mx-[128px]">
@@ -152,6 +163,6 @@ const StoriesPage = () => {
             </div>
         </div>
     );
-}    
+};
 
-export default StoriesPage
+export default StoriesPage;
