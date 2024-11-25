@@ -45,6 +45,7 @@ const Navbar = () => {
     
         // Define offsets for specific sections
         const offsets = {
+            landing: 90,
             about: 90, // Custom offset for "about" section
             events: -180, // Custom offset for "events" section
             sponsors: 120, // Custom offset for "sponsors" section
@@ -67,7 +68,7 @@ const Navbar = () => {
         >
             {/* Logo */}
             <div className="flex items-center pl-2 mr-14">
-                <img src="/Gears/I4_Gear_Logo.png" alt="I4 Logo" className="w-[40px] h-[40px]" />
+                <button onClick={() => scrollToSection('landing')}><img src="/Gears/I4_Gear_Logo.png" alt="I4 Logo" className="w-[40px] h-[40px]" /></button>
             </div>
 
             <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">

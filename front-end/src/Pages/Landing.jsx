@@ -3,12 +3,12 @@ import Button from "../Components/Button";
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col items-center w-full h-screen justify-center">
+    <div id="landing" className="flex flex-col items-center w-full h-screen justify-center">
       {/* Main content container */}
       <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[250px]">
         {/* Left side (Industry 4. and gear) */}
         <div className="flex items-center justify-center mt-24 w-full">
-          <h1 className="text-center text-8xl text-primaryText font-900">
+          <h1 className="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-primaryText font-900">
             INDUSTRY 4.
             <img
               src="/Gears/yellow_gear_in_4.0.svg"
@@ -19,14 +19,14 @@ const LandingPage = () => {
         </div>
 
         {/* Right side (Gear up to go beyond and buttons) */}
-        <div className="flex justify-end w-full mt-6 ml-[5rem] z-20">
-          <div className="text-right mr-10">
-            <h1 className="text-[#EEE6FF] font-900 text-4xl">
+        <div className="flex justify-center md:justify-end w-full mt-3 md:mt-6 lg:ml-[5rem] z-20">
+          <div className="text-center md:text-right lg:text-right lg:mr-10">
+            <h1 className="text-[#EEE6FF] font-900 text-lg sm:xl md:text-3xl  lg:text-6xl lg:text-right">
               GEAR UP TO GO BEYOND
             </h1>
-            <div className="mt-6 flex gap-5 justify-end">
+            <div className="mt-6 flex flex-col items-center md:flex-row gap-5 md:justify-end">
               <Button text="SIGN UP" />
-              <button className="text-secondary font-900 border border-secondary px-4 py-1 rounded-full text-lg w-40 h-14 transition-colors duration-300 hover:bg-yellow-300/20">
+              <button className="text-secondary font-900 border border-secondary px-4 py-1 rounded-full text-sm md:text-lg w-32 h-12 md:w-40 md:h-14 transition-colors duration-300 hover:bg-yellow-300/20">
                 SPONSORS
               </button>
             </div>
