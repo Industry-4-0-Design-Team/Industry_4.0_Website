@@ -11,12 +11,13 @@ const EventsPage = () => {
                         Discover Events
                             </h1>
                         </div>
-                        <h2 className="body custom-lg:text-[24px] md:text-[20px] text-center custom-lg:text-left mt-4 z-10 custom-lg:max-w-[550px] break-words w-full">
+                        <h2 className="body custom-lg:text-[24px] md:text-[20px] text-center custom-lg:text-left mt-4 z-10 custom-lg:max-w-[550px] break-words w-full"
+                            data-aos="fade-up" data-aos-duration="900">
                             Lorem ipsum dolor sit amet consectetur. Felis rhoncus egestas risus imperdiet vel ullamcorper. 
                             Sagittis amet cras ut et sed malesuada cum odio aliquam. Orci quam facilisis penatibus pulvinar sapien 
                             feugiat facilisis tortor. At libero tortor accumsan at. Integer urna ac convallis massa.
                         </h2>
-                        <div className="mt-6 text-center custom-lg:text-left">
+                        <div className="mt-6 text-center custom-lg:text-left" data-aos="zoom-in">
                             <Button text="ALL EVENTS" />
                         </div>
                     </div>

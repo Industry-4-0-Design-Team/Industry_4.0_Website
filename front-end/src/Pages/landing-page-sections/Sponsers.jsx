@@ -19,13 +19,14 @@ const SponserPage = () => {
                                 rs
                             </h1>
                         </div>
-                        <h2 className="body custom-lg:text-[24px] md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[850px]">
+                        <h2 className="body custom-lg:text-[24px] md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[850px]"
+                            data-aos="fade-up" data-aos-duration="900">
                             With the support of our incredible sponsors, we are broadening opportunities for students,
                             providing them with the tools & resources needed to create meaningful
                             solutions in the tech-driven world.
                         </h2>
                         <div className="mt-6 text-center">
-                            <Button text="BECOME A SPONSER" />
+                            <Button text="BECOME A SPONSOR" />
                         </div>
                         <div
                             className="flex flex-col custom-lg:flex-row items-center mt-12 gap-12 justify-center custom-lg:space-x-4"
@@ -34,16 +35,22 @@ const SponserPage = () => {
                                 src="/Sponsers/WEEF.svg"
                                 className="h-lg inline-block relative -top-2 custom-lg:mt-0"
                                 draggable="false"
+                                data-aos="zoom-in-right"
+                                data-aos-duration="700"
                             />
                             <img
                                 src="/Sponsers/MGMT.svg"
                                 className="h-lg inline-block relative -top-2 mt-[-2rem] custom-lg:mt-0"
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="500"
                             />
                             <img
                                 src="/Sponsers/TOYOTA.svg"
                                 className="h-lg inline-block relative -top-2 mt-[-1.5rem] custom-lg:mt-0"
                                 draggable="false"
+                                data-aos="zoom-in-left"
+                                data-aos-duration="700"
                             />
                         </div>
                     </div>
