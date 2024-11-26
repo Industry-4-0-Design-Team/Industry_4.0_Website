@@ -18,6 +18,7 @@ export default {
       },
       screens: {
         'custom-lg': '1200px', // Custom breakpoint
+        'xs': '435px'
     },
     },
   },

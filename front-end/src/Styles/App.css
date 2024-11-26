@@ -21,7 +21,7 @@
 /* in case we want to use it again this is still here */
 .bg-diamonds {
   background-image: url(./diagmonds-bg.png);
-  background-color: black;
+  background-color: #2E2E2E;
   filter: brightness(100%);
   background-repeat: repeat;
 }
