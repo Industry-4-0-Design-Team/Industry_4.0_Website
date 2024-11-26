@@ -7,8 +7,8 @@ const LandingPage = () => {
       {/* Main content container */}
       <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[250px]">
         {/* Left side (Industry 4. and gear) */}
-        <div className="flex items-center justify-center mt-24 w-full">
-          <h1 className="text-center text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-primaryText font-900">
+        <div className="flex items-center justify-center mt-16 w-full">
+          <h1 className="text-center text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-8xl text-primaryText font-900">
             INDUSTRY 4.
             <img
               src="/Gears/yellow_gear_in_4.0.svg"
@@ -21,7 +21,7 @@ const LandingPage = () => {
         {/* Right side (Gear up to go beyond and buttons) */}
         <div className="flex justify-center md:justify-end w-full mt-3 md:mt-6 lg:ml-[5rem] z-20">
           <div className="text-center md:text-right lg:text-right lg:mr-10">
-            <h1 className="text-[#EEE6FF] font-900 text-lg sm:xl md:text-3xl  lg:text-6xl lg:text-right">
+            <h1 className="text-[#EEE6FF] font-900 text-lg md:text-3xl lg:text-4xl lg:text-right">
               GEAR UP TO GO BEYOND
             </h1>
             <div className="mt-6 flex flex-col items-center md:flex-row gap-5 md:justify-end">
