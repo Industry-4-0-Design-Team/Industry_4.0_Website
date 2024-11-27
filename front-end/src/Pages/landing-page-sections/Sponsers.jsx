@@ -6,7 +6,7 @@ const SponserPage = () => {
             <div className="relative z-10 flex justify-center pt-32 items-center mx-[128px]">
                 <div className="flex flex-col items-center custom-lg:flex-row">
                     <div className="flex flex-col items-center justify-center ml-auto">
-                        <div className="flex items-center custom-lg:justify-start">
+                        <div className="flex mt-[18rem] custom-lg:mt-0 items-center custom-lg:justify-start">
                             <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
                                 Spons
                             </h1>

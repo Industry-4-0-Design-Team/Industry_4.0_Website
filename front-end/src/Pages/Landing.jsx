@@ -5,7 +5,7 @@ const LandingPage = () => {
     return (
         <div className="flex flex-col items-center w-full h-screen justify-center">
             {/* Main content container */}
-            <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[250px]">
+            <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[550px]">
                 {/* Left side (Industry 4. and gear) */}
                 <div className="sm:flex items-center justify-center w-full">
                     <h1 className="text-center text-8xl text-primaryText font-900 small:text-5xl small:font-600">
