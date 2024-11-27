@@ -106,12 +106,34 @@ html, body {
   text-transform: uppercase;
 }
 
-.nav-gradient-line {
-  position: absolute;
-  inset-inline: 9%;
-  margin-top: -1rem;
-  height: 1px;
-  background: linear-gradient(to right, transparent, #959595, transparent);
+.buttonGlow {
+  border: 1px solid #0000;
+  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
+        var(--angle),
+        #FDE37F,
+        #FDE37F,
+        #ffffff00,
+        #ffffff00,
+        #ffffff00
+      ) border-box;
+  animation: 5s rotate linear infinite;
+
+}
+
+.buttonGlow:hover {
+  filter: drop-shadow(0 0 3px #FDE37F);
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 
