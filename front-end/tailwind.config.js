@@ -20,6 +20,15 @@ export default {
         'custom-lg': '1200px', // Custom breakpoint
         'xs': '376px'
     },
+    animation: {
+      'spin-slow': 'spin 2.5s linear infinite',
+    },
+    keyframes: {
+      spin: {
+        '0%': { transform: 'rotate(0deg)' },
+        '100%': { transform: 'rotate(360deg)' },
+      }
+    }
     },
   },
   plugins: [],

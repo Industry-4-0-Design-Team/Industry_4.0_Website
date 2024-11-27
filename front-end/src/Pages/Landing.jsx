@@ -1,5 +1,5 @@
-import "../Styles/Landing.css";
-import Button from "../Components/Button";
+import '../Styles/Landing.css';
+//import Button from '../Components/Button';
 
 const LandingPage = () => {
   return (
@@ -32,20 +32,20 @@ const LandingPage = () => {
                 SPONSORS
               </button>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Gear image at the bottom */}
-      <div className="mt-[22rem] h-72 relative z-1 clip-top-half">
-        <img
-          src="/Vector.svg"
-          alt="gear"
-          className="bg-transparent spinning-image2 align-center mt-[-24rem]"
-          style={{
-            maxWidth: "clamp(900px, 40vw + 3300px, 4900px)",
-          }}
-        />
+            {/* Gear image at the bottom */}
+            <div className="mt-[22rem] h-72 relative z-1 clip-top-half">
+                <img
+                    src="/Vector.svg"
+                    alt="gear"
+                    className="bg-transparent spinning-image2 align-center mt-[-24rem]"
+                    style={{
+                        maxWidth: 'clamp(900px, 40vw + 3300px, 4900px)',
+                    }}
+                />
+            </div>
+         </div>
+        </div>
       </div>
     </div>
   );

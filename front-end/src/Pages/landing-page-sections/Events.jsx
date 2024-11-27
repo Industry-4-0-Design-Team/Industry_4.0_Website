@@ -2,7 +2,7 @@ import Button from "../../Components/Button";
 
 const EventsPage = () => {
     return (
-        <div id="events" className="custom-lg:mt-[-18rem] custom-lg:mb-[10rem] h-dvh relative">
+        <div id="events" className="custom-lg:mt-[-18rem] mt-[10rem] custom-lg:mb-[10rem] h-dvh relative">
             <div className="relative z-10 flex justify-center items-center custom-lg:mr-[72px] custom-lg:ml-[150px] mx-[12px] pt-48">
             <div className="flex flex-col items-center custom-lg:flex-row w-full">
             <div className="flex flex-col items-center custom-lg:items-start justify-center mr-auto mt-8 custom-lg:mt-0 w-full">

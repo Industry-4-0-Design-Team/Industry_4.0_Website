@@ -55,6 +55,11 @@ html {
   overflow-x: initial !important;
 }
 
+html, body {
+  overflow-x: hidden; /* or remove */
+  overflow-y: auto; /* only show scrollbar if needed */
+}
+
 .font-900 {
   font-weight: 900 !important;
 }
@@ -84,6 +89,13 @@ html {
   font-weight: 500 !important;
   line-height: 25px !important;
   color: #D3D3D3;
+}
+
+.body-job-position {
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 25px !important;
+  color: #A79BC4;
 }
 
 .navbar-text {
@@ -183,4 +195,18 @@ html {
   .small\:text-sm {
     font-size: 0.875rem !important;
   }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
