@@ -9,6 +9,9 @@ import AboutPage from './Pages/landing-page-sections/About'
 import MissionPage from './Pages/landing-page-sections/Mission';
 import SponserPage from './Pages/landing-page-sections/Sponsers';
 import EventsPage from './Pages/landing-page-sections/Events';
+import StoriesPage from './Pages/landing-page-sections/Stories';
+import Footer from './Components/Footer';
+import CompetitionPage from './Pages/landing-page-sections/Competition';
 
 function App() {
 
@@ -21,6 +24,9 @@ function App() {
       <MissionPage/>
       <EventsPage/>
       <SponserPage/>
+      <StoriesPage/>
+      <CompetitionPage/>
+      <Footer/>
     </div>
   </div>
   )

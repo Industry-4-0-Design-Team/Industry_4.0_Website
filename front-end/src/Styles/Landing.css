@@ -55,6 +55,11 @@ html {
   overflow-x: initial !important;
 }
 
+html, body {
+  overflow-x: hidden; /* or remove */
+  overflow-y: auto; /* only show scrollbar if needed */
+}
+
 .font-900 {
   font-weight: 900 !important;
 }
@@ -86,12 +91,27 @@ html {
   color: #D3D3D3;
 }
 
+.body-job-position {
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 25px !important;
+  color: #A79BC4;
+}
+
 .navbar-text {
   font-size: 14px;
   font-style: normal;
   font-weight: 600 !important;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.nav-gradient-line {
+  position: absolute;
+  inset-inline: 9%;
+  margin-top: -1rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #959595, transparent);
 }
 
 
@@ -153,4 +173,18 @@ html {
   .small\:text-sm {
     font-size: 0.875rem !important;
   }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
