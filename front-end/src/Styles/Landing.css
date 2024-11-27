@@ -94,6 +94,36 @@ html {
   text-transform: uppercase;
 }
 
+.buttonGlow {
+  border: 0.5px solid #0000;
+  background: linear-gradient(#101010, #101010) padding-box, linear-gradient(
+        var(--angle),
+        #FDE37F,
+        #FDE37F,
+        #ffffff00,
+        #ffffff00,
+        #ffffff00
+      ) border-box;
+  animation: 5s rotate linear infinite;
+
+}
+
+.buttonGlow:hover {
+  filter: drop-shadow(0 0 3px #FDE37F);
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 
 /* Media Query for screens smaller than custom-lg for landing page heading*/
 @media (max-width: 1024px) {
