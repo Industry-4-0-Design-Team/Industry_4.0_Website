@@ -5,10 +5,7 @@ const MissionPage = () => {
                 <div className="flex flex-col custom-lg:flex-row">
                     <img
                         src="/Gears/MissionGear.svg"
-                        className="w-[320px] h-auto inline-block mt-24 
-                        custom-lg:mt-24 
-                        mx-auto custom-lg:mx-0 
-                        block custom-lg:inline-block"
+                        className="oscillate w-[320px] h-auto inline-block mt-24"
                         draggable="false"
                     />
                     <div className="flex flex-col items-center custom-lg:items-end justify-center custom-lg:ml-auto mt-8 custom-lg:mt-0">

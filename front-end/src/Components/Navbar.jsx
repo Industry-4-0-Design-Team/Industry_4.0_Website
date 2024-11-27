@@ -46,6 +46,7 @@ const Navbar = () => {
     
         // Define offsets for specific sections
         const offsets = {
+            landing: 90,
             about: 90, // Custom offset for "about" section
             events: -180, // Custom offset for "events" section
             sponsors: 120, // Custom offset for "sponsors" section
@@ -68,7 +69,7 @@ const Navbar = () => {
         >
             {/* Logo */}
             <div className="flex items-center pl-2 mr-14">
-                <img src="/Gears/I4_Gear_Logo.png" alt="I4 Logo" className="w-[40px] h-[40px]" />
+                <button onClick={() => scrollToSection('landing')}><img src="/Gears/I4_Gear_Logo.png" alt="I4 Logo" className="w-[40px] h-[40px]" /></button>
             </div>
 
             <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
@@ -81,8 +82,8 @@ const Navbar = () => {
                                 scrollToSection(item.toLowerCase().replace(/&nbsp;/g, '-').replace(' ', '-'))
                             }
                             className={`navbar-text transition-colors duration-300 px-4 py-2 ${isSignUp
-                                ? 'hover:bg-yellow-300/20 border border-white rounded-[60px]'
-                                : 'hover:bg-secondary hover:text-black rounded-[60px]'
+                                    ? 'hover:bg-yellow-300/20 border border-white rounded-[60px]'
+                                    : 'hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-300 hover:scale-105'
                                 }`}
                             dangerouslySetInnerHTML={{ __html: item }}
                         />
@@ -93,19 +94,21 @@ const Navbar = () => {
 
             {/* Social Media Icons */}
             <div className="w-2/12 flex justify-evenly gap-4 hidden custom-lg:flex">
-                <a href="https://www.instagram.com/uwindustry4.0/" target="blank">
+                <a href="https://www.instagram.com/uwindustry4.0/" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                     <img src="/Social-Media-Icons/instagram_icon.svg" alt="Instagram Link" className="w-5 h-5" />
                 </a>
-                <a href="https://www.linkedin.com/company/industry4team/" target="blank">
+                <a href="https://www.linkedin.com/company/industry4team/" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                     <img src="/Social-Media-Icons/linkedin_icon.svg" alt="LinkedIn Link" className="w-5 h-5" />
                 </a>
-                <a href="https://discord.gg/dRtUKaXekc" target="blank">
+                <a href="https://discord.gg/dRtUKaXekc" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                     <img src="/Social-Media-Icons/discord_icon.svg" alt="Discord Link" className="w-5 h-5" />
                 </a>
-                <a href="mailto:industry4team@uwaterloo.ca" target="blank">
+                <a href="mailto:industry4team@uwaterloo.ca" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                     <img src="/Social-Media-Icons/mail_icon.svg" alt="Email Link" className="w-5 h-5" />
                 </a>
             </div>
+
+            {isMenuOpen && <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='text-gray-200 fixed top-3 right-5 z-50 text-xl'>temp &gt;</button>}
 
             {/* Hamburger Icon for Mobile View */}
             <div className={`custom-lg:hidden ${isMenuOpen ? 'hidden' : ''} ml-auto`}>
@@ -115,6 +118,7 @@ const Navbar = () => {
                     <div className="w-6 h-0.5 bg-white mb-1"></div>
                 </button>
             </div>
+
 
             {/* Mobile Menu */}
             <div
@@ -128,7 +132,7 @@ const Navbar = () => {
                             <li key={item} className="py-4 text-xl">
                                 <button
                                     onClick={() => scrollToSection(item.toLowerCase().replace(/&nbsp;/g, '-').replace(' ', '-'))}
-                                    className="navbar-text hover:bg-secondary hover:text-black transition-colors duration-300 px-4 py-2 rounded-[60px]"
+                                    className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-300 hover:scale-105"
                                     dangerouslySetInnerHTML={{ __html: item }}
                                 />
                             </li>
@@ -137,16 +141,16 @@ const Navbar = () => {
 
                     {/* Social media icons */}
                     <div className="flex justify-evenly gap-8 mt-6">
-                        <a href="https://www.instagram.com/uwindustry4.0/" target="blank">
+                        <a href="https://www.instagram.com/uwindustry4.0/" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                             <img src="/Social-Media-Icons/instagram_icon.svg" alt="Instagram Link" className="w-5 h-5" />
                         </a>
-                        <a href="https://www.linkedin.com/company/industry4team/" target="blank">
+                        <a href="https://www.linkedin.com/company/industry4team/" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                             <img src="/Social-Media-Icons/linkedin_icon.svg" alt="LinkedIn Link" className="w-5 h-5" />
                         </a>
-                        <a href="https://discord.gg/dRtUKaXekc" target="blank">
+                        <a href="https://discord.gg/dRtUKaXekc" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                             <img src="/Social-Media-Icons/discord_icon.svg" alt="Discord Link" className="w-5 h-5" />
                         </a>
-                        <a href="mailto:industry4team@uwaterloo.ca" target="blank">
+                        <a href="mailto:industry4team@uwaterloo.ca" target="blank" className='transform transition-transform duration-300 hover:scale-125'>
                             <img src="/Social-Media-Icons/mail_icon.svg" alt="Email Link" className="w-5 h-5" />
                         </a>
                     </div>
