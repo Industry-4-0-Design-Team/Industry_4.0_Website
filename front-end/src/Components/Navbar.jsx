@@ -68,7 +68,7 @@ const Navbar = () => {
         >
             {/* Logo */}
             <div className="flex items-center pl-2 mr-14">
-                <button onClick={() => scrollToSection('landing')}><img src="/Gears/I4_Gear_Logo.png" alt="I4 Logo" className="w-[40px] h-[40px]" /></button>
+                <button onClick={() => scrollToSection('landing')}><img src="/Gears/I4_Gear_Logo.png" alt="I4 Logo" className="w-[40px] h-[40px]" draggable="false"/></button>
             </div>
 
             <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">

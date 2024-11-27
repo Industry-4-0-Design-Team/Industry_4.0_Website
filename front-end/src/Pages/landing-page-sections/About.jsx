@@ -15,7 +15,7 @@ const AboutPage = () => {
                         ut Us
                     </h1>
                 </div>
-                <h2 className="body px-8 text-center custom-lg:text-[24px] md:text-[20px] mt-4 z-10 max-w-[700px]">
+                <h2 className="body px-8 text-center custom-lg:text-[24px] md:text-[20px] mt-4 z-10 max-w-[700px]" data-aos='fade-up' data-aos-duration='900'>
                     We are an organization committed to empowering students in
                     Management Sciences by fostering a hands-on learning environment.
                     Through case studies, workshops, and leadership events, we provide real-world

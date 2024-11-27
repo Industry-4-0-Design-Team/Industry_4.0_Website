@@ -27,7 +27,9 @@ const MissionPage = () => {
                             text-center custom-lg:text-right 
                             text-xl
                             mt-4 z-10 max-w-[520px] 
-                            body-responsive">
+                            body-responsive"
+                            data-aos="fade-up"
+                            data-aos-duration="900">
                             At Industry 4.0, we strive to create a dynamic learning environment where students gain
                             early access to industry-relevant skills, knowledge, and connections. Through mentorship,
                             career-enhancing workshops, and a supportive community, we prepare students to excel in the
