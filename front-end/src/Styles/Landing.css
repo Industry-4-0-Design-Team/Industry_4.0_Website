@@ -95,8 +95,8 @@ html {
 }
 
 .buttonGlow {
-  border: 0.5px solid #0000;
-  background: linear-gradient(#101010, #101010) padding-box, linear-gradient(
+  border: 1px solid #0000;
+  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
         var(--angle),
         #FDE37F,
         #FDE37F,

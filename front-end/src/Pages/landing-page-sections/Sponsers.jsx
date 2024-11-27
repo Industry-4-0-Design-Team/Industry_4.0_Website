@@ -24,9 +24,9 @@ const SponserPage = () => {
                             providing them with the tools & resources needed to create meaningful
                             solutions in the tech-driven world.
                         </h2>
-                        <div className="mt-6 text-center">
-                            <Button text="BECOME A SPONSER" />
-                        </div>
+                        <button className=" my-6 buttonGlow text-secondary font-900 bg-secondary px-4 py-1 rounded-full text-md md:text-lg h-12 md:h-14 md:w-fit inline-flex items-center justify-center whitespace-nowrap transform transition-transform duration-200 hover:scale-110">
+                            Become a Sponsor
+                        </button>
                         <div
                             className="flex flex-col custom-lg:flex-row items-center mt-12 gap-12 justify-center custom-lg:space-x-4"
                         >
