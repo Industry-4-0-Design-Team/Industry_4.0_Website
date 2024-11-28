@@ -132,10 +132,10 @@ const StoriesPage = () => {
             </h1>
             <h2
               className="body text-[18px] custom-lg:text-[24px] text-center mt-4 max-w-[550px] custom-lg:max-w-[850px]"
-              data-aos="fade-up"
-              data-aos-offset="80"
-              data-aos-delay="100"
-              data-aos-duration="800"
+              data-aos="zoom-in"
+              data-aos-offset="50"
+              data-aos-delay="150"
+              data-aos-duration="700"
               data-aos-once="false"
             >
               Hear about the success stories from past Industry 4.0 members and

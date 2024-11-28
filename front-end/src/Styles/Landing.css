@@ -115,32 +115,26 @@ body {
 
 .buttonGlow {
   border: 1px solid #0000;
-  background:
-    linear-gradient(#191919e9, #101010) padding-box,
-    linear-gradient(
-        var(--angle),
-        #fde37f,
-        #fde37f,
-        #ffffff00,
-        #ffffff00,
-        #ffffff00
-      )
-      border-box;
+  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
+    var(--angle),
+    #FDE37F,
+    #FDE37F,
+    #ffffff00,
+    #ffffff00,
+    #ffffff00
+  ) border-box;
   animation: 5s rotate linear infinite;
   will-change: transform, filter;
-  transition:
-    transform 0.3s ease,
-    filter 0.3s ease; /* Smooth transitions */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Ensure smooth transition for transform and filter */
 }
 
 .buttonGlow:hover {
   filter: drop-shadow(0 0 3px #fde37f);
-  transform: scale(1.1); /* Slight enlargement */
+  transform: scale(1.1); /* Slight enlargement on hover */
 }
 
 .buttonGlow:active {
-  transform: scale(1.2); /* Slight enlargement */
-  filter: drop-shadow(0 0 3px #fde37f);
+  filter: drop-shadow(0 0 6px #fde37f); /* Enhanced shadow on click */
 }
 
 @keyframes rotate {

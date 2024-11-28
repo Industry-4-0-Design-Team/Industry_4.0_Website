@@ -21,10 +21,10 @@ const CompetitionPage = () => {
             </div>
             <h2
               className="body custom-lg:text-[24px] md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[850px]"
-              data-aos="fade-up"
-              data-aos-offset="80"
-              data-aos-delay="100"
-              data-aos-duration="800"
+              data-aos="zoom-in"
+              data-aos-offset="50"
+              data-aos-delay="150"
+              data-aos-duration="700"
               data-aos-once="false"
             >
               Lorem ipsum dolor sit amet consectetur. A phasellus quis aliquet
@@ -36,7 +36,7 @@ const CompetitionPage = () => {
             <div
               className="mt-6 text-center"
               data-aos="fade-up"
-              data-aos-offset="80"
+              data-aos-offset="0"
               data-aos-delay="100"
               data-aos-duration="800"
               data-aos-once="false"
