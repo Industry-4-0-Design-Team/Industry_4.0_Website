@@ -38,11 +38,16 @@ const AboutAndMission = () => {
               Management Sciences by fostering a hands-on learning environment.
               Through case studies, workshops, and leadership events, we provide
               real-world experiences that bridge the gap between theory and
-              practice.
+              practice. We strive to create a learning environment where students gain early
+              exposure to industry skills, expert knowledge, and valuable
+              connections. Through mentorship, career-focused workshops, and a
+              supportive community, we prepare them to excel in the tech-driven
+              future of Industry 4.0.
             </h2>
           </div>
   
           {/* Mission Section */}
+          {/*
           <div
             className="flex flex-col mt-10 custom-lg:mr-[10rem] items-center custom-lg:items-end"
             data-aos="fade-left"
@@ -79,6 +84,30 @@ const AboutAndMission = () => {
               future of Industry 4.0.
             </h2>
           </div>
+*/}
+        </div>
+        {/*Statistics under about us page */}
+        <div className="w-full text-center mt-14 text-white">
+          <ul className="flex w-full text-center items-center justify-around">
+            <li>
+              <div>
+                <h1 className="font-black text-5xl">500+</h1>
+                <h3>COMPETITORS</h3>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h1 className="font-black text-5xl">25+</h1>
+                <h3>EVENTS</h3>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h1 className="font-black text-5xl">50+</h1>
+                <h3>ORGANIZERS</h3>
+              </div>
+            </li>
+          </ul>
         </div>
   
         {/* Oscillating Gear */}
