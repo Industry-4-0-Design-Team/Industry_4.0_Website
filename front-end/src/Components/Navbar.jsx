@@ -82,7 +82,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
-        {["ABOUT", "EVENTS", "SPONSORS", "STORIES", "TEAM", "SIGN&nbsp;UP"].map(
+        {["ABOUT", "EVENTS", "SPONSORS", "STORIES", "SIGN&nbsp;UP", "TEAM"].map(
           (item) => {
             const isSpecialButton = item.includes("SIGN&nbsp;UP") || item.includes("SPONSORS");
             return (
