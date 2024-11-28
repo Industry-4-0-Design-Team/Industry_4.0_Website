@@ -68,6 +68,11 @@ const Navbar = () => {
       className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${
         isScrolled ? "fixed top-0 bg-black/30 backdrop-blur-lg" : "fixed"
       } transition-all duration-500`}
+      data-aos="fade-down"
+      data-aos-offset="500"
+      data-aos-delay="200"
+      data-aos-duration="900"
+      data-aos-once="true"
     >
       {/* Logo */}
       <div className="flex items-center pl-2 mr-14">

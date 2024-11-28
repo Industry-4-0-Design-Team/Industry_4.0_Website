@@ -13,7 +13,7 @@ const SponserPage = () => {
               data-aos-offset="50"
               data-aos-delay="200"
               data-aos-duration="1000"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
                 Spons
@@ -21,7 +21,7 @@ const SponserPage = () => {
               <img
                 src="/Gears/yellow_gear_in_4.0.svg"
                 className="ml-1 mr-1 mt-[4.1rem] w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block relative -top-2"
-                draggable="false"
+                draggable="true"
               />
               <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
                 rs
@@ -35,7 +35,7 @@ const SponserPage = () => {
               data-aos-offset="50"
               data-aos-delay="150"
               data-aos-duration="700"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               With the support of our incredible sponsors, we are broadening
               opportunities for students, providing them with the tools &
@@ -50,7 +50,7 @@ const SponserPage = () => {
               data-aos-offset="80"
               data-aos-delay="100"
               data-aos-duration="800"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               <Button text="BECOME A SPONSOR" />
             </div>
@@ -65,7 +65,7 @@ const SponserPage = () => {
                 data-aos-offset="80"
                 data-aos-delay="100"
                 data-aos-duration="800"
-                data-aos-once="false"
+                data-aos-once="true"
               />
               <img
                 src="/Sponsers/MGMT.svg"
@@ -75,7 +75,7 @@ const SponserPage = () => {
                 data-aos-offset="80"
                 data-aos-delay="100"
                 data-aos-duration="600"
-                data-aos-once="false"
+                data-aos-once="true"
               />
               <img
                 src="/Sponsers/TOYOTA.svg"
@@ -85,7 +85,7 @@ const SponserPage = () => {
                 data-aos-offset="80"
                 data-aos-delay="100"
                 data-aos-duration="800"
-                data-aos-once="false"
+                data-aos-once="true"
               />
             </div>
           </div>

@@ -15,7 +15,7 @@ const EventsPage = () => {
             data-aos-offset="50"
             data-aos-delay="200"
             data-aos-duration="1000"
-            data-aos-once="false"
+            data-aos-once="true"
           >
             <div className="flex items-center custom-lg:justify-start w-full">
               <h1 className="subtitle text-[24px] custom-lg:text-[54px] sm:text-4xl text-center custom-lg:text-left mt-10 z-10 break-words w-full">
@@ -28,7 +28,7 @@ const EventsPage = () => {
               data-aos-offset="50"
               data-aos-delay="300"
               data-aos-duration="1000"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               Stay connected and don&apos;t miss out on our club&apos;s exciting events!
               From design showcases and panel discussions to resume critiques
@@ -40,7 +40,7 @@ const EventsPage = () => {
               data-aos-offset="80"
               data-aos-delay="400"
               data-aos-duration="800"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               <Button text="ALL EVENTS" />
             </div>
@@ -55,7 +55,7 @@ const EventsPage = () => {
             data-aos-offset="50"
             data-aos-delay="200"
             data-aos-duration="700"
-            data-aos-once="false"
+            data-aos-once="true"
           />
         </div>
       </div>

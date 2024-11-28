@@ -13,7 +13,7 @@ const CompetitionPage = () => {
               data-aos-offset="50"
               data-aos-delay="200"
               data-aos-duration="1000"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
                 Compeiti
@@ -35,7 +35,7 @@ const CompetitionPage = () => {
               data-aos-offset="50"
               data-aos-delay="150"
               data-aos-duration="700"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               Lorem ipsum dolor sit amet consectetur. A phasellus quis aliquet
               et. Eu elit convallis nec massa mus fringilla viverra. Duis
@@ -51,7 +51,7 @@ const CompetitionPage = () => {
               data-aos-offset="0"
               data-aos-delay="100"
               data-aos-duration="800"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               <Button text="SIGN UP" />
             </div>

@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @keyframes growAndGlow {
   0% {
     transform: translate(-50px, 0px) rotate(-10deg) scale(0.85);

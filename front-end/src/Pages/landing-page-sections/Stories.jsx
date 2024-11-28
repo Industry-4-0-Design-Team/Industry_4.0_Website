@@ -123,7 +123,7 @@ const StoriesPage = () => {
               data-aos-offset="50"
               data-aos-delay="150"
               data-aos-duration="400"
-              data-aos-once="false">
+              data-aos-once="true">
               St
               <img
                 src={
@@ -141,7 +141,7 @@ const StoriesPage = () => {
               data-aos-offset="50"
               data-aos-delay="100"
               data-aos-duration="700"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               Hear about the success stories from past Industry 4.0 members and
               participants in our annual I4 competition.

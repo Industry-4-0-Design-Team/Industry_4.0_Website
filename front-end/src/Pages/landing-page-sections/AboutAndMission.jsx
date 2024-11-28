@@ -9,7 +9,7 @@ const AboutAndMission = () => {
             data-aos-offset="50"
             data-aos-delay="100"
             data-aos-duration="700"
-            data-aos-once="false"
+            data-aos-once="true"
           >
             <div
               className="flex items-center ml-[2rem] mt-[5rem] custom-lg:mt-[3rem]"
@@ -17,7 +17,7 @@ const AboutAndMission = () => {
               data-aos-offset="50"
               data-aos-delay="300"
               data-aos-duration="700"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               <h1 className="subtitle text-[24px] custom-lg:text-[54px] sm:text-4xl text-center custom-lg:text-left mt-10 z-10">
                 Ab
@@ -49,7 +49,7 @@ const AboutAndMission = () => {
             data-aos-offset="50"
             data-aos-delay="100"
             data-aos-duration="700"
-            data-aos-once="false"
+            data-aos-once="true"
           >
             <div
               className="flex items-center custom-lg:justify-end"
@@ -57,7 +57,7 @@ const AboutAndMission = () => {
               data-aos-offset="50"
               data-aos-delay="300"
               data-aos-duration="700"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               <h1 className="subtitle text-[24px] custom-lg:text-[54px] sm:text-4xl text-center custom-lg:text-right mt-10 z-10 inline-block subtitle-responsive">
                 Our Missi
