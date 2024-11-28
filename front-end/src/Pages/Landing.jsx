@@ -40,14 +40,14 @@ const LandingPage = () => {
 
       <img src="/planetGear.svg" 
            alt="comets" 
-           className="absolute right-20 top-24 w-32 h-32"
+           className="absolute right-20 top-32 lg:top-24 w-32 h-32 hidden md:block"
            data-aos="fade-left"
            data-aos-offset="0"
            data-aos-delay="200"
            data-aos-duration="900"
            data-aos-once="true" />
 
-      <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[550px]">
+      <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[550px] md:mt-[420px]">
         {/* Left side (Industry 4. and gear) */}
         <div className="flex items-center justify-center mt-16 w-full"
               data-aos="zoom-in"
@@ -96,7 +96,7 @@ const LandingPage = () => {
 
       <img src="/Comets.svg" 
            alt="comets" 
-           className="absolute left-24"
+           className="absolute left-10 lg:left-20 hidden md:block"
            data-aos="fade-right"
            data-aos-offset="0"
            data-aos-delay="200"
