@@ -1,15 +1,15 @@
 @keyframes growAndGlow {
   0% {
     transform: translate(-50px, 0px) rotate(-10deg) scale(0.7);
-    filter: drop-shadow(0 0 5px #2B2AD2); /* Starting small glow */
-    }
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Starting small glow */
+  }
   50% {
     transform: translate(-100px, 0px) rotate(-30deg) scale(0.9);
     filter: drop-shadow(0 0 10px #0000ff); /* Larger glow */
-    }
+  }
   100% {
     transform: translate(-50px, 0px) rotate(-10deg) scale(0.7);
-    filter: drop-shadow(0 0 5px #2B2AD2); /* Back to original */
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Back to original */
   }
 }
 
@@ -29,12 +29,13 @@
 }
 
 ::selection {
-  background-color: #FDE37F; /* Change background color */
+  background-color: #fde37f; /* Change background color */
   color: #2d2d2d; /* Change text color */
 }
 
-::-moz-selection { /* Firefox-specific */
-  background-color: #FDE37F;
+::-moz-selection {
+  /* Firefox-specific */
+  background-color: #fde37f;
   color: #2d2d2d;
 }
 
@@ -48,14 +49,20 @@
 }
 
 .clip-top-half {
-  clip-path: polygon(0px 400px, 4000px 400px, 100% calc(100% - 100000px), 0px 0px);
+  clip-path: polygon(
+    0px 400px,
+    4000px 400px,
+    100% calc(100% - 100000px),
+    0px 0px
+  );
 }
 
 html {
   overflow-x: initial !important;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden; /* or remove */
   overflow-y: auto; /* only show scrollbar if needed */
 }
@@ -65,7 +72,7 @@ html, body {
 }
 
 .navbar {
-  height: 64px; 
+  height: 64px;
   position: relative;
   z-index: 30;
 }
@@ -73,7 +80,7 @@ html, body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 64px; 
+  height: 64px;
 }
 
 .subtitle {
@@ -88,14 +95,14 @@ html, body {
   font-style: normal;
   font-weight: 500 !important;
   line-height: 25px !important;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
 .body-job-position {
   font-style: normal;
   font-weight: 700 !important;
   line-height: 25px !important;
-  color: #A79BC4;
+  color: #a79bc4;
 }
 
 .navbar-text {
@@ -108,20 +115,32 @@ html, body {
 
 .buttonGlow {
   border: 1px solid #0000;
-  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
+  background:
+    linear-gradient(#191919e9, #101010) padding-box,
+    linear-gradient(
         var(--angle),
-        #FDE37F,
-        #FDE37F,
+        #fde37f,
+        #fde37f,
         #ffffff00,
         #ffffff00,
         #ffffff00
-      ) border-box;
+      )
+      border-box;
   animation: 5s rotate linear infinite;
-
+  will-change: transform, filter;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease; /* Smooth transitions */
 }
 
 .buttonGlow:hover {
-  filter: drop-shadow(0 0 3px #FDE37F);
+  filter: drop-shadow(0 0 3px #fde37f);
+  transform: scale(1.1); /* Slight enlargement */
+}
+
+.buttonGlow:active {
+  transform: scale(1.2); /* Slight enlargement */
+  filter: drop-shadow(0 0 3px #fde37f);
 }
 
 @keyframes rotate {
@@ -135,7 +154,6 @@ html, body {
   initial-value: 0deg;
   inherits: false;
 }
-
 
 /* Media Query for screens smaller than custom-lg for landing page heading*/
 @media (max-width: 1024px) {
@@ -201,7 +219,9 @@ html, body {
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
 
