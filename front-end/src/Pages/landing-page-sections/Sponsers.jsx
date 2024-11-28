@@ -6,7 +6,15 @@ const SponserPage = () => {
       <div className="relative z-10 flex justify-center pt-32 items-center mx-[128px]">
         <div className="flex flex-col items-center custom-lg:flex-row">
           <div className="flex flex-col items-center custom-lg:mt-0 mt-[10rem] justify-center ml-auto">
-            <div className="flex mt-[18rem] custom-lg:mt-0 items-center custom-lg:justify-start">
+            {/* Sponsors Heading */}
+            <div
+              className="flex mt-[18rem] custom-lg:mt-0 items-center custom-lg:justify-start"
+              data-aos="fade-down"
+              data-aos-offset="50"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-once="false"
+            >
               <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
                 Spons
               </h1>
@@ -19,6 +27,8 @@ const SponserPage = () => {
                 rs
               </h1>
             </div>
+
+            {/* Subtitle Section */}
             <h2
               className="body custom-lg:text-[24px] md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[850px]"
               data-aos="zoom-in"
@@ -32,6 +42,8 @@ const SponserPage = () => {
               resources needed to create meaningful solutions in the tech-driven
               world.
             </h2>
+
+            {/* Button Section */}
             <div
               className="mt-6 text-center custom-lg:text-left"
               data-aos="fade-up"
@@ -43,6 +55,7 @@ const SponserPage = () => {
               <Button text="BECOME A SPONSOR" />
             </div>
 
+            {/* Sponsors Logos */}
             <div className="flex flex-col custom-lg:flex-row items-center mt-12 gap-12 justify-center custom-lg:space-x-4">
               <img
                 src="/Sponsers/WEEF.svg"

@@ -118,7 +118,12 @@ const StoriesPage = () => {
         <div className="flex flex-col items-center justify-center custom-lg:flex-row custom-lg:items-start">
           {/* Text */}
           <div className="flex flex-col items-center justify-center mt-6 custom-lg:ml-6 custom-lg:mt-0">
-            <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center mt-10 z-10">
+            <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center mt-10 z-10"
+              data-aos="zoom-in"
+              data-aos-offset="50"
+              data-aos-delay="150"
+              data-aos-duration="400"
+              data-aos-once="false">
               St
               <img
                 src={
@@ -142,7 +147,7 @@ const StoriesPage = () => {
               participants in our annual I4 competition.
             </h2>
             {/* Story Component */}
-            <div className="mt-6 w-full">
+            <div className="mt-16 w-full">
               <Story
                 {...stories[currentStoryIndex]}
                 isVisible={isVisible}
@@ -150,10 +155,10 @@ const StoriesPage = () => {
               />
             </div>
             {/* Navigation Buttons */}
-            <div className="custom-lg:mt-[-9rem] mt-12 custom-lg:ml-[63rem] flex gap-4 justify-center custom-lg:justify-start z-[1]">
+            <div className="custom-lg:mt-[-7rem] mt-12 custom-lg:ml-[63rem] flex gap-4 justify-center custom-lg:justify-start z-[1]">
               <button
                 onClick={handlePrevious}
-                className="buttonGlow bg-[#6F52AF] p-2 rounded-[10px] flex justify-center items-center"
+                className="buttonGlow2 bg-[#6F52AF] p-2 rounded-[10px] flex justify-center items-center"
               >
                 <img
                   src={
@@ -167,7 +172,7 @@ const StoriesPage = () => {
               </button>
               <button
                 onClick={handleNext}
-                className="buttonGlow bg-[#6F52AF] p-2 rounded-[10px] flex justify-center items-center"
+                className="buttonGlow2 bg-[#6F52AF] p-2 rounded-[10px] flex justify-center items-center"
               >
                 <img
                   src={

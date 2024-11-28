@@ -10,8 +10,7 @@ import { useEffect } from 'react'
 import LandingPage from './Pages/Landing'
 import Navbar from './Components/Navbar'
 
-import AboutPage from './Pages/landing-page-sections/About'
-import MissionPage from './Pages/landing-page-sections/Mission';
+import AboutAndMission from "./Pages/landing-page-sections/AboutAndMission"
 import SponserPage from './Pages/landing-page-sections/Sponsers';
 import EventsPage from './Pages/landing-page-sections/Events';
 import StoriesPage from './Pages/landing-page-sections/Stories';
@@ -27,8 +26,7 @@ function App() {
     <div className='bg-[#181818] relative'>
       <Navbar/>
       <LandingPage/>
-      <AboutPage/>
-      <MissionPage/>
+      <AboutAndMission/>
       <EventsPage/>
       <SponserPage/>
       <StoriesPage/>

@@ -21,7 +21,7 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/uwindustry4.0/"
             target="blank"
-            className="transform transition-transform duration-300 hover:scale-125"
+            className="transform transition-transform duration-300 hover:scale-110"
           >
             <img
               src="/Social-Media-Icons/instagram_icon.svg"
@@ -32,7 +32,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/company/industry4team/"
             target="blank"
-            className="transform transition-transform duration-300 hover:scale-125"
+            className="transform transition-transform duration-300 hover:scale-110"
           >
             <img
               src="/Social-Media-Icons/linkedin_icon.svg"
@@ -40,7 +40,7 @@ const Footer = () => {
               className="w-5 h-5"
             />
           </a>
-          <a href="https://discord.gg/dRtUKaXekc" target="blank" className="transform transition-transform duration-300 hover:scale-125">
+          <a href="https://discord.gg/dRtUKaXekc" target="blank" className="transform transition-transform duration-300 hover:scale-110">
             <img
               src="/Social-Media-Icons/discord_icon.svg"
               alt="Discord Link"
@@ -50,7 +50,7 @@ const Footer = () => {
           <a
             href="mailto:industry4team@uwaterloo.ca"
             target="blank"
-            className="transform transition-transform duration-300 hover:scale-125"
+            className="transform transition-transform duration-300 hover:scale-110"
           >
             <img
               src="/Social-Media-Icons/mail_icon.svg"

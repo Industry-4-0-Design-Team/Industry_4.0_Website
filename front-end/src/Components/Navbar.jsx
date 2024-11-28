@@ -84,7 +84,7 @@ const Navbar = () => {
       <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
         {["ABOUT", "EVENTS", "SPONSORS", "STORIES", "SIGN&nbsp;UP", "TEAM"].map(
           (item) => {
-            const isSpecialButton = item.includes("SIGN&nbsp;UP") || item.includes("SPONSORS");
+            const isSpecialButton = item.includes("SIGN&nbsp;UP");
             return (
               <button
                 key={item}
@@ -99,7 +99,7 @@ const Navbar = () => {
                 className={`navbar-text transition-colors duration-300 px-4 py-2 ${
                   isSpecialButton
                     ? "hover:bg-yellow-300/20 border border-white rounded-[60px]"
-                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-300 hover:scale-105"
+                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-all ease-in duration-200"
                 }`}
                 dangerouslySetInnerHTML={{ __html: item }}
               />
@@ -113,7 +113,7 @@ const Navbar = () => {
         <a
           href="https://www.instagram.com/uwindustry4.0/"
           target="blank"
-          className="transform transition-transform duration-300 hover:scale-125"
+          className="transform transition-transform duration-300 hover:scale-110"
         >
           <img
             src="/Social-Media-Icons/instagram_icon.svg"
@@ -124,7 +124,7 @@ const Navbar = () => {
         <a
           href="https://www.linkedin.com/company/industry4team/"
           target="blank"
-          className="transform transition-transform duration-300 hover:scale-125"
+          className="transform transition-transform duration-300 hover:scale-110"
         >
           <img
             src="/Social-Media-Icons/linkedin_icon.svg"
@@ -135,7 +135,7 @@ const Navbar = () => {
         <a
           href="https://discord.gg/dRtUKaXekc"
           target="blank"
-          className="transform transition-transform duration-300 hover:scale-125"
+          className="transform transition-transform duration-300 hover:scale-110"
         >
           <img
             src="/Social-Media-Icons/discord_icon.svg"
@@ -146,7 +146,7 @@ const Navbar = () => {
         <a
           href="mailto:industry4team@uwaterloo.ca"
           target="blank"
-          className="transform transition-transform duration-300 hover:scale-125"
+          className="transform transition-transform duration-300 hover:scale-110"
         >
           <img
             src="/Social-Media-Icons/mail_icon.svg"
@@ -161,7 +161,7 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-gray-200 fixed top-3 right-5 z-50 text-xl"
         >
-          temp &gt;
+          X
         </button>
       )}
 

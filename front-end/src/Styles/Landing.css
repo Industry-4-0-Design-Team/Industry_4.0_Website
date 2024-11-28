@@ -1,14 +1,14 @@
 @keyframes growAndGlow {
   0% {
-    transform: translate(-50px, 0px) rotate(-10deg) scale(0.7);
+    transform: translate(-50px, 0px) rotate(-10deg) scale(0.85);
     filter: drop-shadow(0 0 5px #2b2ad2); /* Starting small glow */
   }
   50% {
-    transform: translate(-100px, 0px) rotate(-30deg) scale(0.9);
+    transform: translate(-100px, 0px) rotate(-20deg) scale(0.9);
     filter: drop-shadow(0 0 10px #0000ff); /* Larger glow */
   }
   100% {
-    transform: translate(-50px, 0px) rotate(-10deg) scale(0.7);
+    transform: translate(-50px, 0px) rotate(-10deg) scale(0.85);
     filter: drop-shadow(0 0 5px #2b2ad2); /* Back to original */
   }
 }
@@ -130,7 +130,7 @@ body {
 
 .buttonGlow:hover {
   filter: drop-shadow(0 0 3px #fde37f);
-  transform: scale(1.1); /* Slight enlargement on hover */
+  transform: scale(1.01); /* Slight enlargement on hover */
 }
 
 .buttonGlow:active {
@@ -148,6 +148,74 @@ body {
   initial-value: 0deg;
   inherits: false;
 }
+
+.buttonGlow2 {
+  border: 1px solid #0000;
+  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
+    180deg,
+    #8167C8,
+    #8167C8,
+    #ffffff00
+  ) border-box;
+  animation: 3s pulsate infinite;
+  will-change: filter;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+.buttonGlow2:hover {
+  filter: drop-shadow(0 0 2px #8167C8);
+  transform: scale(1.02); /* Slight enlargement on hover */
+}
+
+.buttonGlow2:active {
+  filter: drop-shadow(0 0 12px #8167C8); /* Stronger shadow on click */
+}
+
+@keyframes pulsate {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px #8167C8);
+  }
+  50% {
+    filter: drop-shadow(0 0 7px #8167C8);
+  }
+}
+
+/* Toast notification styles */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  animation: slideInOut 3s ease-in-out;
+}
+
+/* Combined Animation for toast (slide-in, stay, and slide-out) */
+@keyframes slideInOut {
+  0% {
+    transform: translateX(-50%) translateY(40px); /* Start off-screen below */
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(-50%) translateY(0); /* Slide to original position */
+    opacity: 1; /* Fade in */
+  }
+  80% {
+    transform: translateX(-50%) translateY(0); /* Stay in place */
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: translateX(-50%) translateY(40px); /* Slide out to bottom */
+    opacity: 0; /* Fade out */
+  }
+}
+
 
 /* Media Query for screens smaller than custom-lg for landing page heading*/
 @media (max-width: 1024px) {

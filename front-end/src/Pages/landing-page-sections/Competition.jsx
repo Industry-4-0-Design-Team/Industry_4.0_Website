@@ -6,7 +6,15 @@ const CompetitionPage = () => {
       <div className="relative z-10 flex justify-center items-center mx-[128px]">
         <div className="flex flex-col items-center custom-lg:flex-row">
           <div className="flex flex-col items-center justify-center ml-auto">
-            <div className="flex items-center custom-lg:justify-start">
+            {/* Competition Header */}
+            <div
+              className="flex items-center custom-lg:justify-start"
+              data-aos="fade-down"
+              data-aos-offset="50"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-once="false"
+            >
               <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
                 Compeiti
               </h1>
@@ -19,6 +27,8 @@ const CompetitionPage = () => {
                 n
               </h1>
             </div>
+
+            {/* Subtitle Section */}
             <h2
               className="body custom-lg:text-[24px] md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[850px]"
               data-aos="zoom-in"
@@ -33,6 +43,8 @@ const CompetitionPage = () => {
               et volutpat nascetur. Sed non fringilla nec enim lobortis.
               Tristique rhoncus.
             </h2>
+
+            {/* Button Section */}
             <div
               className="mt-6 text-center"
               data-aos="fade-up"
