@@ -91,9 +91,8 @@ body {
 
 .subtitle {
   /* Subtitle */
-  font-weight: 600 !important;
+  font-weight: 900 !important;
   line-height: normal;
-  letter-spacing: 2.9px !important;
   color: white;
 }
 
