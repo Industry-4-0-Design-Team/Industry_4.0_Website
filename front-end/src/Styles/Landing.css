@@ -4,23 +4,54 @@
   box-sizing: border-box;
 }
 
-@keyframes growAndGlow {
+@keyframes smooth-oscillate-and-glow {
   0% {
-    transform: translate(-50px, 0px) rotate(-10deg) scale(0.85);
+    transform: translate(-30px, 50px);
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Starting small glow */
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smooth acceleration */
+  }
+  40% {
+    transform: translate(-30px, 100px);
+    filter: drop-shadow(0 0 10px #0000ff); /* Larger glow */
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smooth deceleration */
+  }
+  50% {
+    transform: translate(-30px, 100px);
+    filter: drop-shadow(0 0 10px #0000ff); /* Small pause */
+  }
+  90% {
+    transform: translate(-30px, 50px);
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Accelerate back */
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smooth deceleration */
+  }
+  100% {
+    transform: translate(-30px, 50px);
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Small pause */
+  }
+}
+
+.simple-oscillate {
+  animation: smooth-oscillate-and-glow 4s infinite;
+  will-change: transform, filter;
+}
+
+@keyframes grow-and-glow {
+  0% {
+    transform: translate(200px, -100px) rotate(-10deg) scale(0.85);
     filter: drop-shadow(0 0 5px #2b2ad2); /* Starting small glow */
   }
   50% {
-    transform: translate(-100px, 0px) rotate(-20deg) scale(0.9);
+    transform: translate(-300px, -100px) rotate(-30deg) scale(0.9);
     filter: drop-shadow(0 0 10px #0000ff); /* Larger glow */
   }
   100% {
-    transform: translate(-50px, 0px) rotate(-10deg) scale(0.85);
+    transform: translate(200px, -100px) rotate(-10deg) scale(0.85);
     filter: drop-shadow(0 0 5px #2b2ad2); /* Back to original */
   }
 }
 
 .oscillate {
-  animation: growAndGlow 10s infinite ease-in-out;
+  animation: grow-and-glow 10s infinite ease-in-out;
   will-change: transform, filter;
 }
 

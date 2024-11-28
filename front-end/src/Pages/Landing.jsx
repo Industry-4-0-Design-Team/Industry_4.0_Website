@@ -38,9 +38,9 @@ const LandingPage = () => {
     <div id="landing" className="flex flex-col items-center w-full h-screen justify-center">
       {/* Main content container */}
 
-      <img src="/planetGear.svg" 
-           alt="comets" 
-           className="absolute right-20 top-32 lg:top-24 w-32 h-32 hidden md:block"
+      <img src="/planetGear.svg"
+           alt="Planet Gear"
+           className="simple-oscillate absolute right-20 top-32 lg:top-24 w-32 h-32 hidden md:block"
            data-aos="fade-left"
            data-aos-offset="0"
            data-aos-delay="200"

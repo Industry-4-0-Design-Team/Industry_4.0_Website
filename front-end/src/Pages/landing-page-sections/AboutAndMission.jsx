@@ -87,8 +87,8 @@ const AboutAndMission = () => {
         <div className="w-full text-center mt-14 text-white">
           <ul className="flex w-full text-center items-center justify-around">
             <li>
-              <div data-aos="fade-right"
-                   data-aos-offset="50"
+              <div data-aos="fade-up"
+                   data-aos-offset="30"
                    data-aos-delay="500"
                    data-aos-duration="700"
                    data-aos-once="true">
@@ -97,8 +97,8 @@ const AboutAndMission = () => {
               </div>
             </li>
             <li>
-              <div data-aos="fade-right"
-                   data-aos-offset="50"
+              <div data-aos="fade-up"
+                   data-aos-offset="30"
                    data-aos-delay="700"
                    data-aos-duration="700"
                    data-aos-once="true">
@@ -107,8 +107,8 @@ const AboutAndMission = () => {
               </div>
             </li>
             <li>
-              <div data-aos="fade-right"
-                   data-aos-offset="50"
+              <div data-aos="fade-up"
+                   data-aos-offset="30"
                    data-aos-delay="900"
                    data-aos-duration="700"
                    data-aos-once="true">
