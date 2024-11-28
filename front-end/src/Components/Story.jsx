@@ -58,7 +58,7 @@ const Story = ({ name, job, quote, headshot, isVisible, preloadedImages }) => {
                 >
                     <div className="body text-xl">{name}</div>
                     <div className="body-job-position text-xl mt-4">{job}</div>
-                    <div className="body custom-lg:text-[24px] md:text-[12px]  text-[12px] mt-4">{quote}</div>
+                    <div className="body custom-lg:text-[24px] md:text-[12px] text-[12px] mt-4">{quote}</div>
                 </div>
             </div>
         </div>

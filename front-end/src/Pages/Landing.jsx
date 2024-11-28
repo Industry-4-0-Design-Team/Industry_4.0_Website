@@ -31,7 +31,7 @@ const LandingPage = () => {
     // Hide the toast after 3 seconds
     setTimeout(() => {
       setToastVisible(false);
-    }, 3000);
+    }, 5000);
   };
 
   return (

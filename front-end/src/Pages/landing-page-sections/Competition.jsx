@@ -16,7 +16,7 @@ const CompetitionPage = () => {
               data-aos-once="true"
             >
               <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
-                Compeiti
+                Competi
               </h1>
               <img
                 src="/Gears/yellow_gear_in_4.0.svg"
