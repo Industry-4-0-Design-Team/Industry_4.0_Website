@@ -1,5 +1,5 @@
 import "../Styles/Landing.css";
-import Button from "../Components/Button";
+// import Button from "../Components/Button";
 
 const LandingPage = () => {
   return (
@@ -25,7 +25,7 @@ const LandingPage = () => {
               GEAR UP TO GO BEYOND
             </h1>
             <div className="mt-6 flex flex-col items-center md:flex-row gap-5 md:justify-end">
-              <button className="text-black font-900 bg-secondary px-4 py-1 rounded-full text-md md:text-lg w-32 h-12 md:w-40 md:h-14 inline-flex items-center justify-center whitespace-nowrap transform transition-transform duration-200 hover:scale-110">
+              <button className="text-black font-900 bg-secondary px-4 py-1 rounded-full text-md md:text-lg w-32 h-12 md:w-40 md:h-14 inline-flex items-center justify-center whitespace-nowrap transform transition-transform duration-200 hover:scale-110 active:drop-shadow-xl">
                   SIGN UP
               </button>
               <button className="buttonGlow text-secondary font-900 px-4 py-1 rounded-full text-sm md:text-lg w-32 h-12 md:w-40 md:h-14 transform transition-transform duration-200 hover:scale-110">
