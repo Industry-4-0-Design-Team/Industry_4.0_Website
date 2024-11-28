@@ -134,7 +134,7 @@ const StoriesPage = () => {
               className="body text-[18px] custom-lg:text-[24px] text-center mt-4 max-w-[550px] custom-lg:max-w-[850px]"
               data-aos="zoom-in"
               data-aos-offset="50"
-              data-aos-delay="150"
+              data-aos-delay="100"
               data-aos-duration="700"
               data-aos-once="false"
             >
