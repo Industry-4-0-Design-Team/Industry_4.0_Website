@@ -4,34 +4,18 @@
   box-sizing: border-box;
 }
 
-@keyframes smooth-oscillate-and-glow {
-  0% {
-    transform: translate(-30px, 50px);
-    filter: drop-shadow(0 0 5px #2b2ad2); /* Starting small glow */
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smooth acceleration */
-  }
-  40% {
-    transform: translate(-30px, 100px);
-    filter: drop-shadow(0 0 10px #0000ff); /* Larger glow */
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smooth deceleration */
+@keyframes smooth-bob-and-glow {
+  0%, 100% {
+    transform: translate(-30px, 50px); /* Starting and ending position */
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Small glow */
   }
   50% {
-    transform: translate(-30px, 100px);
-    filter: drop-shadow(0 0 10px #0000ff); /* Small pause */
-  }
-  90% {
-    transform: translate(-30px, 50px);
-    filter: drop-shadow(0 0 5px #2b2ad2); /* Accelerate back */
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smooth deceleration */
-  }
-  100% {
-    transform: translate(-30px, 50px);
-    filter: drop-shadow(0 0 5px #2b2ad2); /* Small pause */
+    transform: translate(-30px, 60px); /* Slight downward movement */
+    filter: drop-shadow(0 0 10px #0000ff); /* Slightly larger glow */
   }
 }
-
 .simple-oscillate {
-  animation: smooth-oscillate-and-glow 4s infinite;
+  animation: smooth-bob-and-glow 4s infinite;
   will-change: transform, filter;
 }
 
