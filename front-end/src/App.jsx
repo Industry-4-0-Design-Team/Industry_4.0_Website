@@ -29,8 +29,8 @@ function App() {
       <AboutAndMission/>
       <EventsPage/>
       <SponsorPage/>
-      <StoriesPage/>
       <CompetitionPage/>
+      <StoriesPage/>
       <Footer/>
     </div>
   </div>

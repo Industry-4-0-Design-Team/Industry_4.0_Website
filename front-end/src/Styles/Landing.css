@@ -149,6 +149,26 @@ body {
   text-transform: uppercase;
 }
 
+.navbarButtonGlow {
+  border: 1px solid #ffff0035;
+}
+
+.navbarButtonGlow:hover {
+  filter: drop-shadow(0 0 3px #fde37f);
+  transform: scale(1.01); /* Slight enlargement on hover */
+  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
+    var(--angle),
+    #ffec9e,
+    #ffeeac,
+    #ffffff00,
+    #ffffff00,
+    #ffffff00
+  ) border-box;
+  animation: 5s rotate linear infinite;
+  will-change: transform, filter;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Ensure smooth transition for transform and filter */
+}
+
 .buttonGlow {
   border: 1px solid #ffff0021;
   background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(

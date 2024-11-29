@@ -17,7 +17,7 @@ const AboutAndMission = () => {
                 ABOUT US
               </h1>
             </div>
-            <p className="body px-8 md:px-8 lg:px-10 custom-lg:px-20 text-center mt-12 mb-16 z-10 w-full md:text-2xl lg:text-2xl"
+            <p className="body px-14 md:px-8 lg:px-10 custom-lg:px-20 text-center mt-12 mb-16 z-10 w-full md:text-2xl lg:text-2xl"
                data-aos="zoom-in"
                data-aos-offset="50"
                data-aos-delay="300"
@@ -35,44 +35,9 @@ const AboutAndMission = () => {
             </p>
           </div>
         </div>
-        {/*Statistics under about us page */}
-        <div className="w-full text-center text-white">
-          <ul className="flex w-full text-center items-center justify-around">
-            <li>
-              <div data-aos="fade-up"
-                   data-aos-offset="30"
-                   data-aos-delay="500"
-                   data-aos-duration="700"
-                   data-aos-once="true">
-                <h1 className="purpleNeonText font-black text-xl xs:text-3xl sm:text-4xl lg:text-6xl">500+</h1>
-                <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">COMPETITORS</h3>
-              </div>
-            </li>
-            <li>
-              <div data-aos="fade-up"
-                   data-aos-offset="30"
-                   data-aos-delay="700"
-                   data-aos-duration="700"
-                   data-aos-once="true">
-                <h1 className="purpleNeonText font-black text-xl xs:text-3xl sm:text-4xl lg:text-6xl">25+</h1>
-                <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">EVENTS</h3>
-              </div>
-            </li>
-            <li>
-              <div data-aos="fade-up"
-                   data-aos-offset="30"
-                   data-aos-delay="900"
-                   data-aos-duration="700"
-                   data-aos-once="true">
-                <h1 className="purpleNeonText font-black text-xl xs:text-3xl sm:text-4xl lg:text-6xl">50+</h1>
-                <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">ORGANIZERS</h3>
-              </div>
-            </li>
-          </ul>
-        </div>
   
         {/* Oscillating Gear */}
-        <div className="flex justify-center ml-[8rem] mt-40 mb-16">
+        <div className="flex justify-center ml-[8rem] mt-24">
           <img
             src="/Gears/MissionGear.svg"
             className="oscillate w-[320px] h-auto"

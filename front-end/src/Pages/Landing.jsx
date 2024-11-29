@@ -43,8 +43,8 @@ const LandingPage = () => {
            className="simple-oscillate absolute right-20 top-4 lg:top-12 w-32 h-32 hidden md:block"
            data-aos="fade-left"
            data-aos-offset="0"
-           data-aos-delay="200"
-           data-aos-duration="900"
+           data-aos-delay="500"
+           data-aos-duration="1100"
            data-aos-once="true" />
 
       <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[550px] md:mt-[420px]">
@@ -53,7 +53,7 @@ const LandingPage = () => {
               data-aos="zoom-in"
               data-aos-offset="0"
               data-aos-delay="200"
-              data-aos-duration="900"
+              data-aos-duration="1100"
               data-aos-once="true">
           <h1 className="text-center text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-8xl text-primaryText font-900" >
             INDUSTRY 4.
@@ -69,8 +69,8 @@ const LandingPage = () => {
         <div className="flex justify-center md:justify-end w-full mt-3 md:mt-6 lg:ml-[5rem] z-20"
               data-aos="zoom-in"
               data-aos-offset="0"
-              data-aos-delay="200"
-              data-aos-duration="900"
+              data-aos-delay="350"
+              data-aos-duration="1100"
               data-aos-once="true">
           <div className="text-center md:text-right lg:text-right lg:mr-10">
             <h1 className="text-[#EEE6FF] font-900 text-lg md:text-3xl lg:text-4xl lg:text-right">
@@ -99,14 +99,14 @@ const LandingPage = () => {
            className="absolute left-10 lg:left-20 hidden md:block"
            data-aos="fade-right"
            data-aos-offset="0"
-           data-aos-delay="200"
-           data-aos-duration="900"
+           data-aos-delay="600"
+           data-aos-duration="1100"
            data-aos-once="true" />
 
       {/* Toast Notification */}
       {toastVisible && (
         <div className="toast">
-          <p>Competition has not been set up yet, check back soon or keep up with social media for updates.</p>
+          <p>Competition sign up has not begun yet, check back soon or keep up with social media for updates.</p>
         </div>
       )}
 

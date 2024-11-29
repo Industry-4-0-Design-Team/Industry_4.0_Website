@@ -51,7 +51,7 @@ const Navbar = () => {
       landing: 90,
       about: 80, // Custom offset for "about" section
       events: -170, // Custom offset for "events" section
-      sponsors: 20, // Custom offset for "sponsors" section
+      sponsors: -20, // Custom offset for "sponsors" section
       stories: -65, // Custom offset for "stories" section
       team: 100, // Custom offset for "team" section
     };
@@ -66,12 +66,12 @@ const Navbar = () => {
   return (
     <div
       className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${
-        isScrolled ? "fixed top-0 bg-black/30 backdrop-blur-lg" : "fixed"
+        isScrolled ? "fixed top-0 backdrop-blur-lg" : "fixed"
       } transition-all duration-500`}
       data-aos="fade-down"
       data-aos-offset="500"
-      data-aos-delay="200"
-      data-aos-duration="900"
+      data-aos-delay="300"
+      data-aos-duration="800"
       data-aos-once="true"
     >
       {/* Logo */}
@@ -87,24 +87,24 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
-        {["ABOUT", "EVENTS", "SPONSORS", "STORIES", "SIGN&nbsp;UP", "TEAM"].map(
+        {(isScrolled ? ["ABOUT", "EVENTS", "SPONSORS", "COMPETITION", "STORIES", "SIGN&nbsp;UP"] : ["ABOUT", "EVENTS", "SPONSORS", "COMPETITION", "STORIES"]).map(
           (item) => {
             const isSpecialButton = item.includes("SIGN&nbsp;UP");
             return (
               <button
                 key={item}
                 onClick={() =>
-                  scrollToSection(
-                    item
-                      .toLowerCase()
-                      .replace(/&nbsp;/g, "-")
-                      .replace(" ", "-")
-                  )
-                }
+                  scrollToSection((item == "SIGN&nbsp;UP") 
+                                    ? "landing" 
+                                    : item
+                                        .toLowerCase()
+                                        .replace(/&nbsp;/g, "-")
+                                        .replace(" ", "-")
+                          )}
                 className={`navbar-text transition-colors duration-300 px-4 py-2 ${
                   isSpecialButton
-                    ? "hover:bg-yellow-300/20 border border-white rounded-[60px]"
-                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-all ease-in duration-200"
+                    ? "navbarButtonGlow hover: rounded-full"
+                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-100 hover:scale-105"
                 }`}
                 dangerouslySetInnerHTML={{ __html: item }}
               />
