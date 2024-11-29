@@ -10,7 +10,7 @@ const EventsPage = () => {
         <div className="flex flex-col items-center custom-lg:flex-row w-full">
           {/* Left Section - Discover Events */}
           <div
-            className="flex flex-col items-center custom-lg:items-start justify-center mr-auto mt-8 custom-lg:mt-0 w-full"
+            className="flex flex-col gap-3 items-center custom-lg:items-start justify-center mr-auto mt-8 custom-lg:mt-0 w-full"
             data-aos="fade-right"
             data-aos-offset="50"
             data-aos-delay="200"
@@ -18,12 +18,12 @@ const EventsPage = () => {
             data-aos-once="true"
           >
             <div className="flex items-center custom-lg:justify-start w-full">
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] sm:text-4xl text-center custom-lg:text-left mt-10 z-10 break-words w-full">
-                Discover Events
+              <h1 className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest">
+                EVENTS
               </h1>
             </div>
             <h2
-              className="body custom-lg:text-[24px] md:text-[22px] text-center custom-lg:text-left mt-4 z-10 custom-lg:max-w-[550px] break-words w-full"
+              className="body custom-lg:text-[22px] md:text-[20px] text-center custom-lg:text-left mt-4 z-10 custom-lg:max-w-[550px] break-words w-full"
               data-aos="fade-right"
               data-aos-offset="50"
               data-aos-delay="300"

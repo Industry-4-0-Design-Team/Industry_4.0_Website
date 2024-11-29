@@ -15,16 +15,8 @@ const CompetitionPage = () => {
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
-                Competi
-              </h1>
-              <img
-                src="/Gears/yellow_gear_in_4.0.svg"
-                className="ml-1 mr-1 mt-[4.1rem] w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block relative -top-2"
-                draggable="false"
-              />
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
-                n
+              <h1 className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest">
+                COMPETITION
               </h1>
             </div>
 

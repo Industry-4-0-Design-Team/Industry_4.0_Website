@@ -130,7 +130,7 @@ body {
 .body {
   font-style: normal;
   font-weight: 500 !important;
-  line-height: 25px !important;
+  line-height: 30px !important;
   color: #d3d3d3;
 }
 
@@ -150,11 +150,11 @@ body {
 }
 
 .buttonGlow {
-  border: 1px solid #0000;
+  border: 1px solid #ffff0021;
   background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
     var(--angle),
-    #FDE37F,
-    #FDE37F,
+    #ffec9e,
+    #ffeeac,
     #ffffff00,
     #ffffff00,
     #ffffff00

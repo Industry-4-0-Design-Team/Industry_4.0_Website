@@ -118,22 +118,13 @@ const StoriesPage = () => {
         <div className="flex flex-col items-center justify-center custom-lg:flex-row custom-lg:items-start">
           {/* Text */}
           <div className="flex flex-col items-center justify-center mt-6 custom-lg:ml-6 custom-lg:mt-0">
-            <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center mt-10 z-10"
+            <h1 className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest"
               data-aos="zoom-in"
               data-aos-offset="50"
               data-aos-delay="150"
               data-aos-duration="400"
               data-aos-once="true">
-              St
-              <img
-                src={
-                  preloadedImages["/Gears/yellow_gear_in_4.0.svg"] ||
-                  "/Gears/yellow_gear_in_4.0.svg"
-                }
-                className="inline-block w-6 h-6 custom-lg:w-8 custom-lg:h-8 mx-1"
-                draggable="false"
-              />
-              ries
+              STORIES
             </h1>
             <h2
               className="body text-[18px] custom-lg:text-[24px] text-center mt-4 max-w-[550px] custom-lg:max-w-[850px]"

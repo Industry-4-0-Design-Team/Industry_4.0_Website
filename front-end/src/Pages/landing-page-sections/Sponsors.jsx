@@ -1,6 +1,6 @@
 import Button from "../../Components/Button";
 
-const SponserPage = () => {
+const SponsorPage = () => {
   return (
     <div id="sponsors" className="h-full relative">
       <div className="relative z-10 flex justify-center pt-32 items-center mx-[128px]">
@@ -15,16 +15,8 @@ const SponserPage = () => {
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
-                Spons
-              </h1>
-              <img
-                src="/Gears/yellow_gear_in_4.0.svg"
-                className="ml-1 mr-1 mt-[4.1rem] w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block relative -top-2"
-                draggable="true"
-              />
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
-                rs
+              <h1 className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest">
+                SPONSORS
               </h1>
             </div>
 
@@ -45,7 +37,7 @@ const SponserPage = () => {
 
             {/* Button Section */}
             <div
-              className="mt-6 text-center custom-lg:text-left"
+              className="mt-10 text-center custom-lg:text-left"
               data-aos="fade-up"
               data-aos-offset="80"
               data-aos-delay="100"
@@ -95,4 +87,4 @@ const SponserPage = () => {
   );
 };
 
-export default SponserPage;
+export default SponsorPage;
