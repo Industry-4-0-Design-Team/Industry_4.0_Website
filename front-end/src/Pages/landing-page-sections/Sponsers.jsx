@@ -39,7 +39,7 @@ const SponserPage = () => {
             >
               With the support of our incredible sponsors, we are broadening
               opportunities for students, providing them with the tools &
-              resources needed to create meaningful solutions in the tech-driven
+              resources needed to create meaningful solutions in the tech
               world.
             </h2>
 

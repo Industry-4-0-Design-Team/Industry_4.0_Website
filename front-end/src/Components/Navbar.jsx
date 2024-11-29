@@ -82,7 +82,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
-        {["ABOUT", "EVENTS", "SPONSORS", "STORIES", "SIGN&nbsp;UP", "TEAM"].map(
+        {["ABOUT", "EVENTS", "SPONSORS", "STORIES", "SIGN&nbsp;UP"].map(
           (item) => {
             const isSpecialButton = item.includes("SIGN&nbsp;UP");
             return (
@@ -188,7 +188,6 @@ const Navbar = () => {
               "EVENTS",
               "SPONSORS",
               "STORIES",
-              "TEAM",
               "SIGN&nbsp;UP",
             ].map((item) => (
               <li key={item} className="py-4 text-xl">
