@@ -11,7 +11,7 @@ import LandingPage from './Pages/Landing'
 import Navbar from './Components/Navbar'
 
 import AboutAndMission from "./Pages/landing-page-sections/AboutAndMission"
-import SponserPage from './Pages/landing-page-sections/Sponsers';
+import SponsorPage from './Pages/landing-page-sections/Sponsors';
 import EventsPage from './Pages/landing-page-sections/Events';
 import StoriesPage from './Pages/landing-page-sections/Stories';
 import Footer from './Components/Footer';
@@ -38,7 +38,7 @@ function App() {
       <LandingPage/>
       <AboutAndMission/>
       <EventsPage/>
-      <SponserPage/>
+      <SponsorPage/>
       <StoriesPage/>
       <CompetitionPage/>
       <TeamPage teamData={teamData} />

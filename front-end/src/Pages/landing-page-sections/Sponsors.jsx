@@ -1,30 +1,22 @@
 import Button from "../../Components/Button";
 
-const SponserPage = () => {
+const SponsorPage = () => {
   return (
     <div id="sponsors" className="h-full relative">
-      <div className="relative z-10 flex justify-center pt-32 items-center mx-[128px]">
+      <div className="relative z-10 flex justify-center items-center mx-[128px]">
         <div className="flex flex-col items-center custom-lg:flex-row">
-          <div className="flex flex-col items-center custom-lg:mt-0 mt-[10rem] justify-center ml-auto">
+          <div className="flex flex-col items-center justify-center ml-auto">
             {/* Sponsors Heading */}
             <div
-              className="flex mt-[18rem] custom-lg:mt-0 items-center custom-lg:justify-start"
+              className="flex items-center custom-lg:justify-start mb-5"
               data-aos="fade-down"
               data-aos-offset="50"
-              data-aos-delay="200"
-              data-aos-duration="1000"
-              data-aos-once="false"
+              data-aos-delay="100"
+              data-aos-duration="700"
+              data-aos-once="true"
             >
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
-                Spons
-              </h1>
-              <img
-                src="/Gears/yellow_gear_in_4.0.svg"
-                className="ml-1 mr-1 mt-[4.1rem] w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block relative -top-2"
-                draggable="false"
-              />
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center text-3xl mt-10 z-10">
-                rs
+              <h1 className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest">
+                SPONSORS
               </h1>
             </div>
 
@@ -32,10 +24,10 @@ const SponserPage = () => {
             <h2
               className="body custom-lg:text-[24px] md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[850px]"
               data-aos="zoom-in"
-              data-aos-offset="50"
-              data-aos-delay="150"
-              data-aos-duration="700"
-              data-aos-once="false"
+               data-aos-offset="50"
+               data-aos-delay="400"
+               data-aos-duration="700"
+               data-aos-once="true"
             >
               With the support of our incredible sponsors, we are broadening
               opportunities for students, providing them with the tools &
@@ -45,12 +37,12 @@ const SponserPage = () => {
 
             {/* Button Section */}
             <div
-              className="mt-6 text-center custom-lg:text-left"
-              data-aos="fade-up"
+              className="mt-10 text-center custom-lg:text-left"
+              data-aos="fade-in"
               data-aos-offset="80"
-              data-aos-delay="100"
+              data-aos-delay="800"
               data-aos-duration="800"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               <Button text="BECOME A SPONSOR" />
             </div>
@@ -63,19 +55,19 @@ const SponserPage = () => {
                 draggable="false"
                 data-aos="zoom-in-right"
                 data-aos-offset="80"
-                data-aos-delay="100"
+                data-aos-delay="600"
                 data-aos-duration="800"
-                data-aos-once="false"
+                data-aos-once="true"
               />
               <img
                 src="/Sponsers/MGMT.svg"
                 className="h-lg inline-block relative -top-2 mt-[-2rem] custom-lg:mt-0"
                 draggable="false"
-                data-aos="fade-up"
+                data-aos="fade-in"
                 data-aos-offset="80"
-                data-aos-delay="100"
-                data-aos-duration="600"
-                data-aos-once="false"
+                data-aos-delay="600"
+                data-aos-duration="1500"
+                data-aos-once="true"
               />
               <img
                 src="/Sponsers/TOYOTA.svg"
@@ -83,9 +75,9 @@ const SponserPage = () => {
                 draggable="false"
                 data-aos="zoom-in-left"
                 data-aos-offset="80"
-                data-aos-delay="100"
+                data-aos-delay="00"
                 data-aos-duration="800"
-                data-aos-once="false"
+                data-aos-once="true"
               />
             </div>
           </div>
@@ -95,4 +87,4 @@ const SponserPage = () => {
   );
 };
 
-export default SponserPage;
+export default SponsorPage;

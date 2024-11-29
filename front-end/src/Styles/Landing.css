@@ -1,20 +1,57 @@
-@keyframes growAndGlow {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes smooth-oscillate-and-glow {
   0% {
-    transform: translate(-50px, 0px) rotate(-10deg) scale(0.85);
+    transform: translate(-30px, 50px);
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Starting small glow */
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smooth acceleration */
+  }
+  40% {
+    transform: translate(-30px, 100px);
+    filter: drop-shadow(0 0 10px #0000ff); /* Larger glow */
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smooth deceleration */
+  }
+  50% {
+    transform: translate(-30px, 100px);
+    filter: drop-shadow(0 0 10px #0000ff); /* Small pause */
+  }
+  90% {
+    transform: translate(-30px, 50px);
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Accelerate back */
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Smooth deceleration */
+  }
+  100% {
+    transform: translate(-30px, 50px);
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Small pause */
+  }
+}
+
+.simple-oscillate {
+  animation: smooth-oscillate-and-glow 4s infinite;
+  will-change: transform, filter;
+}
+
+@keyframes grow-and-glow {
+  0% {
+    transform: translate(200px, -100px) rotate(-10deg) scale(0.85);
     filter: drop-shadow(0 0 5px #2b2ad2); /* Starting small glow */
   }
   50% {
-    transform: translate(-100px, 0px) rotate(-20deg) scale(0.9);
+    transform: translate(-300px, -100px) rotate(-30deg) scale(0.9);
     filter: drop-shadow(0 0 10px #0000ff); /* Larger glow */
   }
   100% {
-    transform: translate(-50px, 0px) rotate(-10deg) scale(0.85);
+    transform: translate(200px, -100px) rotate(-10deg) scale(0.85);
     filter: drop-shadow(0 0 5px #2b2ad2); /* Back to original */
   }
 }
 
 .oscillate {
-  animation: growAndGlow 10s infinite ease-in-out;
+  animation: grow-and-glow 10s infinite ease-in-out;
   will-change: transform, filter;
 }
 
@@ -85,16 +122,15 @@ body {
 
 .subtitle {
   /* Subtitle */
-  font-weight: 600 !important;
+  font-weight: 900 !important;
   line-height: normal;
-  letter-spacing: 2.9px !important;
   color: white;
 }
 
 .body {
   font-style: normal;
   font-weight: 500 !important;
-  line-height: 25px !important;
+  line-height: 30px !important;
   color: #d3d3d3;
 }
 
@@ -113,12 +149,32 @@ body {
   text-transform: uppercase;
 }
 
-.buttonGlow {
-  border: 1px solid #0000;
+.navbarButtonGlow {
+  border: 1px solid #ffff0035;
+}
+
+.navbarButtonGlow:hover {
+  filter: drop-shadow(0 0 3px #fde37f);
+  transform: scale(1.01); /* Slight enlargement on hover */
   background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
     var(--angle),
-    #FDE37F,
-    #FDE37F,
+    #ffec9e,
+    #ffeeac,
+    #ffffff00,
+    #ffffff00,
+    #ffffff00
+  ) border-box;
+  animation: 5s rotate linear infinite;
+  will-change: transform, filter;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Ensure smooth transition for transform and filter */
+}
+
+.buttonGlow {
+  border: 1px solid #ffff0021;
+  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
+    var(--angle),
+    #ffec9e,
+    #ffeeac,
     #ffffff00,
     #ffffff00,
     #ffffff00

@@ -31,16 +31,31 @@ const LandingPage = () => {
     // Hide the toast after 3 seconds
     setTimeout(() => {
       setToastVisible(false);
-    }, 3000);
+    }, 5000);
   };
 
   return (
     <div id="landing" className="flex flex-col items-center w-full h-screen justify-center">
       {/* Main content container */}
-      <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[550px]">
+
+      <img src="/planetGear.svg"
+           alt="Planet Gear"
+           className="simple-oscillate absolute right-20 top-4 lg:top-12 w-32 h-32 hidden md:block"
+           data-aos="fade-left"
+           data-aos-offset="0"
+           data-aos-delay="500"
+           data-aos-duration="1100"
+           data-aos-once="true" />
+
+      <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[550px] md:mt-[420px]">
         {/* Left side (Industry 4. and gear) */}
-        <div className="flex items-center justify-center mt-16 w-full">
-          <h1 className="text-center text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-8xl text-primaryText font-900">
+        <div className="flex items-center justify-center mt-16 w-full"
+              data-aos="zoom-in"
+              data-aos-offset="0"
+              data-aos-delay="200"
+              data-aos-duration="1100"
+              data-aos-once="true">
+          <h1 className="text-center text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-8xl text-primaryText font-900" >
             INDUSTRY 4.
             <img
               src="/Gears/yellow_gear_in_4.0.svg"
@@ -51,7 +66,12 @@ const LandingPage = () => {
         </div>
 
         {/* Right side (Gear up to go beyond and buttons) */}
-        <div className="flex justify-center md:justify-end w-full mt-3 md:mt-6 lg:ml-[5rem] z-20">
+        <div className="flex justify-center md:justify-end w-full mt-3 md:mt-6 lg:ml-[5rem] z-20"
+              data-aos="zoom-in"
+              data-aos-offset="0"
+              data-aos-delay="350"
+              data-aos-duration="1100"
+              data-aos-once="true">
           <div className="text-center md:text-right lg:text-right lg:mr-10">
             <h1 className="text-[#EEE6FF] font-900 text-lg md:text-3xl lg:text-4xl lg:text-right">
               GEAR UP TO GO BEYOND
@@ -73,6 +93,15 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+
+      <img src="/Comets.svg" 
+           alt="comets" 
+           className="absolute left-10 lg:left-20 hidden md:block"
+           data-aos="fade-right"
+           data-aos-offset="0"
+           data-aos-delay="600"
+           data-aos-duration="1100"
+           data-aos-once="true" />
 
       {/* Toast Notification */}
       {toastVisible && (

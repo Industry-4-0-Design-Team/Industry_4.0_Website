@@ -113,27 +113,18 @@ const StoriesPage = () => {
   }
 
   return (
-    <div id="stories" className="h-full relative mb-[500px]">
-      <div className="relative z-10 flex flex-col items-center custom-lg:flex-row justify-center pt-32 mx-[128px]">
+    <div id="stories" className="h-full relative mb-[150px]">
+      <div className="relative z-10 flex flex-col items-center custom-lg:flex-row justify-center mt-52 mx-[128px]">
         <div className="flex flex-col items-center justify-center custom-lg:flex-row custom-lg:items-start">
           {/* Text */}
           <div className="flex flex-col items-center justify-center mt-6 custom-lg:ml-6 custom-lg:mt-0">
-            <h1 className="subtitle text-[24px] custom-lg:text-[54px] md:text-6xl text-center mt-10 z-10"
+            <h1 className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest"
               data-aos="zoom-in"
               data-aos-offset="50"
               data-aos-delay="150"
               data-aos-duration="400"
-              data-aos-once="false">
-              St
-              <img
-                src={
-                  preloadedImages["/Gears/yellow_gear_in_4.0.svg"] ||
-                  "/Gears/yellow_gear_in_4.0.svg"
-                }
-                className="inline-block w-6 h-6 custom-lg:w-8 custom-lg:h-8 mx-1"
-                draggable="false"
-              />
-              ries
+              data-aos-once="true">
+              STORIES
             </h1>
             <h2
               className="body text-[18px] custom-lg:text-[24px] text-center mt-4 max-w-[550px] custom-lg:max-w-[850px]"
@@ -141,13 +132,13 @@ const StoriesPage = () => {
               data-aos-offset="50"
               data-aos-delay="100"
               data-aos-duration="700"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               Hear about the success stories from past Industry 4.0 members and
               participants in our annual I4 competition.
             </h2>
             {/* Story Component */}
-            <div className="mt-16 w-full">
+            <div className="mt-2 w-full">
               <Story
                 {...stories[currentStoryIndex]}
                 isVisible={isVisible}
@@ -155,10 +146,10 @@ const StoriesPage = () => {
               />
             </div>
             {/* Navigation Buttons */}
-            <div className="custom-lg:mt-[-7rem] mt-12 custom-lg:ml-[63rem] flex gap-4 justify-center custom-lg:justify-start z-[1]">
+            <div className="custom-lg:mt-[-4rem] mt-12 custom-lg:ml-[59rem] flex gap-4 justify-center custom-lg:justify-start z-[1]">
               <button
                 onClick={handlePrevious}
-                className="buttonGlow2 bg-[#6F52AF] p-2 rounded-[10px] flex justify-center items-center"
+                className="buttonGlow2 bg-[#6F52AF] p-2 rounded-xl flex justify-center items-center"
               >
                 <img
                   src={
@@ -172,14 +163,14 @@ const StoriesPage = () => {
               </button>
               <button
                 onClick={handleNext}
-                className="buttonGlow2 bg-[#6F52AF] p-2 rounded-[10px] flex justify-center items-center"
+                className="buttonGlow2 bg-[#6F52AF] p-2 rounded-xl flex justify-center items-center"
               >
                 <img
                   src={
                     preloadedImages["/arrows/RightArrow.svg"] ||
                     "/arrows/RightArrow.svg"
                   }
-                  className="w-[30px] h-auto"
+                  className="w-[30px] h-[30px]"
                   draggable="false"
                   alt="Right Arrow"
                 />
