@@ -23,7 +23,7 @@ const EventsPage = () => {
               </h1>
             </div>
             <h2
-              className="body  px-8 md:px-8 lg:px-8 custom-lg:px-10 text-center mt-12 z-10 w-full md:text-2xl lg:text-2xl"
+              className="body pr-4 md:pr-6 lg:pr-8 custom-lg:pr-10 text-center custom-lg:text-left mt-4 z-10 w-full md:text-2xl lg:text-2xl"
               data-aos="fade-right"
               data-aos-offset="50"
               data-aos-delay="300"
