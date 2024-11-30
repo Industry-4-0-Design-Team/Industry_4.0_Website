@@ -40,7 +40,7 @@ const LandingPage = () => {
 
       <img src="/planetGear.svg"
            alt="Planet Gear"
-           className="simple-oscillate absolute right-20 top-4 lg:top-12 w-32 h-32 hidden md:block"
+           className="simple-oscillate absolute right-0 top-10 md:right-20 md:top-4 lg:top-12 w-32 h-32 md:block"
            data-aos="fade-left"
            data-aos-offset="0"
            data-aos-delay="500"

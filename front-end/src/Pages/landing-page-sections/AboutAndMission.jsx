@@ -17,7 +17,7 @@ const AboutAndMission = () => {
                 ABOUT US
               </h1>
             </div>
-            <p className="body px-14 md:px-8 lg:px-10 custom-lg:px-20 text-center mt-12 mb-16 z-10 w-full md:text-2xl lg:text-2xl"
+            <p className="body px-8 md:px-8 lg:px-8 custom-lg:px-10 text-center mt-12 z-10 w-full md:text-2xl lg:text-2xl"
                data-aos="zoom-in"
                data-aos-offset="50"
                data-aos-delay="300"
@@ -37,10 +37,10 @@ const AboutAndMission = () => {
         </div>
   
         {/* Oscillating Gear */}
-        <div className="flex justify-center ml-[8rem] mt-24">
+        <div className="flex justify-center ml-[8rem] mt-40">
           <img
             src="/Gears/MissionGear.svg"
-            className="oscillate w-[320px] h-auto"
+            className="oscillate w-[150px] md:w-[320px] h-auto"
             draggable="false"
           />
         </div>

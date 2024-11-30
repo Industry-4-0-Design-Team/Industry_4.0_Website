@@ -54,6 +54,7 @@ const Navbar = () => {
       sponsors: -20, // Custom offset for "sponsors" section
       stories: -65, // Custom offset for "stories" section
       team: 100, // Custom offset for "team" section
+      competition: 90
     };
 
     if (section) {
