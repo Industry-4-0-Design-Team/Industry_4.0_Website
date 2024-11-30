@@ -1,15 +1,15 @@
 @keyframes growAndGlow {
   0% {
-    transform: translate(-50px, 0px) rotate(-10deg) scale(0.7);
-    filter: drop-shadow(0 0 5px #2B2AD2); /* Starting small glow */
-    }
+    transform: translate(-50px, 0px) rotate(-10deg) scale(0.85);
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Starting small glow */
+  }
   50% {
-    transform: translate(-100px, 0px) rotate(-30deg) scale(0.9);
+    transform: translate(-100px, 0px) rotate(-20deg) scale(0.9);
     filter: drop-shadow(0 0 10px #0000ff); /* Larger glow */
-    }
+  }
   100% {
-    transform: translate(-50px, 0px) rotate(-10deg) scale(0.7);
-    filter: drop-shadow(0 0 5px #2B2AD2); /* Back to original */
+    transform: translate(-50px, 0px) rotate(-10deg) scale(0.85);
+    filter: drop-shadow(0 0 5px #2b2ad2); /* Back to original */
   }
 }
 
@@ -29,12 +29,13 @@
 }
 
 ::selection {
-  background-color: #FDE37F; /* Change background color */
+  background-color: #fde37f; /* Change background color */
   color: #2d2d2d; /* Change text color */
 }
 
-::-moz-selection { /* Firefox-specific */
-  background-color: #FDE37F;
+::-moz-selection {
+  /* Firefox-specific */
+  background-color: #fde37f;
   color: #2d2d2d;
 }
 
@@ -48,14 +49,20 @@
 }
 
 .clip-top-half {
-  clip-path: polygon(0px 400px, 4000px 400px, 100% calc(100% - 100000px), 0px 0px);
+  clip-path: polygon(
+    0px 400px,
+    4000px 400px,
+    100% calc(100% - 100000px),
+    0px 0px
+  );
 }
 
 html {
   overflow-x: initial !important;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden; /* or remove */
   overflow-y: auto; /* only show scrollbar if needed */
 }
@@ -65,7 +72,7 @@ html, body {
 }
 
 .navbar {
-  height: 64px; 
+  height: 64px;
   position: relative;
   z-index: 30;
 }
@@ -73,7 +80,7 @@ html, body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 64px; 
+  height: 64px;
 }
 
 .subtitle {
@@ -88,14 +95,14 @@ html, body {
   font-style: normal;
   font-weight: 500 !important;
   line-height: 25px !important;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
 .body-job-position {
   font-style: normal;
   font-weight: 700 !important;
   line-height: 25px !important;
-  color: #A79BC4;
+  color: #a79bc4;
 }
 
 .navbar-text {
@@ -106,12 +113,107 @@ html, body {
   text-transform: uppercase;
 }
 
-.nav-gradient-line {
-  position: absolute;
-  inset-inline: 9%;
-  margin-top: -1rem;
-  height: 1px;
-  background: linear-gradient(to right, transparent, #959595, transparent);
+.buttonGlow {
+  border: 1px solid #0000;
+  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
+    var(--angle),
+    #FDE37F,
+    #FDE37F,
+    #ffffff00,
+    #ffffff00,
+    #ffffff00
+  ) border-box;
+  animation: 5s rotate linear infinite;
+  will-change: transform, filter;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Ensure smooth transition for transform and filter */
+}
+
+.buttonGlow:hover {
+  filter: drop-shadow(0 0 3px #fde37f);
+  transform: scale(1.01); /* Slight enlargement on hover */
+}
+
+.buttonGlow:active {
+  filter: drop-shadow(0 0 6px #fde37f); /* Enhanced shadow on click */
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.buttonGlow2 {
+  border: 1px solid #0000;
+  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
+    180deg,
+    #8167C8,
+    #8167C8,
+    #ffffff00
+  ) border-box;
+  animation: 3s pulsate infinite;
+  will-change: filter;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+.buttonGlow2:hover {
+  filter: drop-shadow(0 0 2px #8167C8);
+  transform: scale(1.02); /* Slight enlargement on hover */
+}
+
+.buttonGlow2:active {
+  filter: drop-shadow(0 0 12px #8167C8); /* Stronger shadow on click */
+}
+
+@keyframes pulsate {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px #8167C8);
+  }
+  50% {
+    filter: drop-shadow(0 0 7px #8167C8);
+  }
+}
+
+/* Toast notification styles */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  animation: slideInOut 3s ease-in-out;
+}
+
+/* Combined Animation for toast (slide-in, stay, and slide-out) */
+@keyframes slideInOut {
+  0% {
+    transform: translateX(-50%) translateY(40px); /* Start off-screen below */
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(-50%) translateY(0); /* Slide to original position */
+    opacity: 1; /* Fade in */
+  }
+  80% {
+    transform: translateX(-50%) translateY(0); /* Stay in place */
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: translateX(-50%) translateY(40px); /* Slide out to bottom */
+    opacity: 0; /* Fade out */
+  }
 }
 
 
@@ -174,12 +276,13 @@ html, body {
     font-size: 0.875rem !important;
   }
 }
-
 .fade-in-section {
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
 
@@ -187,4 +290,53 @@ html, body {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+/* Custom styles for headshots scrolling */
+.scroller-div {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.scroller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2.5rem;
+}
+
+.scroller__inner {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: nowrap;
+  width: max-content;
+  transition: transform 0.1s linear;  /* Smooth scroll transition */
+}
+
+/* Smooth horizontal scroll animation (done by JavaScript) */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 80s;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 40s;
+}
+
+/* Responsive image size for larger screens */
+.custom-lg\:w-20 {
+  width: 5rem;
+}
+
+.custom-lg\:h-20 {
+  height: 5rem;
 }
