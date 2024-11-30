@@ -4,7 +4,7 @@ const SponsorPage = () => {
   return (
     <div id="sponsors" className="h-full relative">
       <div className="relative z-10 flex justify-center items-center mx-[128px]">
-        <div className="flex flex-col items-center custom-lg:flex-row">
+        <div className="flex flex-col items-center custom-lg:mt-0 mt-[24rem] custom-lg:flex-row">
           <div className="flex flex-col items-center justify-center ml-auto">
             {/* Sponsors Heading */}
             <div
