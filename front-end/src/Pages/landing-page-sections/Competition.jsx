@@ -84,7 +84,7 @@ const CompetitionPage = () => {
                data-aos-delay="1000"
                data-aos-duration="700"
                data-aos-once="true">
-              <img src="/clockWStars.png"
+              <img src="/Gears/clockWStars.png"
                       alt="gear"
                       className="w-52 md:w-64 lg:w-80 h-auto"/>
             <div className="flex flex-col gap-0">
