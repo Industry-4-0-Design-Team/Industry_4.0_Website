@@ -50,7 +50,7 @@ const Story = ({ name, job, quote, headshot, isVisible, preloadedImages }) => {
 
                 {/* Text Section (Fade In/Out Only) */}
                 <div
-                    className="flex flex-col text-center custom-lg:text-right mt-4 custom-lg:ml-6 max-w-[520px]"
+                    className="flex flex-col text-center custom-lg:text-right mt-4 max-w-[1050px] custom-lg:ml-6 custom-lg:max-w-[520px]"
                     style={{
                         opacity: isVisible ? 1 : 0,
                         transition: 'opacity 500ms ease-in-out',

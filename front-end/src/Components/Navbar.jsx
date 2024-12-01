@@ -194,7 +194,6 @@ const Navbar = () => {
               "EVENTS",
               "SPONSORS",
               "STORIES",
-              "TEAM",
               "SIGN&nbsp;UP",
             ].map((item) => (
               <li key={item} className="py-4 text-xl">
