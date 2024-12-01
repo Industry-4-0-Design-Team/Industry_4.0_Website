@@ -48,7 +48,7 @@ const EventsPage = () => {
 
           {/* Right Section - Events Gear */}
           <img
-            src="/Gears/EventsGear.svg"
+            src="/Gears/EventsGear.png"
             className="custom-lg:max-w-[820px] md:max-w-[360px] max-w-[260px] mt-10 h-auto inline-block md:mt-100 custom-lg:mt-0 mx-auto custom-lg:mx-0 custom-lg:inline-block"
             draggable="false"
             data-aos="fade-left"
