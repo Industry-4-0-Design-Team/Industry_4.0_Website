@@ -105,8 +105,8 @@ const LandingPage = () => {
 
       {/* Toast Notification */}
       {toastVisible && (
-        <div className="toast">
-          <p>Competition sign up has not begun yet, check back soon or keep up with social media for updates.</p>
+        <div className="toast text-center">
+          <p>Competition has not begun yet, check back soon or keep up with our socials for updates.</p>
         </div>
       )}
 

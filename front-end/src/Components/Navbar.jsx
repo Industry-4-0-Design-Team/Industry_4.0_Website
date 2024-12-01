@@ -194,7 +194,6 @@ const Navbar = () => {
               "EVENTS",
               "SPONSORS",
               "STORIES",
-              "TEAM",
               "SIGN&nbsp;UP",
             ].map((item) => (
               <li key={item} className="py-4 text-xl">
@@ -207,7 +206,7 @@ const Navbar = () => {
                         .replace(" ", "-")
                     )
                   }
-                  className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-300 hover:scale-105"
+                  className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-105"
                   dangerouslySetInnerHTML={{ __html: item }}
                 />
               </li>
