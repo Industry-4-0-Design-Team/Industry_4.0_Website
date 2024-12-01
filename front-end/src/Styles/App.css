@@ -31,3 +31,16 @@ html, body {
   padding: 0;
   overflow-x: hidden;
 }
+
+.neonText {
+  text-shadow: 0 0 8px #FDE37F;
+}
+
+.purpleNeonText {
+  text-shadow: 0 0 15px #682ee6;
+}
+
+.buttonDisabled {
+  border: 1px solid #393939;
+  color: #393939;
+}

@@ -1,106 +1,61 @@
 const AboutAndMission = () => {
-    return (
-      <div id="about" className="relative z-[10]">
-        <div className="flex mt-48 flex-col custom-lg:flex-row justify-between items-center custom-lg:items-start gap-8">
-          {/* About Section */}
+  return (
+    <div id="about" className="relative z-[10] w-full">
+      <div className="flex mt-64 flex-col justify-center items-center">
+        {/* About Section */}
+        <div className="flex flex-col w-full items-center justify-center">
           <div
-            className="flex flex-col custom-lg:ml-[8rem] items-center custom-lg:items-start"
-            data-aos="fade-right"
+            className="w-full flex justify-center items-center text-center mb-4"
+            data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
             data-aos-duration="700"
-            data-aos-once="false"
+            data-aos-once="true"
           >
-            <div
-              className="flex items-center ml-[2rem] mt-[5rem] custom-lg:mt-[3rem]"
-              data-aos="fade-right"
-              data-aos-offset="50"
-              data-aos-delay="300"
-              data-aos-duration="700"
-              data-aos-once="false"
-            >
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] sm:text-4xl text-center custom-lg:text-left mt-10 z-10">
-                Ab
-              </h1>
-              <img
-                src="/Gears/yellow_gear_in_4.0.svg"
-                className="ml-1 mr-1 mt-[4.1rem] w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block relative -top-2 clip-top-half"
-                draggable="false"
-              />
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] sm:text-4xl text-center custom-lg:text-left mt-10 z-10">
-                ut Us
-              </h1>
-            </div>
-            <h2
-              className="body px-8 text-center custom-lg:text-left custom-lg:text-[24px] md:text-[20px] mt-4 z-10 max-w-[800px]"
-            >
-              We are an organization committed to empowering students in
-              Management Sciences by fostering a hands-on learning environment.
-              Through case studies, workshops, and leadership events, we provide
-              real-world experiences that bridge the gap between theory and
-              practice.
-            </h2>
+            <h1 className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest">
+              ABOUT US
+            </h1>
           </div>
-  
-          {/* Mission Section */}
-          <div
-            className="flex flex-col mt-10 custom-lg:mr-[10rem] items-center custom-lg:items-end"
-            data-aos="fade-left"
+          <p
+            className="body px-8 md:px-8 lg:px-8 custom-lg:px-10 text-center mt-12 z-10 w-full md:text-2xl lg:text-2xl"
+            data-aos="zoom-in"
             data-aos-offset="50"
-            data-aos-delay="100"
+            data-aos-delay="300"
             data-aos-duration="700"
-            data-aos-once="false"
+            data-aos-once="true"
           >
-            <div
-              className="flex items-center custom-lg:justify-end"
-              data-aos="fade-left"
-              data-aos-offset="50"
-              data-aos-delay="300"
-              data-aos-duration="700"
-              data-aos-once="false"
-            >
-              <h1 className="subtitle text-[24px] custom-lg:text-[54px] sm:text-4xl text-center custom-lg:text-right mt-10 z-10 inline-block subtitle-responsive">
-                Our Missi
-                <img
-                  src="/Gears/yellow_gear_in_4.0.svg"
-                  className="w-6 h-6 custom-lg:w-8 custom-lg:h-8 inline-block align-middle mx-1"
-                  draggable="false"
-                />
-                n
-              </h1>
-            </div>
-            <h2
-              className="body custom-lg:text-[24px] md:text-[20px] text-center custom-lg:text-right text-xl mt-4 z-10 max-w-[720px] body-responsive"
-            >
-              We strive to create a learning environment where students gain early
-              exposure to industry skills, expert knowledge, and valuable
-              connections. Through mentorship, career-focused workshops, and a
-              supportive community, we prepare them to excel in the tech-driven
-              future of Industry 4.0.
-            </h2>
-          </div>
+            We are an organization committed to empowering students in
+            Management Sciences by fostering a hands-on learning environment 📚.
+            Through case studies, workshops, and leadership events, we provide
+            real-world experiences that bridge the gap between theory and
+            practice 🌍. We strive to create a learning environment where
+            students gain early exposure to industry skills 🧑‍💻, expert knowledge
+            🧠, and valuable connections 🤝. Through mentorship,
+            career-focused workshops, and a supportive community, we
+            prepare them to excel in the tech-driven future of Industry 4.0 🚀!
+          </p>
         </div>
-  
-        {/* Oscillating Gear */}
-        <div className="flex justify-center ml-[8rem] mt-24 mb-32">
-          <img
-            src="/Gears/MissionGear.svg"
-            className="oscillate w-[320px] h-auto"
-            draggable="false"
-          />
-        </div>
-  
-        {/* Responsive Layout */}
-        <style jsx>{`
-          @media (max-width: 1024px) {
-            #about {
-              text-align: center;
-            }
-          }
-        `}</style>
       </div>
-    );
-  };
-  
-  export default AboutAndMission;
-  
+
+      {/* Oscillating Gear */}
+      <div className="flex justify-center ml-[8rem] mt-40">
+        <img
+          src="/Gears/MissionGear.svg"
+          className="oscillate w-[150px] md:w-[320px] h-auto"
+          draggable="false"
+        />
+      </div>
+
+      {/* Responsive Layout */}
+      <style jsx>{`
+        @media (max-width: 1024px) {
+          #about {
+            text-align: center;
+          }
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export default AboutAndMission;

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="relative">
+    <div className="relative border-t border-gray-700">
       {/* Divider */}
       <div className="nav-gradient-line"></div>
 

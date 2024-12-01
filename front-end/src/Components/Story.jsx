@@ -36,7 +36,7 @@ const Story = ({ name, job, quote, headshot, isVisible, preloadedImages }) => {
                 >
                     <img
                         src={getImageSrc('/Gears/StoriesGear.svg')}
-                        className="w-[260px] custom-lg:w-[820px] h-auto"
+                        className="w-[260px] custom-lg:w-[520px] h-auto"
                         draggable="false"
                         alt="Gear Background"
                     />
@@ -56,9 +56,9 @@ const Story = ({ name, job, quote, headshot, isVisible, preloadedImages }) => {
                         transition: 'opacity 500ms ease-in-out',
                     }}
                 >
-                    <div className="body text-xl">{name}</div>
+                    <div className="body text-4xl font-extrabold">{name}</div>
                     <div className="body-job-position text-xl mt-4">{job}</div>
-                    <div className="body custom-lg:text-[24px] md:text-[12px]  text-[12px] mt-4">{quote}</div>
+                    <div className="body custom-lg:text-[24px] md:text-[12px] text-[12px] mt-4">{quote}</div>
                 </div>
             </div>
         </div>
