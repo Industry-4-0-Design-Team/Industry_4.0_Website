@@ -22,7 +22,7 @@ const CompetitionPage = () => {
 
             {/* Subtitle Section */}
             <h2
-              className="body text px-4 sm:px-8 lg:px-10 custom-lg:px-20 text-center mt-8 z-10 max-w-[550px] custom-lg:max-w-[850px]"
+              className="body text px-4 sm:px-8 lg:px-10 custom-lg:px-20 text-center mt-8 z-10 max-w-[550px] md:text-2xl lg:text-2xl custom-lg:max-w-[1050px]"
               data-aos="zoom-in"
               data-aos-offset="50"
               data-aos-delay="150"
