@@ -1,4 +1,4 @@
-import Button from "../../Components/Button";
+// import Button from "../../Components/Button";
 
 const CompetitionPage = () => {
 
@@ -84,8 +84,8 @@ const CompetitionPage = () => {
                data-aos-delay="1000"
                data-aos-duration="700"
                data-aos-once="true">
-              <img src="/clockWStars.png" 
-                      alt="gear" 
+              <img src="/clockWStars.png"
+                      alt="gear"
                       className="w-52 md:w-64 lg:w-80 h-auto"/>
             <div className="flex flex-col gap-0">
               <h2 className="font-black tracking-widest text-center text-4xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-t from-white via-yellow-100 to-secondary">01:26:08:38:20</h2>
@@ -104,7 +104,7 @@ const CompetitionPage = () => {
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <button className="buttonDisabled font-900 px-4 py-1 rounded-full text-md md:text-lg w-auto min-w-[10rem] h-12 md:w-auto md:h-14 inline-flex items-center justify-center whitespace-nowrap transform transition-transform duration-200">            
+                <button className="buttonDisabled font-900 px-4 py-1 rounded-full text-md md:text-lg w-auto min-w-[10rem] h-12 md:w-auto md:h-14 inline-flex items-center justify-center whitespace-nowrap transform transition-transform duration-200">
                   SIGN UP
                 </button>
               </div>
