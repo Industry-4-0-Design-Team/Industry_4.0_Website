@@ -2,7 +2,7 @@
 
 const EventsPage = () => {
   return (
-    <div id="events" className="mt-0 h-dvh relative">
+    <div id="events" className="mx-auto max-w-[1440px] mt-0 h-fit mb-[200px] custom-lg:mb-[250px] relative">
       <div className="relative z-10 flex justify-center items-center custom-lg:mr-[72px] custom-lg:ml-[150px] mx-[12px]">
         <div className="flex flex-col items-center custom-lg:flex-row custom-lg:items-start w-full">
           {/* Left Section - Discover Events */}
@@ -42,8 +42,8 @@ const EventsPage = () => {
               Whether you&apos;re looking to sharpen your skills, gain
               inspiration from industry experts, or connect with a community of
               like-minded peers, our events have something for everyone. Stay
-              connected with us📲 to ensure you don&apos;t miss out on these
-              incredible events!
+              connected with us to ensure you don&apos;t miss out on these
+              incredible events! 📲
             </h2>
             {/* <div
               className="mt-6 text-center custom-lg:text-left"
@@ -60,7 +60,7 @@ const EventsPage = () => {
           {/* Right Section - Events Gear */}
           <img
             src="/Gears/EventsGear.png"
-            className="custom-lg:max-w-[600px] md:max-w-[500px] max-w-[400px] mt-10 h-auto inline-block md:mt-100 custom-lg:mt-0 mx-auto custom-lg:mx-0 custom-lg:inline-block"
+            className="custom-lg:max-w-[600px] md:max-w-[500px] sm:max-w-[400px] max-w-[300px] mt-10 h-auto inline-block md:mt-100 custom-lg:mt-0 mx-auto custom-lg:mx-0 custom-lg:inline-block"
             draggable="false"
             data-aos="fade-left"
             data-aos-offset="50"

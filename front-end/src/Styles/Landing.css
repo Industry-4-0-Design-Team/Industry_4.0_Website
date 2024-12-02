@@ -114,7 +114,20 @@ body {
 .body {
   font-style: normal;
   font-weight: 500 !important;
-  line-height: 30px !important;
+  line-height: 28px !important;
+  color: #d3d3d3;
+}
+
+.body-story {
+  font-style: normal;
+  font-weight: 500 !important;
+  color: #d3d3d3;
+}
+
+.body-name {
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 42px !important;
   color: #d3d3d3;
 }
 
@@ -204,7 +217,8 @@ body {
 
 .buttonGlow2:hover {
   filter: drop-shadow(0 0 2px #8167C8);
-  transform: scale(1.02); /* Slight enlargement on hover */
+  background: linear-gradient(#3f3e3ee9, #2b2b2b);
+  border: 1px solid #8167C8;
 }
 
 .buttonGlow2:active {
@@ -236,6 +250,19 @@ body {
   animation: slideInOut 3s ease-in-out;
 }
 
+.alumni-network-heading {
+  width: 301px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  background: var(--Yellow-Gradient, linear-gradient(180deg, #F9F8FF 0%, #F4DC97 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Combined Animation for toast (slide-in, stay, and slide-out) */
 @keyframes slideInOut {
   0% {
@@ -259,6 +286,9 @@ body {
 
 /* Media Query for screens smaller than custom-lg for landing page heading*/
 @media (max-width: 1024px) {
+  .body {
+    line-height: 35px !important;
+  }
   .text-8xl {
     font-size: 3rem; /* Scale down Industry 4. */
   }

@@ -5,7 +5,7 @@ const CompetitionPage = () => {
   return (
     <div
       id="competition"
-      className="h-full mt-52 relative z-10 flex justify-center items-center mx-[128px] custom-lg:flex-row"
+      className="h-full mt-56 relative z-10 flex justify-center items-center mx-[128px] custom-lg:flex-row"
     >
       <div className="w-full flex flex-col items-center justify-center">
         {/* Competition Header */}
@@ -25,7 +25,7 @@ const CompetitionPage = () => {
 
           {/* Subtitle Section */}
           <h2
-            className="body px-2 md:px-4 lg:px-6 custom-lg:px-10 text-center mt-4 z-10 w-full md:text-2xl lg:text-2xl"
+            className="body px-2 md:px-4 lg:px-6 custom-lg:px-10 text-center mt-4 z-10 custom-lg:max-w-[1100px] w-full md:text-2xl lg:text-2xl"
             data-aos="zoom-in"
             data-aos-offset="50"
             data-aos-delay="150"

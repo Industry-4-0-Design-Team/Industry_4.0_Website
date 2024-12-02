@@ -11,6 +11,7 @@ import LandingPage from './Pages/Landing'
 import Navbar from './Components/Navbar'
 
 import AboutAndMission from "./Pages/landing-page-sections/AboutAndMission"
+import AlumniNetwork from './Pages/landing-page-sections/AlumniNetwork.jsx'
 import SponsorPage from './Pages/landing-page-sections/Sponsors';
 import EventsPage from './Pages/landing-page-sections/Events';
 import StoriesPage from './Pages/landing-page-sections/Stories';
@@ -40,6 +41,7 @@ function App() {
       <EventsPage/>
       <SponsorPage/>
       <StoriesPage/>
+      <AlumniNetwork/>
       <CompetitionPage/>
       <TeamPage teamData={teamData} />
       <Footer/>

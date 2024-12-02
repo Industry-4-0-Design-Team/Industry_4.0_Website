@@ -50,11 +50,11 @@ const Navbar = () => {
     const offsets = {
       landing: 90,
       about: 80, // Custom offset for "about" section
-      events: 70, // Custom offset for "events" section
-      sponsors: -28, // Custom offset for "sponsors" section
-      stories: -68, // Custom offset for "stories" section
+      events: 140, // Custom offset for "events" section
+      sponsors: 140, // Custom offset for "sponsors" section
+      stories: 70, // Custom offset for "stories" section
       team: 100, // Custom offset for "team" section
-      competition: 90 // Custom offset for "competition" section
+      competition: 90, // Custom offset for "competition" section
     };
 
     if (section) {
@@ -66,8 +66,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${isScrolled ? "fixed top-0  backdrop-filter backdrop-blur-lg" : "fixed"
-        } transition-all duration-500`}
+      className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${
+        isScrolled ? "fixed top-0  backdrop-filter backdrop-blur-lg" : "fixed"
+      } transition-all duration-500`}
       data-aos="fade-down"
       data-aos-offset="500"
       data-aos-delay="300"
@@ -87,29 +88,40 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
-        {(isScrolled ? ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION", "SIGN&nbsp;UP"] : ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION"]).map(
-          (item) => {
-            const isSpecialButton = item.includes("SIGN&nbsp;UP");
-            return (
-              <button
-                key={item}
-                onClick={() =>
-                  scrollToSection((item == "SIGN&nbsp;UP")
-                    ? "landing"
+        {(isScrolled
+          ? [
+              "ABOUT",
+              "EVENTS",
+              "SPONSORS",
+              "STORIES",
+              "COMPETITION",
+              "SIGN&nbsp;UP",
+            ]
+          : ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION"]
+        ).map((item) => {
+          const isSpecialButton = item.includes("SIGN&nbsp;UP");
+          return (
+            <button
+              key={item}
+              onClick={() =>
+                scrollToSection(
+                  item == "SIGN&nbsp;UP"
+                    ? "competition"
                     : item
-                      .toLowerCase()
-                      .replace(/&nbsp;/g, "-")
-                      .replace(" ", "-")
-                  )}
-                className={`navbar-text transition-colors duration-300 px-4 py-2 ${isSpecialButton
-                    ? "navbarButtonGlow hover: rounded-full"
-                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-100 hover:scale-101"
-                  }`}
-                dangerouslySetInnerHTML={{ __html: item }}
-              />
-            );
-          }
-        )}
+                        .toLowerCase()
+                        .replace(/&nbsp;/g, "-")
+                        .replace(" ", "-")
+                )
+              }
+              className={`navbar-text transition-colors duration-300 px-4 py-2 ${
+                isSpecialButton
+                  ? "navbarButtonGlow hover: rounded-full"
+                  : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-200 hover:scale-104"
+              }`}
+              dangerouslySetInnerHTML={{ __html: item }}
+            />
+          );
+        })}
       </div>
 
       {/* Social Media Icons */}
@@ -163,9 +175,9 @@ const Navbar = () => {
       {isMenuOpen && (
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-gray-200 block custom-lg:hidden fixed mt-4 top-3 right-5 z-50 text-sm"
+          className=" block custom-lg:hidden fixed mt-4 top-3 right-60 z-50 text-sm"
         >
-          Hide
+          <img className="w-6 h-6" src="/Close.svg" />
         </button>
       )}
 
@@ -209,21 +221,22 @@ const Navbar = () => {
             ].map((item) => {
               return (
                 <li key={item} className="py-4 text-xl">
-                <button
-                  onClick={() =>
-                    scrollToSection((item == "SIGN&nbsp;UP")
-                    ? "landing"
-                    : item
-                      .toLowerCase()
-                      .replace(/&nbsp;/g, "-")
-                      .replace(" ", "-")
-                  )
-                  }
-                  className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-101"
-                  dangerouslySetInnerHTML={{ __html: item }}
-                />
-              </li>
-              )
+                  <button
+                    onClick={() =>
+                      scrollToSection(
+                        item == "SIGN&nbsp;UP"
+                          ? "landing"
+                          : item
+                              .toLowerCase()
+                              .replace(/&nbsp;/g, "-")
+                              .replace(" ", "-")
+                      )
+                    }
+                    className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-101"
+                    dangerouslySetInnerHTML={{ __html: item }}
+                  />
+                </li>
+              );
             })}
           </ul>
 
