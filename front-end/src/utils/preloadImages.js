@@ -1,10 +1,10 @@
 // utils/preloadImages.js
 export const teamData = {
   "Aleesha": { jobPosition: "Sponsorship Coordinator" },
+  "Felix": { jobPosition: "Finance & Videography" },
   "Anushka": { jobPosition: "R&D Executive" },
   "Demir": { jobPosition: "Director" },
   "Elly": { jobPosition: "Logistics Executive" },
-  "Felix": { jobPosition: "Finance & Videography" },
   "Gateek": { jobPosition: "Software Developer" },
   "Gurman": { jobPosition: "UI/UX Designer" },
   "Ian": { jobPosition: "Lead of Business Development" },

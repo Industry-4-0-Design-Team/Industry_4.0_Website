@@ -38,14 +38,16 @@ const LandingPage = () => {
     <div id="landing" className="flex flex-col items-center w-full h-screen justify-center">
       {/* Main content container */}
 
-      <img src="/planetGear.svg"
-           alt="Planet Gear"
-           className="simple-oscillate absolute right-0 top-10 md:right-20 md:top-4 lg:top-12 w-32 h-32 md:block"
-           data-aos="fade-left"
-           data-aos-offset="0"
-           data-aos-delay="500"
-           data-aos-duration="1100"
-           data-aos-once="true" />
+      <img
+  src="/planetGear.svg"
+  alt="Planet Gear"
+  className="simple-oscillate absolute right-0 top-10 md:right-20 md:top-4 lg:top-12 w-32 h-32 hidden custom-lg:block"
+  data-aos="fade-left"
+  data-aos-offset="0"
+  data-aos-delay="500"
+  data-aos-duration="1100"
+  data-aos-once="true"
+/>
 
       <div className="flex flex-col items-center custom-lg:mt-[380px] mt-[550px] md:mt-[420px]">
         {/* Left side (Industry 4. and gear) */}

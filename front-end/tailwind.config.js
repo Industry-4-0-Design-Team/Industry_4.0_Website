@@ -31,6 +31,11 @@ export default {
     }
     },
   },
+  variants: {
+    extend: {
+      backdropBlur: ['responsive']
+    }
+  },
   plugins: [],
 }
 

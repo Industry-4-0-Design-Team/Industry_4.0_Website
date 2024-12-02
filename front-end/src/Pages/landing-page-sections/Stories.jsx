@@ -138,7 +138,7 @@ const StoriesPage = () => {
               participants in our annual I4 competition.
             </h2>
             {/* Story Component */}
-            <div className="mt-2 w-full">
+            <div className="mt-16 w-full">
               <Story
                 {...stories[currentStoryIndex]}
                 isVisible={isVisible}
