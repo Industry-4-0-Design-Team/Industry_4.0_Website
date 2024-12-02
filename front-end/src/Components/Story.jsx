@@ -58,7 +58,12 @@ const Story = ({ name, job, quote, headshot, isVisible, preloadedImages }) => {
                 >
                     <div className="body text-4xl font-extrabold">{name}</div>
                     <div className="body-job-position text-xl mt-4">{job}</div>
-                    <div className="body custom-lg:text-[24px] md:text-[12px] text-[12px] mt-4">{quote}</div>
+                    <div
+                        className="body-story custom-lg:text-[24px] md:text-[12px] text-[12px] mt-4 custom-lg:leading-relaxed leading-tight"
+                        style={{ whiteSpace: "pre-line" }}
+                    >
+                        {quote}
+                    </div>
                 </div>
             </div>
         </div>

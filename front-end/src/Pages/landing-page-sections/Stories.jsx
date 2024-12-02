@@ -4,18 +4,21 @@ import Story from "../../Components/Story";
 const StoriesPage = () => {
   const stories = [
     {
-      name: "Martin Luther King",
-      job: "Freedom Fighter @ Bangladesh",
-      quote:
-        "Lorem ipsum dolor sit amet consectetur. Venenatis tincidunt donec in dolor. In augue purus ac dignissim pellentesque porttitor. Nec ac nisl est mus hac. Erat aliquet at euismod libero ultricies vitae. Vulputate ac bibendum orci nunc feugiat.",
-      headshot: "/story-headshots/TejasSample.jpg",
+      name: "Adriel De Vera",
+      job: "Former President, Inspiring Leader, Visionary in Software Architecture",
+      quote: `Adriel De Vera, former president, drove innovation and championed user-centric software solutions, leaving an inspiring legacy. 
+      
+      A recipient of the Engineering Society Leadership Excellence Award, he recently shared insights on leadership and technology. Adriel recently shared his expertise on leadership and technology at our panel event. Now in San Francisco, Adriel continues to embody bold ambition and innovation.`,
+      headshot: "/story-headshots/Adriel.svg",
     },
     {
-      name: "Rosa Parks",
-      job: "Data Scientist @ Organization",
+      name: "Rodrigo  Tiscareno",
+      job: "Former Director, Data Engineering Enthusiast, and Varsity Athlete",
       quote:
-        "Aliquam euismod nunc in elit tincidunt tristique. Praesent ut dui nec nisi vehicula porttitor. Suspendisse faucibus velit sit amet dignissim. Cras convallis tortor non sapien convallis tincidunt.",
-      headshot: "/story-headshots/JinaSample.jpg",
+        `Rodrigo Tiscareno, a leader in data-driven innovation, connected 100+ students with cutting-edge tech as an Industry 4.0 director. 
+        
+        A Waterloo Management Engineering student, he excelled at Balyasny Asset Management, building data pipelines and supporting equities strategies with Python, AWS, and SQL. He also led the Midnight Sun Solar Team, contributed to the Data Science Club, and excelled as a varsity soccer player.`,
+      headshot: "/story-headshots/Rodrigo.svg",
     },
   ];
 
@@ -98,7 +101,7 @@ const StoriesPage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000); // 4 seconds
+    }, 9000); // 4 seconds
 
     // Cleanup interval on component unmount
     return () => clearInterval(interval);
@@ -138,7 +141,12 @@ const StoriesPage = () => {
               participants in our annual I4 competition.
             </h2>
             {/* Story Component */}
-            <div className="mt-16 w-full">
+            <div className="mt-16 max-w-full custom-lg:max-w-[5000px]"
+            data-aos="zoom-in"
+            data-aos-offset="50"
+            data-aos-delay="100"
+            data-aos-duration="600"
+            data-aos-once="true">
               <Story
                 {...stories[currentStoryIndex]}
                 isVisible={isVisible}
@@ -146,7 +154,7 @@ const StoriesPage = () => {
               />
             </div>
             {/* Navigation Buttons */}
-            <div className="custom-lg:mt-[-4rem] mt-12 custom-lg:ml-[59rem] flex gap-4 justify-center custom-lg:justify-start z-[1]">
+            <div className="custom-lg:mt-[2rem] mt-12 custom-lg:ml-[59rem] flex gap-4 justify-center custom-lg:justify-start z-[1]">
               <button
                 onClick={handlePrevious}
                 className="buttonGlow2 bg-[#6F52AF] p-2 rounded-xl flex justify-center items-center"

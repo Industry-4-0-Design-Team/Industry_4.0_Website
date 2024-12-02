@@ -114,7 +114,13 @@ body {
 .body {
   font-style: normal;
   font-weight: 500 !important;
-  line-height: 30px !important;
+  line-height: 28px !important;
+  color: #d3d3d3;
+}
+
+.body-story {
+  font-style: normal;
+  font-weight: 500 !important;
   color: #d3d3d3;
 }
 
