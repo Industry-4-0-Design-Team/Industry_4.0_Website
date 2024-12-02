@@ -165,7 +165,7 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-gray-200 block custom-lg:hidden fixed mt-4 top-3 right-5 z-50 text-sm"
         >
-          hide
+          Hide
         </button>
       )}
 
