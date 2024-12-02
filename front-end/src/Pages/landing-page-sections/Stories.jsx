@@ -140,7 +140,7 @@ const StoriesPage = () => {
               <button
                 onClick={handlePrevious}
                 className="buttonGlow2 bg-[#6F52AF] p-2 rounded-xl flex justify-center items-center"
-                data-aos="fade-right"
+                data-aos="zoom-out-right"
               >
                 <img
                   src={
@@ -155,7 +155,7 @@ const StoriesPage = () => {
               <button
                 onClick={handleNext}
                 className="buttonGlow2 bg-[#6F52AF] p-2 rounded-xl flex justify-center items-center"
-                data-aos="fade-left"
+                data-aos="zoom-out-left"
               >
                 <img
                   src={

@@ -67,10 +67,10 @@ const SponsorPage = () => {
                 src="/Sponsers/MGMT.svg"
                 className="h-lg inline-block relative -top-2 mt-[-2rem] custom-lg:mt-0"
                 draggable="false"
-                data-aos="fade-in"
+                data-aos="zoom-in"
                 data-aos-offset="80"
                 data-aos-delay="600"
-                data-aos-duration="1500"
+                data-aos-duration="1100"
                 data-aos-once="true"
               />
               <img
@@ -79,7 +79,7 @@ const SponsorPage = () => {
                 draggable="false"
                 data-aos="zoom-in-left"
                 data-aos-offset="80"
-                data-aos-delay="00"
+                data-aos-delay="600"
                 data-aos-duration="800"
                 data-aos-once="true"
               />

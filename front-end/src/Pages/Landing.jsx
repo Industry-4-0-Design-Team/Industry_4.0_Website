@@ -46,7 +46,7 @@ const LandingPage = () => {
         src="/planetGear.svg"
         alt="Planet Gear"
         className="simple-oscillate absolute right-0 top-10 md:right-20 md:top-4 lg:top-12 w-32 h-32 hidden custom-lg:block"
-        data-aos="fade-left"
+        data-aos="fade-down"
         data-aos-offset="0"
         data-aos-delay="500"
         data-aos-duration="1100"
