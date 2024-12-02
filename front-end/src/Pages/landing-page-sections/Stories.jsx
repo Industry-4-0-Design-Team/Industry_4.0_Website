@@ -141,6 +141,7 @@ const StoriesPage = () => {
                 onClick={handlePrevious}
                 className="buttonGlow2 bg-[#6F52AF] p-2 rounded-xl flex justify-center items-center"
                 data-aos="zoom-out-right"
+                data-aos-duration="800"
               >
                 <img
                   src={
@@ -156,6 +157,7 @@ const StoriesPage = () => {
                 onClick={handleNext}
                 className="buttonGlow2 bg-[#6F52AF] p-2 rounded-xl flex justify-center items-center"
                 data-aos="zoom-out-left"
+                data-aos-duration="800"
               >
                 <img
                   src={
