@@ -116,21 +116,30 @@ const StoriesPage = () => {
   }
 
   return (
-    <div id="stories" className="h-full relative mb-[150px]">
-      <div className="relative z-10 flex flex-col items-center custom-lg:flex-row justify-center mt-52 mx-[128px]">
-        <div className="flex flex-col items-center justify-center custom-lg:flex-row custom-lg:items-start">
+    <div
+      id="stories"
+      className="h-full relative mb-[150px] px-8 custom-lg:px-16"
+    >
+      <div
+        className="relative z-10 flex flex-col items-center custom-lg:flex-row justify-center mt-52 max-w-[1400px] w-full mx-auto"
+      >
+        <div className="flex flex-col items-center justify-center custom-lg:flex-row custom-lg:items-start w-full">
           {/* Text */}
-          <div className="flex flex-col items-center justify-center mt-6 custom-lg:ml-6 custom-lg:mt-0">
-            <h1 className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest"
+          <div
+            className="flex flex-col items-center justify-center mt-6 custom-lg:ml-6 custom-lg:mt-0 w-full"
+          >
+            <h1
+              className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest"
               data-aos="zoom-in"
               data-aos-offset="50"
               data-aos-delay="150"
               data-aos-duration="400"
-              data-aos-once="true">
+              data-aos-once="true"
+            >
               STORIES
             </h1>
             <h2
-              className="body text-[18px] custom-lg:text-[24px] text-center mt-4 max-w-[550px] custom-lg:max-w-[850px]"
+              className="body text-[18px] custom-lg:text-[24px] text-center mt-4 max-w-[750px] custom-lg:max-w-[1200px]"
               data-aos="zoom-in"
               data-aos-offset="50"
               data-aos-delay="100"
@@ -141,12 +150,14 @@ const StoriesPage = () => {
               participants in our annual I4 competition.
             </h2>
             {/* Story Component */}
-            <div className="mt-16 max-w-full custom-lg:max-w-[5000px]"
-            data-aos="zoom-in"
-            data-aos-offset="50"
-            data-aos-delay="100"
-            data-aos-duration="600"
-            data-aos-once="true">
+            <div
+              className="mt-16 max-w-full w-full"
+              data-aos="zoom-in"
+              data-aos-offset="50"
+              data-aos-delay="100"
+              data-aos-duration="600"
+              data-aos-once="true"
+            >
               <Story
                 {...stories[currentStoryIndex]}
                 isVisible={isVisible}
@@ -154,7 +165,9 @@ const StoriesPage = () => {
               />
             </div>
             {/* Navigation Buttons */}
-            <div className="custom-lg:mt-[2rem] mt-12 custom-lg:ml-[59rem] flex gap-4 justify-center custom-lg:justify-start z-[1]">
+            <div
+              className="custom-lg:mt-[4rem] mt-12 flex gap-4 justify-center z-[1] w-full"
+            >
               <button
                 onClick={handlePrevious}
                 className="buttonGlow2 bg-[#6F52AF] p-2 rounded-xl flex justify-center items-center"

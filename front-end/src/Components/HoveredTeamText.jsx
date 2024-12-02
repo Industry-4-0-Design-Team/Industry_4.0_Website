@@ -12,7 +12,7 @@ const HoveredText = React.memo(({ name, jobPosition }) => (
       {name || "Our Team"}
     </h1>
     <h2 className="text-xl text-white vertical-text transition-all duration-300 ease-in-out">
-      {jobPosition || "Making everything possible"}
+      {jobPosition || "Making it all happen"}
     </h2>
   </div>
 ));
