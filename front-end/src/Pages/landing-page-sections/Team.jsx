@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React, { useState, useRef, useEffect } from "react";
 import HoveredText from "../../Components/HoveredTeamText";
 import Marquee from "react-fast-marquee";

@@ -114,7 +114,7 @@ const StoriesPage = () => {
               data-aos-duration="800"
             >
               Hear about the success stories from past Industry 4.0 members and
-              participants in our annual I4 competition.
+              participants in our annual I4 competition. 🏆
             </h2>
 
             {/* Story Component */}

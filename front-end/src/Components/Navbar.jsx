@@ -54,7 +54,7 @@ const Navbar = () => {
       sponsors: 140, // Custom offset for "sponsors" section
       stories: 70, // Custom offset for "stories" section
       team: 100, // Custom offset for "team" section
-      competition: 90
+      competition: 90 // Custom offset for "competition" section
     };
 
     if (section) {
@@ -66,7 +66,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${isScrolled ? "fixed top-0 backdrop-blur-lg" : "fixed"
+      className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${isScrolled ? "fixed top-0  backdrop-filter backdrop-blur-lg" : "fixed"
         } transition-all duration-500`}
       data-aos="fade-down"
       data-aos-offset="500"
@@ -182,22 +182,22 @@ const Navbar = () => {
       <div
         ref={menuRef}
         className={`
-    custom-lg:hidden 
-    fixed 
-    top-0 
-    right-0 
-    w-72 
-    h-full 
-    transition-all 
-    transform 
-    z-40 
-    backdrop-filter 
-    backdrop-blur-lg 
-    bg-black/30 
-    ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
-  `}
+                  custom-lg:hidden 
+                  fixed 
+                  top-0
+                  right-0 
+                  w-72 
+                  h-screen
+                  transition-all 
+                  transform 
+                  z-40 
+                  backdrop-filter 
+                  backdrop-blur-lg 
+                  bg-black/30 
+                  ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
+                `}
       >
-        <div className="flex flex-col items-center pt-12 pb-12">
+        <div className="flex flex-col items-center text-center pt-12 pb-12">
           <ul className="text-white">
             {[
               "ABOUT",
@@ -206,22 +206,25 @@ const Navbar = () => {
               "STORIES",
               "COMPETITION",
               "SIGN&nbsp;UP",
-            ].map((item) => (
-              <li key={item} className="py-4 text-xl">
+            ].map((item) => {
+              return (
+                <li key={item} className="py-4 text-xl">
                 <button
                   onClick={() =>
-                    scrollToSection(
-                      item
-                        .toLowerCase()
-                        .replace(/&nbsp;/g, "-")
-                        .replace(" ", "-")
-                    )
+                    scrollToSection((item == "SIGN&nbsp;UP")
+                    ? "landing"
+                    : item
+                      .toLowerCase()
+                      .replace(/&nbsp;/g, "-")
+                      .replace(" ", "-")
+                  )
                   }
                   className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-101"
                   dangerouslySetInnerHTML={{ __html: item }}
                 />
               </li>
-            ))}
+              )
+            })}
           </ul>
 
           {/* Social media icons */}
