@@ -5,7 +5,7 @@ const CompetitionPage = () => {
   return (
     <div
       id="competition"
-      className="h-full mt-52 relative z-10 flex justify-center items-center mx-[128px] custom-lg:flex-row"
+      className="h-full mt-56 relative z-10 flex justify-center items-center mx-[128px] custom-lg:flex-row"
     >
       <div className="w-full flex flex-col items-center justify-center">
         {/* Competition Header */}

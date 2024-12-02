@@ -41,7 +41,7 @@ const CountdownSection = () => {
         className="w-52 md:w-64 lg:w-80 h-auto"
       />
       <div className="flex flex-col gap-0">
-        <h2 className="font-black tracking-widest text-center text-xl lg:text-4xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-t from-white via-yellow-100 to-secondary">
+        <h2 className="font-black tracking-widest text-center text-3xl lg:text-4xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-t from-white via-yellow-100 to-secondary">
           {`${String(timeLeft.months).padStart(2, "0")}:${String(
             timeLeft.days
           ).padStart(2, "0")}:${String(timeLeft.hours).padStart(2, "0")}:${String(

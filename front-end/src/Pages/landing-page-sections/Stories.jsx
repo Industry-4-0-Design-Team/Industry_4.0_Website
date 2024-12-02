@@ -93,7 +93,7 @@ const StoriesPage = () => {
 
   return (
     <div id="stories" className="h-full relative mb-[150px] px-8 custom-lg:px-16">
-      <div className="relative z-10 flex flex-col items-center custom-lg:flex-row justify-center mt-52 max-w-[1400px] w-full mx-auto">
+      <div className="relative z-10 flex flex-col items-center custom-lg:flex-row justify-center mt-44 max-w-[1400px] w-full mx-auto">
         <div className="flex flex-col items-center justify-center custom-lg:flex-row custom-lg:items-start w-full">
           <div className="flex flex-col items-center justify-center mt-6 custom-lg:ml-6 custom-lg:mt-0 w-full">
             {/* Heading */}
