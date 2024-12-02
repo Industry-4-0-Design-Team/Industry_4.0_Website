@@ -30,7 +30,7 @@ const SponserPage = () => {
 
             {/* Subtitle Section */}
             <h2
-              className="body custom-lg:text-[24px] md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[850px]"
+              className="body custom-lg:text-[24px] border border-red-100 y w-full md:text-[20px] text-center mt-4 z-10 max-w-[550px] custom-lg:max-w-[900px]"
               data-aos="zoom-in"
               data-aos-offset="50"
               data-aos-delay="150"

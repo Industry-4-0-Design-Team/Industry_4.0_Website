@@ -103,7 +103,7 @@ const Navbar = () => {
                   )}
                 className={`navbar-text transition-colors duration-300 px-4 py-2 ${isSpecialButton
                     ? "navbarButtonGlow hover: rounded-full"
-                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-100 hover:scale-101"
+                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-200 hover:scale-104"
                   }`}
                 dangerouslySetInnerHTML={{ __html: item }}
               />

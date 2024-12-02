@@ -243,6 +243,19 @@ body {
   animation: slideInOut 3s ease-in-out;
 }
 
+.alumni-network-heading {
+  width: 301px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  background: var(--Yellow-Gradient, linear-gradient(180deg, #F9F8FF 0%, #F4DC97 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Combined Animation for toast (slide-in, stay, and slide-out) */
 @keyframes slideInOut {
   0% {
