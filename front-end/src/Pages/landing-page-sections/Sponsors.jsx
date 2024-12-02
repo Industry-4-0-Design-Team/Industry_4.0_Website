@@ -22,7 +22,7 @@ const SponsorPage = () => {
 
             {/* Subtitle Section */}
             <h2
-              className="body px-8 md:px-8 lg:px-8 custom-lg:px-10 text-center mt-0 z-10 w-full md:text-2xl lg:text-2xl"
+              className="body px-8 md:px-8 lg:px-8 custom-lg:px-10 text-center mt-0 z-10 max-w-[1250px] w-full md:text-2xl lg:text-2xl"
               data-aos="zoom-in"
               data-aos-offset="50"
               data-aos-delay="400"
@@ -31,7 +31,7 @@ const SponsorPage = () => {
             >
               With the support of our incredible sponsors, we are broadening
               opportunities for students, providing them with the tools &
-              resources needed to create meaningful solutions in the tech-driven
+              resources needed to create solutions in the tech-driven
               world.
             </h2>
 
