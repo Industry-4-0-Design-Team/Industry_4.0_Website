@@ -13,11 +13,11 @@ const AboutAndMission = () => {
             data-aos-once="true"
           >
             <h1 className="neonText subtitle text-4xl xs:text-5xl sm:text-6xl md:text-8xl lg:text-8xl z-10 tracking-widest">
-              ABOUT US
+              WHO WE ARE
             </h1>
           </div>
           <p
-            className="body px-8 md:px-8 lg:px-8 custom-lg:px-10 text-center mt-12 z-10 w-full md:text-2xl lg:text-2xl"
+            className="body px-8 md:px-8 lg:px-8 custom-lg:px-10 max-w-[1300px] text-center mt-12 z-10 w-full md:text-2xl lg:text-2xl"
             data-aos="zoom-in"
             data-aos-offset="50"
             data-aos-delay="300"
@@ -25,14 +25,16 @@ const AboutAndMission = () => {
             data-aos-once="true"
           >
             We are an organization committed to empowering students in
-            Management Sciences by fostering a hands-on learning environment 📚.
-            Through case studies, workshops, and leadership events, we provide
+            Management Sciences by fostering a hands-on learning environment.
+            Through  <span className="text-secondary font-bold">case competitions</span>, <span className="text-secondary font-bold">workshops</span>, 
+              and <span className="text-secondary font-bold">leadership events</span>, we provide
             real-world experiences that bridge the gap between theory and
-            practice 🌍. We strive to create a learning environment where
-            students gain early exposure to industry skills 🧑‍💻, expert knowledge
-            🧠, and valuable connections 🤝. Through mentorship,
+            practice. We strive to create a learning environment where
+            students gain early exposure 
+            to <span className="text-secondary font-bold">industry skills</span>, <span className="text-secondary font-bold">expert knowledge</span>
+            , and <span className="text-secondary font-bold">valuable connections</span>. Through mentorship,
             career-focused workshops, and a supportive community, we
-            prepare them to excel in the tech-driven future of Industry 4.0 🚀!
+            prepare them to excel in the tech-driven future of Industry 4.0! 🚀
           </p>
         </div>
       </div>
