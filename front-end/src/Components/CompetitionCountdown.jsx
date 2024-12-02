@@ -8,8 +8,12 @@ const CountdownSection = () => {
     const difference = targetDate - now;
 
     const months = Math.floor(difference / (1000 * 60 * 60 * 24 * 30));
-    const days = Math.floor((difference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const days = Math.floor(
+      (difference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
+    );
+    const hours = Math.floor(
+      (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
@@ -44,7 +48,10 @@ const CountdownSection = () => {
         <h2 className="font-black tracking-widest text-center text-3xl lg:text-4xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-t from-white via-yellow-100 to-secondary">
           {`${String(timeLeft.months).padStart(2, "0")}:${String(
             timeLeft.days
-          ).padStart(2, "0")}:${String(timeLeft.hours).padStart(2, "0")}:${String(
+          ).padStart(
+            2,
+            "0"
+          )}:${String(timeLeft.hours).padStart(2, "0")}:${String(
             timeLeft.minutes
           ).padStart(2, "0")}:${String(timeLeft.seconds).padStart(2, "0")}`}
         </h2>

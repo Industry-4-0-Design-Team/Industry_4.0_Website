@@ -31,8 +31,7 @@ const SponsorPage = () => {
             >
               With the support of our incredible sponsors, we are broadening
               opportunities for students, providing them with the tools &
-              resources needed to create solutions in the tech-driven
-              world.
+              resources needed to create solutions in the tech-driven world.
             </h2>
 
             {/* Button Section */}
@@ -46,7 +45,9 @@ const SponsorPage = () => {
             >
               <Button
                 text="BECOME A SPONSOR"
-                onClick={() => (window.location.href = "mailto:industry4team@uwaterloo.ca")}
+                onClick={() =>
+                  (window.location.href = "mailto:industry4team@uwaterloo.ca")
+                }
               />
             </div>
 
