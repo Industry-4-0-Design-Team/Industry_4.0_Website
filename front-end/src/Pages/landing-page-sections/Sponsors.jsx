@@ -42,7 +42,7 @@ const SponsorPage = () => {
               data-aos-offset="80"
               data-aos-delay="100"
               data-aos-duration="800"
-              data-aos-once="false"
+              data-aos-once="true"
             >
               <Button
                 text="BECOME A SPONSOR"

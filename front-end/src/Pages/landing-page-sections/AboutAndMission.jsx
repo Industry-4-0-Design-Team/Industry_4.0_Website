@@ -45,6 +45,11 @@ const AboutAndMission = () => {
         <img
           src="/Gears/MissionGear.svg"
           className="oscillate w-[150px] md:w-[320px] h-auto"
+          data-aos="fade-right"
+          data-aos-offset="50"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
           draggable="false"
         />
       </div>
