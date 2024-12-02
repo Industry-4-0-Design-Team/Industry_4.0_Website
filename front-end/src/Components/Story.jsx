@@ -35,7 +35,7 @@ const Story = ({ name, job, quote, headshot, isVisible, preloadedImages }) => {
                     }}
                 >
                     <img
-                        src={getImageSrc('/Gears/StoriesGear.svg')}
+                        src={getImageSrc('/Gears/storiesGear.png')}
                         className="w-[260px] custom-lg:w-[520px] h-auto"
                         draggable="false"
                         alt="Gear Background"

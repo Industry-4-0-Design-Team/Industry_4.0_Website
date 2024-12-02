@@ -45,7 +45,7 @@ const TeamPage = ({ teamData }) => {
   const handleMouseLeave = debounce(() => setHoveredName(null), 100);
 
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto px-4 mt-[10rem] mb-[4rem]">
       <div className="flex items-center justify-between space-x-8 flex-col custom-lg:flex-row">
         <div className="flex-shrink-0 w-[328px] relative text-center custom-lg:text-left">
           <HoveredText

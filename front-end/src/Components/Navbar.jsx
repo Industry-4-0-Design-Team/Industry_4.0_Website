@@ -66,9 +66,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${
-        isScrolled ? "fixed top-0 backdrop-blur-lg" : "fixed"
-      } transition-all duration-500`}
+      className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${isScrolled ? "fixed top-0 backdrop-blur-lg" : "fixed"
+        } transition-all duration-500`}
       data-aos="fade-down"
       data-aos-offset="500"
       data-aos-delay="300"
@@ -88,25 +87,24 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
-        {(isScrolled ? ["ABOUT", "EVENTS", "SPONSORS", "COMPETITION", "STORIES", "SIGN&nbsp;UP"] : ["ABOUT", "EVENTS", "SPONSORS", "COMPETITION", "STORIES"]).map(
+        {(isScrolled ? ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION", "SIGN&nbsp;UP"] : ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION"]).map(
           (item) => {
             const isSpecialButton = item.includes("SIGN&nbsp;UP");
             return (
               <button
                 key={item}
                 onClick={() =>
-                  scrollToSection((item == "SIGN&nbsp;UP") 
-                                    ? "landing" 
-                                    : item
-                                        .toLowerCase()
-                                        .replace(/&nbsp;/g, "-")
-                                        .replace(" ", "-")
-                          )}
-                className={`navbar-text transition-colors duration-300 px-4 py-2 ${
-                  isSpecialButton
+                  scrollToSection((item == "SIGN&nbsp;UP")
+                    ? "landing"
+                    : item
+                      .toLowerCase()
+                      .replace(/&nbsp;/g, "-")
+                      .replace(" ", "-")
+                  )}
+                className={`navbar-text transition-colors duration-300 px-4 py-2 ${isSpecialButton
                     ? "navbarButtonGlow hover: rounded-full"
-                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-100 hover:scale-105"
-                }`}
+                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-100 hover:scale-101"
+                  }`}
                 dangerouslySetInnerHTML={{ __html: item }}
               />
             );
@@ -165,9 +163,9 @@ const Navbar = () => {
       {isMenuOpen && (
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-gray-200 fixed top-3 right-5 z-50 text-xl"
+          className="text-gray-200 block custom-lg:hidden fixed mt-4 top-3 right-5 z-50 text-sm"
         >
-          X
+          hide
         </button>
       )}
 
@@ -183,17 +181,30 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         ref={menuRef}
-        className={`custom-lg:hidden fixed top-0 right-0 bg-black/30 backdrop-blur-lg w-72 h-full transition-all transform ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } z-40`}
+        className={`
+    custom-lg:hidden 
+    fixed 
+    top-0 
+    right-0 
+    w-72 
+    h-full 
+    transition-all 
+    transform 
+    z-40 
+    backdrop-filter 
+    backdrop-blur-lg 
+    bg-black/30 
+    ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
+  `}
       >
-        <div className="flex flex-col items-center pt-24">
+        <div className="flex flex-col items-center pt-12 pb-12">
           <ul className="text-white">
             {[
               "ABOUT",
               "EVENTS",
               "SPONSORS",
               "STORIES",
+              "COMPETITION",
               "SIGN&nbsp;UP",
             ].map((item) => (
               <li key={item} className="py-4 text-xl">
@@ -206,7 +217,7 @@ const Navbar = () => {
                         .replace(" ", "-")
                     )
                   }
-                  className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-105"
+                  className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-101"
                   dangerouslySetInnerHTML={{ __html: item }}
                 />
               </li>

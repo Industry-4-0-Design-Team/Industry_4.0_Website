@@ -39,8 +39,8 @@ function App() {
       <AboutAndMission/>
       <EventsPage/>
       <SponsorPage/>
-      <CompetitionPage/>
       <StoriesPage/>
+      <CompetitionPage/>
       <TeamPage teamData={teamData} />
       <Footer/>
     </div>
