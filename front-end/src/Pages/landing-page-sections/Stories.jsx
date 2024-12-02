@@ -14,8 +14,7 @@ const StoriesPage = () => {
     {
       name: "Rodrigo  Tiscareno",
       job: "Former Director, Data Engineering Enthusiast, and Varsity Athlete",
-      quote:
-        `Rodrigo Tiscareno, a leader in data-driven innovation, connected 100+ students with cutting-edge tech as an Industry 4.0 director. 
+      quote: `Rodrigo Tiscareno, a leader in data-driven innovation, connected 100+ students with cutting-edge tech as an Industry 4.0 director. 
         
         A Waterloo Management Engineering student, he excelled at Balyasny Asset Management, building data pipelines and supporting equities strategies with Python, AWS, and SQL. He also led the Midnight Sun Solar Team, contributed to the Data Science Club, and excelled as a varsity soccer player.`,
       headshot: "/story-headshots/Rodrigo.svg",
@@ -46,9 +45,11 @@ const StoriesPage = () => {
           };
         });
 
-      [...stories.map((story) => story.headshot), "/arrows/LeftArrow.svg", "/arrows/RightArrow.svg"].forEach((src) =>
-        loadPromises.push(createImagePromise(src))
-      );
+      [
+        ...stories.map((story) => story.headshot),
+        "/arrows/LeftArrow.svg",
+        "/arrows/RightArrow.svg",
+      ].forEach((src) => loadPromises.push(createImagePromise(src)));
 
       await Promise.all(loadPromises);
       setPreloadedImages(imageCache);
@@ -92,7 +93,10 @@ const StoriesPage = () => {
   }
 
   return (
-    <div id="stories" className="h-full relative mb-[150px] px-8 custom-lg:px-16">
+    <div
+      id="stories"
+      className="h-full relative mb-[150px] px-8 custom-lg:px-16"
+    >
       <div className="relative z-10 flex flex-col items-center custom-lg:flex-row justify-center mt-44 max-w-[1400px] w-full mx-auto">
         <div className="flex flex-col items-center justify-center custom-lg:flex-row custom-lg:items-start w-full">
           <div className="flex flex-col items-center justify-center mt-6 custom-lg:ml-6 custom-lg:mt-0 w-full">
@@ -124,7 +128,11 @@ const StoriesPage = () => {
               data-aos-delay="400"
               data-aos-duration="1000"
             >
-              <Story {...stories[currentStoryIndex]} isVisible={isVisible} preloadedImages={preloadedImages} />
+              <Story
+                {...stories[currentStoryIndex]}
+                isVisible={isVisible}
+                preloadedImages={preloadedImages}
+              />
             </div>
 
             {/* Navigation Buttons */}
@@ -135,7 +143,10 @@ const StoriesPage = () => {
                 data-aos="fade-right"
               >
                 <img
-                  src={preloadedImages["/arrows/LeftArrow.svg"] || "/arrows/LeftArrow.svg"}
+                  src={
+                    preloadedImages["/arrows/LeftArrow.svg"] ||
+                    "/arrows/LeftArrow.svg"
+                  }
                   className="w-[30px] h-auto"
                   draggable="false"
                   alt="Left Arrow"
@@ -147,7 +158,10 @@ const StoriesPage = () => {
                 data-aos="fade-left"
               >
                 <img
-                  src={preloadedImages["/arrows/RightArrow.svg"] || "/arrows/RightArrow.svg"}
+                  src={
+                    preloadedImages["/arrows/RightArrow.svg"] ||
+                    "/arrows/RightArrow.svg"
+                  }
                   className="w-[30px] h-[30px]"
                   draggable="false"
                   alt="Right Arrow"
