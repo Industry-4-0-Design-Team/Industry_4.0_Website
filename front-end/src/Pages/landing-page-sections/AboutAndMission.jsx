@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 const AboutAndMission = () => {
   return (
     <div id="about" className="relative z-[10] w-full">
@@ -25,12 +26,12 @@ const AboutAndMission = () => {
             data-aos-once="true"
           >
             We are an organization committed to empowering students in
-            Management Sciences by fostering a hands-on learning environment.
-            Through  <span className="text-secondary font-bold">case competitions</span>, <span className="text-secondary font-bold">workshops</span>, 
+            Management Sciences by fostering a hands-on learning environment. 🧠✨
+            Through  <span className="text-secondary font-bold">case competitions</span>, <span className="text-secondary font-bold">workshops</span>,
               and <span className="text-secondary font-bold">leadership events</span>, we provide
             real-world experiences that bridge the gap between theory and
             practice. We strive to create a learning environment where
-            students gain early exposure 
+            students gain early exposure
             to <span className="text-secondary font-bold">industry skills</span>, <span className="text-secondary font-bold">expert knowledge</span>
             , and <span className="text-secondary font-bold">valuable connections</span>. Through mentorship,
             career-focused workshops, and a supportive community, we
