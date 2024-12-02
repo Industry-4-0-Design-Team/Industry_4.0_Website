@@ -6,11 +6,11 @@
 
 @keyframes smooth-bob-and-glow {
   0%, 100% {
-    transform: translate(-30px, 50px); /* Starting and ending position */
+    transform: translate(-30px, 80px); /* Starting and ending position */
     filter: drop-shadow(0 0 5px #2b2ad2); /* Small glow */
   }
   50% {
-    transform: translate(-30px, 60px); /* Slight downward movement */
+    transform: translate(-30px, 110px); /* Slight downward movement */
     filter: drop-shadow(0 0 10px #0000ff); /* Slightly larger glow */
   }
 }
