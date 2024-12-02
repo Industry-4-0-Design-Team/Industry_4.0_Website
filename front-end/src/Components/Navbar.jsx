@@ -95,7 +95,7 @@ const Navbar = () => {
                 key={item}
                 onClick={() =>
                   scrollToSection((item == "SIGN&nbsp;UP")
-                    ? "landing"
+                    ? "competition"
                     : item
                       .toLowerCase()
                       .replace(/&nbsp;/g, "-")
@@ -163,9 +163,11 @@ const Navbar = () => {
       {isMenuOpen && (
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-gray-200 block custom-lg:hidden fixed mt-4 top-3 right-5 z-50 text-sm"
+          className=" block custom-lg:hidden fixed mt-4 top-3 right-60 z-50 text-sm"
         >
-          hide
+          <img className="w-6 h-6"
+          src="/Close.svg"
+          />
         </button>
       )}
 

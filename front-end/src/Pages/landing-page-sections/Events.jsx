@@ -42,8 +42,8 @@ const EventsPage = () => {
               Whether you&apos;re looking to sharpen your skills, gain
               inspiration from industry experts, or connect with a community of
               like-minded peers, our events have something for everyone. Stay
-              connected with us📲 to ensure you don&apos;t miss out on these
-              incredible events!
+              connected with us to ensure you don&apos;t miss out on these
+              incredible events! 📲
             </h2>
             {/* <div
               className="mt-6 text-center custom-lg:text-left"

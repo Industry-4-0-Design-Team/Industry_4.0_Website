@@ -124,6 +124,13 @@ body {
   color: #d3d3d3;
 }
 
+.body-name {
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 42px !important;
+  color: #d3d3d3;
+}
+
 .body-job-position {
   font-style: normal;
   font-weight: 700 !important;
