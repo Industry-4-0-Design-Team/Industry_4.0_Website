@@ -14,7 +14,7 @@ const LandingPage = () => {
       landing: 90,
       about: 90,
       events: -190,
-      sponsors: -55, // Custom offset for "sponsors" section
+      sponsors: 0, // Custom offset for "sponsors" section
       stories: -65,
       team: 100,
     };
