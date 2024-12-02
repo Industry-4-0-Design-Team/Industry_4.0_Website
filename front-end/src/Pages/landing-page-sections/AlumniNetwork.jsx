@@ -49,7 +49,7 @@ const AlumniNetwork = () => {
   }, []);
 
   return (
-    <div className="container max-w-[1400px] mx-auto px-4 custom-lg:mt-[-14rem] md:mt-[25rem] mt-[16rem] mb-[-12rem] custom-lg:mb-[12rem]">
+    <div className="container max-w-[1400px] mx-auto px-4 custom-lg:mt-[-4rem] md:mt-[25rem] mt-[16rem] mb-[-12rem] custom-lg:mb-[12rem]">
       <div>
         {/* Staggered text animation */}
         <h1

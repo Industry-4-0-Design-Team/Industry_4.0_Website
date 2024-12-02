@@ -2,8 +2,8 @@
 
 const EventsPage = () => {
   return (
-    <div id="events" className="mt-0 h-dvh relative">
-      <div className="relative z-10 flex justify-center items-center custom-lg:mr-[72px] custom-lg:ml-[150px] mx-[12px]">
+    <div id="events" className="mt-[-8rem] h-dvh justify-center items-center align-center flex relative">
+      <div className="relative z-10 w-[1350px] flex justify-center items-center align-center mx-[12px]">
         <div className="flex flex-col items-center custom-lg:flex-row custom-lg:items-start w-full">
           {/* Left Section - Discover Events */}
           <div
@@ -42,8 +42,8 @@ const EventsPage = () => {
               Whether you&apos;re looking to sharpen your skills, gain
               inspiration from industry experts, or connect with a community of
               like-minded peers, our events have something for everyone. Stay
-              connected with us📲 to ensure you don&apos;t miss out on these
-              incredible events!
+              connected with us to ensure you don&apos;t miss out on these
+              incredible events! 📲
             </h2>
             {/* <div
               className="mt-6 text-center custom-lg:text-left"

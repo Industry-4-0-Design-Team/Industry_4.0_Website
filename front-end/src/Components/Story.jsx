@@ -56,7 +56,7 @@ const Story = ({ name, job, quote, headshot, isVisible, preloadedImages }) => {
                         transition: 'opacity 500ms ease-in-out',
                     }}
                 >
-                    <div className="body text-4xl font-extrabold">{name}</div>
+                    <div className="body-name text-4xl font-extrabold leading-tight">{name}</div>
                     <div className="body-job-position text-xl mt-4">{job}</div>
                     <div
                         className="body-story custom-lg:text-[24px] max-w-[1050px]md:text-[12px] text-[12px] mt-4 custom-lg:leading-7 leading-tight"
