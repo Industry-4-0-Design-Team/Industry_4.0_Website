@@ -114,7 +114,13 @@ body {
 .body {
   font-style: normal;
   font-weight: 500 !important;
-  line-height: 30px !important;
+  line-height: 28px !important;
+  color: #d3d3d3;
+}
+
+.body-story {
+  font-style: normal;
+  font-weight: 500 !important;
   color: #d3d3d3;
 }
 
@@ -204,7 +210,8 @@ body {
 
 .buttonGlow2:hover {
   filter: drop-shadow(0 0 2px #8167C8);
-  transform: scale(1.02); /* Slight enlargement on hover */
+  background: linear-gradient(#3f3e3ee9, #2b2b2b);
+  border: 1px solid #8167C8;
 }
 
 .buttonGlow2:active {
@@ -259,6 +266,9 @@ body {
 
 /* Media Query for screens smaller than custom-lg for landing page heading*/
 @media (max-width: 1024px) {
+  .body {
+    line-height: 20px !important;
+  }
   .text-8xl {
     font-size: 3rem; /* Scale down Industry 4. */
   }
