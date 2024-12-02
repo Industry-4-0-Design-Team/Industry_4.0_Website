@@ -23,7 +23,7 @@ const EventsPage = () => {
               </h1>
             </div>
             <h2
-              className="body custom-lg:text-[22px] md:text-[20px] text-center custom-lg:text-left mt-4 z-10 custom-lg:max-w-[550px] break-words w-full"
+              className="body pr-4 md:pr-6 lg:pr-8 custom-lg:pr-10 text-center custom-lg:text-left mt-4 z-10 w-full md:text-2xl lg:text-2xl"
               data-aos="fade-right"
               data-aos-offset="50"
               data-aos-delay="300"
@@ -48,7 +48,7 @@ const EventsPage = () => {
 
           {/* Right Section - Events Gear */}
           <img
-            src="/Gears/EventsGear.svg"
+            src="/Gears/EventsGear.png"
             className="custom-lg:max-w-[820px] md:max-w-[360px] max-w-[260px] mt-10 h-auto inline-block md:mt-100 custom-lg:mt-0 mx-auto custom-lg:mx-0 custom-lg:inline-block"
             draggable="false"
             data-aos="fade-left"

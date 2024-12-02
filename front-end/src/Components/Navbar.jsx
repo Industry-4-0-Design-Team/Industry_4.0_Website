@@ -54,6 +54,7 @@ const Navbar = () => {
       sponsors: -20, // Custom offset for "sponsors" section
       stories: -65, // Custom offset for "stories" section
       team: 100, // Custom offset for "team" section
+      competition: 90
     };
 
     if (section) {
@@ -205,7 +206,7 @@ const Navbar = () => {
                         .replace(" ", "-")
                     )
                   }
-                  className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-300 hover:scale-105"
+                  className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-105"
                   dangerouslySetInnerHTML={{ __html: item }}
                 />
               </li>
