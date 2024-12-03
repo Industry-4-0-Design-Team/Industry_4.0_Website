@@ -1,7 +1,20 @@
 import React from "react";
 import CountdownSection from "../../Components/CompetitionCountdown";
+import { useEffect } from "react";
 
 const CompetitionPage = () => {
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 425) {
+      // Disable AOS animations for small screens
+      const elementsWithAOS = document.querySelectorAll("[data-aos]");
+      elementsWithAOS.forEach((element) => {
+        element.removeAttribute("data-aos");
+      });
+    }
+  }, []);
+
   return (
     <div
       id="competition"

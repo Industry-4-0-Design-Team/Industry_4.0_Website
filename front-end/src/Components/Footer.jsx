@@ -1,4 +1,14 @@
+import { useState } from "react";
+
 const Footer = () => {
+  
+  const [isSpinning, setIsSpinning] = useState(false);
+
+  const handleGearClick = () => {
+    setIsSpinning(true);
+    setTimeout(() => setIsSpinning(false), 500); // Remove spinning class after animation
+  };
+
   return (
     <div className="relative border-t border-gray-700">
       {/* Divider */}
@@ -11,7 +21,9 @@ const Footer = () => {
           <img
             src="Gears/FooterGear.svg"
             alt="Footer Gear"
-            className="w-6 h-6"
+            className={`w-6 h-6 cursor-pointer transition-transform ${isSpinning ? "spin-gear" : ""
+              }`}
+            onClick={handleGearClick}
           />
           <a href="mailto:industry4team@uwaterloo.ca" target="_blank">
             <span className="bg-gray-800 text-white py-1 px-3 rounded-full text-sm hover:bg-gray-700 transition-colors">

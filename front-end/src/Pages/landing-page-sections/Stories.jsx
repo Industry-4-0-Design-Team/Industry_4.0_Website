@@ -25,6 +25,18 @@ const StoriesPage = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [preloadedImages, setPreloadedImages] = useState({});
+  
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 425) {
+      // Disable AOS animations for small screens
+      const elementsWithAOS = document.querySelectorAll("[data-aos]");
+      elementsWithAOS.forEach((element) => {
+        element.removeAttribute("data-aos");
+      });
+    }
+  }, []);
 
   useEffect(() => {
     const preloadImages = async () => {

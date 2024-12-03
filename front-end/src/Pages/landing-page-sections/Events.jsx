@@ -1,6 +1,16 @@
-// import Button from "../../Components/Button";
-
+import { useEffect } from "react";
 const EventsPage = () => {
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 425) {
+      // Disable AOS animations for small screens
+      const elementsWithAOS = document.querySelectorAll("[data-aos]");
+      elementsWithAOS.forEach((element) => {
+        element.removeAttribute("data-aos");
+      });
+    }
+  }, []);
   return (
     <div
       id="events"
