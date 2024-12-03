@@ -45,17 +45,15 @@ const CompetitionPage = () => {
             data-aos-duration="700"
             data-aos-once="true"
           >
-            The <span className="text-secondary font-bold">I4 Challenge</span> is
-            a high school-level data-driven competition organized by students at
-            the University of Waterloo. Named after the fourth industrial
+            The <span className="text-secondary font-bold">I4 Challenge</span>{" "}
+            is a high school-level data-driven competition organized by students
+            at the University of Waterloo. Named after the fourth industrial
             revolution, it focuses on the{" "}
             <span className="text-secondary font-bold">
               computerization of manufacturing
             </span>{" "}
             and{" "}
-            <span className="text-secondary font-bold">
-              big data analytics
-            </span>
+            <span className="text-secondary font-bold">big data analytics</span>
             .
             <br />
             <br />
@@ -71,39 +69,57 @@ const CompetitionPage = () => {
 
         {/*Statistics under about us page */}
         <div className="text-center text-white mt-14">
-            <ul className="flex flex-col md:flex-row w-full text-center items-center justify-around gap-10 md:gap-28 lg:gap-64">
-              <li>
-                <div data-aos="fade-up"
-                    data-aos-offset="30"
-                    data-aos-delay="500"
-                    data-aos-duration="700"
-                    data-aos-once="true">
-                  <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">1000+</h1>
-                  <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">STUDENTS</h3>
-                </div>
-              </li>
-              <li>
-                <div data-aos="fade-up"
-                    data-aos-offset="30"
-                    data-aos-delay="700"
-                    data-aos-duration="700"
-                    data-aos-once="true">
-                  <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">50+</h1>
-                  <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">SCHOOLS</h3>
-                </div>
-              </li>
-              <li>
-                <div data-aos="fade-up"
-                    data-aos-offset="30"
-                    data-aos-delay="900"
-                    data-aos-duration="700"
-                    data-aos-once="true">
-                  <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">75+</h1>
-                  <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">ALUMNI</h3>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ul className="flex flex-col md:flex-row w-full text-center items-center justify-around gap-10 md:gap-28 lg:gap-64">
+            <li>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="30"
+                data-aos-delay="500"
+                data-aos-duration="700"
+                data-aos-once="true"
+              >
+                <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                  1000+
+                </h1>
+                <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
+                  STUDENTS
+                </h3>
+              </div>
+            </li>
+            <li>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="30"
+                data-aos-delay="700"
+                data-aos-duration="700"
+                data-aos-once="true"
+              >
+                <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                  50+
+                </h1>
+                <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
+                  SCHOOLS
+                </h3>
+              </div>
+            </li>
+            <li>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="30"
+                data-aos-delay="900"
+                data-aos-duration="700"
+                data-aos-once="true"
+              >
+                <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                  75+
+                </h1>
+                <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
+                  ALUMNI
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
 
         {/* Countdown Section */}
         <CountdownSection />

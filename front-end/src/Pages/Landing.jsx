@@ -45,7 +45,10 @@ const LandingPage = () => {
   };
 
   return (
-    <div id="landing" className="flex flex-col items-center w-full h-screen justify-center">
+    <div
+      id="landing"
+      className="flex flex-col items-center w-full h-screen justify-center"
+    >
       {/* Main content container */}
       <img
         src="/planetGear.svg"
@@ -128,7 +131,10 @@ const LandingPage = () => {
 
       {toastVisible && (
         <div className="toast text-center">
-          <p>Competition has not begun yet, check back soon or keep up with our socials for updates.</p>
+          <p>
+            Competition has not begun yet, check back soon or keep up with our
+            socials for updates.
+          </p>
         </div>
       )}
 

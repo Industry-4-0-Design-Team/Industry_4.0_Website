@@ -66,9 +66,11 @@ const TeamPage = ({ teamData }) => {
         </div>
         <div
           className={`flex-grow relative overflow-hidden mt-12 custom-lg:mt-0 ${
-            imagesLoaded ? "opacity-100 transition-opacity duration-1000" : "opacity-0"
+            imagesLoaded
+              ? "opacity-100 transition-opacity duration-1000"
+              : "opacity-0"
           }`}
-          data-aos="zoom-in" 
+          data-aos="zoom-in"
         >
           <div
             className="absolute inset-y-0 left-0 w-10 bg-[#181818] z-10 pointer-events-none"

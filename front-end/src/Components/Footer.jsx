@@ -56,7 +56,11 @@ const Footer = () => {
               className="w-5 h-5"
             />
           </a>
-          <a href="https://discord.gg/dRtUKaXekc" target="blank" className="transform transition-transform duration-300 hover:scale-110">
+          <a
+            href="https://discord.gg/dRtUKaXekc"
+            target="blank"
+            className="transform transition-transform duration-300 hover:scale-110"
+          >
             <img
               src="/Social-Media-Icons/discord_icon.svg"
               alt="Discord Link"

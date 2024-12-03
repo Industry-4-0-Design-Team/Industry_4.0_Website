@@ -5,7 +5,8 @@
 }
 
 @keyframes smooth-bob-and-glow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-30px, 80px); /* Starting and ending position */
     filter: drop-shadow(0 0 5px #2b2ad2); /* Small glow */
   }
@@ -179,32 +180,42 @@ body {
 .navbarButtonGlow:hover {
   filter: drop-shadow(0 0 3px #fde37f);
   transform: scale(1.01); /* Slight enlargement on hover */
-  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
-    var(--angle),
-    #ffec9e,
-    #ffeeac,
-    #ffffff00,
-    #ffffff00,
-    #ffffff00
-  ) border-box;
+  background:
+    linear-gradient(#191919e9, #101010) padding-box,
+    linear-gradient(
+        var(--angle),
+        #ffec9e,
+        #ffeeac,
+        #ffffff00,
+        #ffffff00,
+        #ffffff00
+      )
+      border-box;
   animation: 5s rotate linear infinite;
   will-change: transform, filter;
-  transition: transform 0.3s ease, filter 0.3s ease; /* Ensure smooth transition for transform and filter */
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease; /* Ensure smooth transition for transform and filter */
 }
 
 .buttonGlow {
   border: 1px solid #ffff0021;
-  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
-    var(--angle),
-    #ffec9e,
-    #ffeeac,
-    #ffffff00,
-    #ffffff00,
-    #ffffff00
-  ) border-box;
+  background:
+    linear-gradient(#191919e9, #101010) padding-box,
+    linear-gradient(
+        var(--angle),
+        #ffec9e,
+        #ffeeac,
+        #ffffff00,
+        #ffffff00,
+        #ffffff00
+      )
+      border-box;
   animation: 5s rotate linear infinite;
   will-change: transform, filter;
-  transition: transform 0.3s ease, filter 0.3s ease; /* Ensure smooth transition for transform and filter */
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease; /* Ensure smooth transition for transform and filter */
 }
 
 .buttonGlow:hover {
@@ -230,33 +241,33 @@ body {
 
 .buttonGlow2 {
   border: 1px solid #0000;
-  background: linear-gradient(#191919e9, #101010) padding-box, linear-gradient(
-    180deg,
-    #8167C8,
-    #8167C8,
-    #ffffff00
-  ) border-box;
+  background:
+    linear-gradient(#191919e9, #101010) padding-box,
+    linear-gradient(180deg, #8167c8, #8167c8, #ffffff00) border-box;
   animation: 3s pulsate infinite;
   will-change: filter;
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease; /* Smooth transition */
 }
 
 .buttonGlow2:hover {
-  filter: drop-shadow(0 0 2px #8167C8);
+  filter: drop-shadow(0 0 2px #8167c8);
   background: linear-gradient(#3f3e3ee9, #2b2b2b);
-  border: 1px solid #8167C8;
+  border: 1px solid #8167c8;
 }
 
 .buttonGlow2:active {
-  filter: drop-shadow(0 0 12px #8167C8); /* Stronger shadow on click */
+  filter: drop-shadow(0 0 12px #8167c8); /* Stronger shadow on click */
 }
 
 @keyframes pulsate {
-  0%, 100% {
-    filter: drop-shadow(0 0 2px #8167C8);
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px #8167c8);
   }
   50% {
-    filter: drop-shadow(0 0 7px #8167C8);
+    filter: drop-shadow(0 0 7px #8167c8);
   }
 }
 
@@ -278,12 +289,15 @@ body {
 
 .alumni-network-heading {
   width: 301px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.9px;
-  background: var(--Yellow-Gradient, linear-gradient(180deg, #F9F8FF 0%, #F4DC97 100%));
+  background: var(
+    --Yellow-Gradient,
+    linear-gradient(180deg, #f9f8ff 0%, #f4dc97 100%)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -308,7 +322,6 @@ body {
     opacity: 0; /* Fade out */
   }
 }
-
 
 /* Media Query for screens smaller than custom-lg for landing page heading*/
 @media (max-width: 1024px) {
@@ -407,7 +420,7 @@ body {
   gap: 2.5rem;
   flex-wrap: nowrap;
   width: max-content;
-  transition: transform 0.1s linear;  /* Smooth scroll transition */
+  transition: transform 0.1s linear; /* Smooth scroll transition */
 }
 
 /* Smooth horizontal scroll animation (done by JavaScript) */

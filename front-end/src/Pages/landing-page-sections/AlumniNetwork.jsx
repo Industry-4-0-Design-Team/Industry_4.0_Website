@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Marquee from 'react-fast-marquee';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useState, useEffect } from "react";
+import Marquee from "react-fast-marquee";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const alumniNetworkImages = [
   "amazon.svg",
@@ -15,7 +15,7 @@ const alumniNetworkImages = [
   "telus.svg",
   "tesla.svg",
   "toyota-alumni.svg",
-  "ttc.svg"
+  "ttc.svg",
 ];
 
 const AlumniNetwork = () => {
@@ -93,7 +93,7 @@ const AlumniNetwork = () => {
         />
         {/* Right gradient overlay */}
         <div
-         className="absolute inset-y-0 -right-1 w-10 bg-[#181818] z-10 pointer-events-none"
+          className="absolute inset-y-0 -right-1 w-10 bg-[#181818] z-10 pointer-events-none"
           style={{
             maskImage: "linear-gradient(to left, black, transparent)",
             WebkitMaskImage: "linear-gradient(to left, black, transparent)",
