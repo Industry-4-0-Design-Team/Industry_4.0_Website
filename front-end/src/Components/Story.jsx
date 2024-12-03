@@ -3,27 +3,27 @@ import { useState, useEffect } from "react";
 const Story = ({ name, job, quote, headshot, isVisible, preloadedImages }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
-    useEffect(() => {
-        const screenWidth = window.innerWidth;
-    
-        if (screenWidth <= 425) {
-          // Disable AOS animations for small screens
-          const elementsWithAOS = document.querySelectorAll("[data-aos]");
-          elementsWithAOS.forEach((element) => {
-            element.removeAttribute("data-aos");
-          });
-        }
-      }, []);
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
 
-    useEffect(() => {
-        if (isVisible) {
-            const img = new Image();
-            img.src = preloadedImages?.[headshot] || headshot;
-            img.onload = () => setImageLoaded(true);
-        } else {
-            setImageLoaded(false); // Reset state when transitioning out
-        }
-    }, [isVisible, headshot, preloadedImages]);
+    if (screenWidth <= 425) {
+      // Disable AOS animations for small screens
+      const elementsWithAOS = document.querySelectorAll("[data-aos]");
+      elementsWithAOS.forEach((element) => {
+        element.removeAttribute("data-aos");
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      const img = new Image();
+      img.src = preloadedImages?.[headshot] || headshot;
+      img.onload = () => setImageLoaded(true);
+    } else {
+      setImageLoaded(false); // Reset state when transitioning out
+    }
+  }, [isVisible, headshot, preloadedImages]);
 
   const getImageSrc = (src) => preloadedImages?.[src] || src;
 

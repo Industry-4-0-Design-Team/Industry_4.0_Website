@@ -10,7 +10,7 @@ import "aos/dist/aos.css"; // Import AOS CSS
 const TeamPage = ({ teamData }) => {
   const [hoveredName, setHoveredName] = useState(null);
   const [imagesLoaded, setImagesLoaded] = useState(false); // Track if images are loaded
-  
+
   useEffect(() => {
     const screenWidth = window.innerWidth;
 

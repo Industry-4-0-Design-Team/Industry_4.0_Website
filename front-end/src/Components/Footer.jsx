@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const Footer = () => {
-  
   const [isSpinning, setIsSpinning] = useState(false);
 
   const handleGearClick = () => {
@@ -21,8 +20,9 @@ const Footer = () => {
           <img
             src="Gears/FooterGear.svg"
             alt="Footer Gear"
-            className={`w-6 h-6 cursor-pointer transition-transform ${isSpinning ? "spin-gear" : ""
-              }`}
+            className={`w-6 h-6 cursor-pointer transition-transform ${
+              isSpinning ? "spin-gear" : ""
+            }`}
             onClick={handleGearClick}
           />
           <a href="mailto:industry4team@uwaterloo.ca" target="_blank">
