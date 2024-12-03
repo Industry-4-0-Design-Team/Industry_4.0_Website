@@ -1,9 +1,10 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Ensure Tailwind CSS is installed and configured correctly */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 * {
   margin: 0;
@@ -19,12 +20,14 @@
 }
 
 /* in case we want to use it again this is still here */
+/*
 .bg-diamonds {
   background-image: url(./diagmonds-bg.png);
   background-color: #2e2e2e;
   filter: brightness(100%);
   background-repeat: repeat;
 }
+*/
 
 html,
 body {
