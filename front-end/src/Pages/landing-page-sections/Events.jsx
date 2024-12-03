@@ -1,6 +1,16 @@
-// import Button from "../../Components/Button";
-
+import { useEffect } from "react";
 const EventsPage = () => {
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 425) {
+      // Disable AOS animations for small screens
+      const elementsWithAOS = document.querySelectorAll("[data-aos]");
+      elementsWithAOS.forEach((element) => {
+        element.removeAttribute("data-aos");
+      });
+    }
+  }, []);
   return (
     <div id="events" className="mx-auto max-w-[1440px] mt-0 h-fit mb-[200px] custom-lg:mb-[250px] relative">
       <div className="relative z-10 flex justify-center items-center custom-lg:mr-[72px] custom-lg:ml-[150px] mx-[12px]">

@@ -1,6 +1,19 @@
+import { useEffect } from "react";
 import Button from "../../Components/Button";
 
 const SponsorPage = () => {
+  useEffect(() => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 425) {
+      // Disable AOS animations for small screens
+      const elementsWithAOS = document.querySelectorAll("[data-aos]");
+      elementsWithAOS.forEach((element) => {
+        element.removeAttribute("data-aos");
+      });
+    }
+  }, []);
+
   return (
     <div id="sponsors" className="h-full relative">
       <div className="relative z-10 flex justify-center items-center mx-[128px]">
@@ -46,7 +59,9 @@ const SponsorPage = () => {
             >
               <Button
                 text="BECOME A SPONSOR"
-                onClick={() => (window.location.href = "mailto:industry4team@uwaterloo.ca")}
+                onClick={() =>
+                  (window.location.href = "mailto:industry4team@uwaterloo.ca")
+                }
               />
             </div>
 

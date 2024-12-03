@@ -4,6 +4,18 @@ const Story = ({ name, job, quote, headshot, isVisible, preloadedImages }) => {
     const [imageLoaded, setImageLoaded] = useState(false);
 
     useEffect(() => {
+        const screenWidth = window.innerWidth;
+    
+        if (screenWidth <= 425) {
+          // Disable AOS animations for small screens
+          const elementsWithAOS = document.querySelectorAll("[data-aos]");
+          elementsWithAOS.forEach((element) => {
+            element.removeAttribute("data-aos");
+          });
+        }
+      }, []);
+
+    useEffect(() => {
         if (isVisible) {
             const img = new Image();
             img.src = preloadedImages?.[headshot] || headshot;
