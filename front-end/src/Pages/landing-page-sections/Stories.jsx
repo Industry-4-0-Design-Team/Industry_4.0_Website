@@ -25,7 +25,7 @@ const StoriesPage = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [preloadedImages, setPreloadedImages] = useState({});
-  
+
   useEffect(() => {
     const screenWidth = window.innerWidth;
 

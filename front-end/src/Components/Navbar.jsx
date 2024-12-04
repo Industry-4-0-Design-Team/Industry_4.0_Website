@@ -194,18 +194,18 @@ const Navbar = () => {
       <div
         ref={menuRef}
         className={`
-                  custom-lg:hidden 
-                  fixed 
+                  custom-lg:hidden
+                  fixed
                   top-0
-                  right-0 
-                  w-72 
+                  right-0
+                  w-72
                   h-screen
-                  transition-all 
-                  transform 
-                  z-40 
-                  backdrop-filter 
-                  backdrop-blur-lg 
-                  bg-black/30 
+                  transition-all
+                  transform
+                  z-40
+                  backdrop-filter
+                  backdrop-blur-lg
+                  bg-black/30
                   ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
                 `}
       >
