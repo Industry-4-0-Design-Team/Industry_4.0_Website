@@ -82,7 +82,7 @@ const CompetitionPage = () => {
                   1000+
                 </h1>
                 <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
-                  STUDENTS
+                  PAST COMPETITIORS
                 </h3>
               </div>
             </li>
@@ -111,10 +111,10 @@ const CompetitionPage = () => {
                 data-aos-once="true"
               >
                 <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                  75+
+                  25+
                 </h1>
                 <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
-                  ALUMNI
+                  EXECUTIVES
                 </h3>
               </div>
             </li>

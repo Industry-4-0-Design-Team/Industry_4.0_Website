@@ -45,9 +45,13 @@ const AboutAndMission = () => {
               "data-aos-once": "true",
             })}
           >
-            We are an organization committed to empowering students in
-            Management Sciences by fostering a hands-on learning environment.
-            🧠✨ Through{" "}
+            We are a student design team within the Faculty of Engineering at the University of Waterloo, proudly
+            associated with the Sedra Student Design Centre. ✨
+            We focus on fostering hands-on learning environments for students interested 
+            in  <span className="text-secondary font-bold">management</span> {" "}
+            and <span className="text-secondary font-bold">Industry 4.0</span>,
+            bringing together participants from diverse academic backgrounds and programs across the university. 🌍 <br/> <br/>
+            Through{" "}
             <span className="text-secondary font-bold">case competitions</span>,{" "}
             <span className="text-secondary font-bold">workshops</span>, and{" "}
             <span className="text-secondary font-bold">leadership events</span>,

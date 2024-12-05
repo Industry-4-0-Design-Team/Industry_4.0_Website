@@ -51,7 +51,7 @@ const EventsPage = () => {
               <span className="text-secondary font-bold"> resume </span>
               critiques and our highly anticipated annual
               <span className="text-secondary font-bold"> competition</span>,
-              there&apos;s always something exciting happening in our club.
+              there&apos;s always something exciting happening here.
               Whether you&apos;re looking to sharpen your skills, gain
               inspiration from industry experts, or connect with a community of
               like-minded peers, our events have something for everyone. Stay
