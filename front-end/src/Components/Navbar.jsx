@@ -79,7 +79,7 @@ const Navbar = () => {
       <div className="flex items-center pl-2 mr-14">
         <button onClick={() => scrollToSection("landing")}>
           <img
-            src="/Gears/I4_Gear_Logo.png"
+            src="/Gears/New_I4_Logo.png"
             alt="I4 Logo"
             className="w-[40px] h-[40px]"
             draggable="false"
