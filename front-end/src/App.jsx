@@ -17,6 +17,7 @@ import EventsPage from "./Pages/landing-page-sections/Events";
 import StoriesPage from "./Pages/landing-page-sections/Stories";
 import Footer from "./Components/Footer";
 import CompetitionPage from "./Pages/landing-page-sections/Competition";
+import Contact from "./Pages/landing-page-sections/Contact.jsx"
 import TeamPage from "./Pages/landing-page-sections/Team";
 
 // this is so like the images are initially loaded to not cause lag later
@@ -42,6 +43,7 @@ function App() {
         <StoriesPage />
         <AlumniNetwork />
         <CompetitionPage />
+        <Contact/>
         <TeamPage teamData={teamData} />
         <Footer />
       </div>
