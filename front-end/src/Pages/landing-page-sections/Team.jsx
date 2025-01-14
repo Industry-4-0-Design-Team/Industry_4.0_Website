@@ -56,7 +56,7 @@ const TeamPage = ({ teamData }) => {
   const handleMouseLeave = debounce(() => setHoveredName(null), 100);
 
   return (
-    <div className="container mx-auto px-4 mt-[10rem] mb-[4rem]">
+    <div className="container mx-auto px-4 mt-[8.5rem] mb-[4rem]">
       <div className="flex items-center justify-between space-x-8 flex-col custom-lg:flex-row">
         <div className="flex-shrink-0 w-[328px] relative text-center custom-lg:text-left">
           <HoveredText
@@ -65,7 +65,7 @@ const TeamPage = ({ teamData }) => {
           />
         </div>
         <div
-          className={`flex-grow relative overflow-hidden mt-12 custom-lg:mt-0 ${
+          className={`flex-grow relative mt-12 custom-lg:mt-0 ${
             imagesLoaded
               ? "opacity-100 transition-opacity duration-1000"
               : "opacity-0"
@@ -86,7 +86,7 @@ const TeamPage = ({ teamData }) => {
               WebkitMaskImage: "linear-gradient(to left, black, transparent)",
             }}
           />
-          <Marquee speed={90} pauseOnHover gradient={false}>
+          <Marquee speed={90} pauseOnHover gradient={false} className="py-2.5">
             {Object.keys(teamData).map((name, index) => (
               <a
                 key={index}
@@ -99,7 +99,7 @@ const TeamPage = ({ teamData }) => {
               >
                 <img
                   src={`/team-headshots/${name}.webp`}
-                  className="rounded-full object-cover w-16 h-16"
+                  className="rounded-full object-cover w-16 h-16 shadow-[0_0_15px_3px_rgba(36,22,59,0.8)] group-hover:shadow-[0_0_10px_3px_rgba(101,71,150,0.8)]"
                   alt={`${name} headshot`}
                   draggable="false"
                   loading="lazy"
