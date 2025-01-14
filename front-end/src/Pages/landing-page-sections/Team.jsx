@@ -88,9 +88,12 @@ const TeamPage = ({ teamData }) => {
           />
           <Marquee speed={90} pauseOnHover gradient={false}>
             {Object.keys(teamData).map((name, index) => (
-              <div
+              <a
                 key={index}
-                className="relative group mx-2"
+                href={teamData[name].linkedIn}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group mx-2 block" // make anchor behave like a block-level div
                 onMouseEnter={() => handleMouseEnter(name)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -101,7 +104,7 @@ const TeamPage = ({ teamData }) => {
                   draggable="false"
                   loading="lazy"
                 />
-              </div>
+              </a>
             ))}
           </Marquee>
         </div>
