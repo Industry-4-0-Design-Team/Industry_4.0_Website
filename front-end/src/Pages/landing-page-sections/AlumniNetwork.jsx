@@ -15,6 +15,7 @@ const alumniNetworkImages = [
   "telus.svg",
   "tesla.svg",
   "toyota-alumni.svg",
+  "ttc.svg",
 ];
 
 const AlumniNetwork = () => {

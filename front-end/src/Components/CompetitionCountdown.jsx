@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
+import Button from "../Components/Button";
 
 const CountdownSection = () => {
   const targetDate = new Date("2025-03-08T00:00:00").getTime();
@@ -73,17 +74,25 @@ const CountdownSection = () => {
             SECS
           </h2>
         </div>
-        <div
-          className="mt-6 text-center"
-          data-aos="fade-up"
-          data-aos-offset="0"
-          data-aos-delay="100"
-          data-aos-duration="800"
-          data-aos-once="true"
-        >
-          <button className="buttonDisabled font-900 px-4 py-1 rounded-full text-md md:text-lg w-auto min-w-[10rem] h-12 md:w-auto md:h-14 inline-flex items-center justify-center whitespace-nowrap transform transition-transform duration-200">
-            SIGN UP
-          </button>
+        <div className="custom-lg:mt-[4rem] mt-12 flex gap-8 justify-center z-[1] w-full">
+          <a
+            data-aos="fade-up"
+            className="mt-2"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfZNLAafZOhM9HAt3rDsPu88LIOI5Q24T5M9d_sfKqxToWYGg/viewform?usp=sharing"
+            target="_blank"
+          >
+            <Button text="High School Sign Up" />
+          </a>
+          <a
+            data-aos="fade-up"
+            className="mt-2"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdFWQfGcwmdqer-224ajgOM-uI07QgKttdFRtfy60_ruzpWbQ/viewform?usp=sf_link"
+            target="_blank"
+          >
+            <Button text="University Sign Up" />
+          </a>
         </div>
       </div>
     </div>
