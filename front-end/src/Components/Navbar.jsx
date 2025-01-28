@@ -81,7 +81,7 @@ const Navbar = () => {
           <img
             src="/Gears/New_I4_Logo.png"
             alt="I4 Logo"
-            className="w-[40px] h-[40px]"
+            className="w-[50px] h-[50px]"
             draggable="false"
           />
         </button>
