@@ -95,6 +95,7 @@ const Navbar = () => {
               "SPONSORS",
               "STORIES",
               "COMPETITION",
+              "NEWSLETTER",
               "SIGN&nbsp;UP",
             ]
           : ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION"]
