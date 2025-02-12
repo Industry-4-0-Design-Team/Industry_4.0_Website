@@ -87,42 +87,45 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className="navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow">
-        {(isScrolled
-          ? [
-              "ABOUT",
-              "EVENTS",
-              "SPONSORS",
-              "STORIES",
-              "COMPETITION",
-              "NEWSLETTER",
-              "SIGN&nbsp;UP",
-            ]
-          : ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION"]
-        ).map((item) => {
-          const isSpecialButton = item.includes("SIGN&nbsp;UP");
-          return (
-            <button
-              key={item}
-              onClick={() =>
-                scrollToSection(
-                  item == "SIGN&nbsp;UP"
-                    ? "competition"
-                    : item
-                        .toLowerCase()
-                        .replace(/&nbsp;/g, "-")
-                        .replace(" ", "-")
-                )
-              }
-              className={`navbar-text transition-colors duration-300 px-4 py-2 ${
-                isSpecialButton
-                  ? "navbarButtonGlow hover: rounded-full"
-                  : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-200 hover:scale-104"
-              }`}
-              dangerouslySetInnerHTML={{ __html: item }}
-            />
-          );
-        })}
+      <div className={isScrolled ? 
+        "navbar-buttons hidden custom-lg:flex gap-3 custom-lg:gap-[6px] xl:gap-3 justify-start items-center flex-grow":
+        "navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow"}>
+          {(isScrolled
+            ? [
+                "ABOUT",
+                "EVENTS",
+                "SPONSORS",
+                "STORIES",
+                "COMPETITION",
+                "NEWSLETTER",
+                "SIGN&nbsp;UP",
+              ]
+            : ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION", "NEWSLETTER"]
+          ).map((item) => {
+            const isSpecialButton = item.includes("SIGN&nbsp;UP");
+            return (
+              <a key={item}  href={item=="NEWSLETTER" ? "https://uwindustry4.substack.com/." : undefined} target={item=="NEWSLETTER" ? "_blank":undefined}>
+                <button
+                  key={item}
+                  onClick={() =>
+                    scrollToSection(
+                      item == "SIGN&nbsp;UP"
+                        ? "competition"
+                        : item
+                            .toLowerCase()
+                            .replace(/&nbsp;/g, "-")
+                            .replace(" ", "-")
+                    )
+                }
+                className={`navbar-text transition-colors duration-300 px-4 py-2 ${
+                  isSpecialButton
+                    ? "navbarButtonGlow hover: rounded-full"
+                    : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-200 hover:scale-104"
+                }`}
+                dangerouslySetInnerHTML={{ __html: item }}
+              /></a>
+            );
+          })}
       </div>
 
       {/* Social Media Icons */}
