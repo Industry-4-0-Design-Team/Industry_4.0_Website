@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+@keyframes grow-shrink {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.grow-shrink {
+  animation: grow-shrink 5s infinite alternate ease-in-out;
+}
+
 @keyframes smooth-bob-and-glow {
   0%,
   100% {
