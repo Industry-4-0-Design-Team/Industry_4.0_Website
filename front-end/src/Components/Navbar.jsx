@@ -221,11 +221,12 @@ const Navbar = () => {
               "SPONSORS",
               "STORIES",
               "COMPETITION",
+              "NEWSLETTER",
               "SIGN&nbsp;UP",
             ].map((item) => {
               return (
                 <li key={item} className="py-4 text-xl">
-                  <button
+                  <a href={item==="NEWSLETTER" ? "https://uwindustry4.substack.com/" : undefined} target={item==="NEWSLETTER" ? "https://uwindustry4.substack.com/":undefined}><button
                     onClick={() =>
                       scrollToSection(
                         item == "SIGN&nbsp;UP"
@@ -238,7 +239,7 @@ const Navbar = () => {
                     }
                     className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-101"
                     dangerouslySetInnerHTML={{ __html: item }}
-                  />
+                  /></a>
                 </li>
               );
             })}
