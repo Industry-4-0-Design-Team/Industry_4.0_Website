@@ -59,7 +59,7 @@ const CompetitionPage = () => {
             <br />
             In this one-day event, participants will enhance their analytical,
             time management, and optimization skills. Working in{" "}
-            <span className="text-secondary font-bold">teams of 3-5</span>,
+            <span className="text-secondary font-bold">teams of 1-4</span>,
             students will analyze a manufacturing process, evaluate its layout
             and efficiency, and apply engineering principles to propose
             improvements. Teams will present their findings in a concise report
