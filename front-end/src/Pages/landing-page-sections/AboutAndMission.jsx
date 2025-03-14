@@ -45,9 +45,12 @@ const AboutAndMission = () => {
               "data-aos-once": "true",
             })}
           >
-            We are an organization committed to empowering students in
-            Management Sciences by fostering a hands-on learning environment.
-            🧠✨ Through{" "}
+            We are an organization part of the{" "}
+            <span className="text-secondary font-bold">
+              Sedra Student Design Centre
+            </span>
+            , committed to empowering students in all faculties by fostering a
+            hands-on learning environment. 🧠✨ Through{" "}
             <span className="text-secondary font-bold">case competitions</span>,{" "}
             <span className="text-secondary font-bold">workshops</span>, and{" "}
             <span className="text-secondary font-bold">leadership events</span>,

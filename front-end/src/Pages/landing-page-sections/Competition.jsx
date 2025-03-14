@@ -68,7 +68,7 @@ const CompetitionPage = () => {
           </h2>
         </div>
 
-        {/*Statistics under about us page */}
+        {/*Statistics under competition page */}
         <div className="text-center text-white mt-14">
           <ul className="flex flex-col md:flex-row w-full text-center items-center justify-around gap-10 md:gap-28 lg:gap-64">
             <li>
@@ -82,9 +82,14 @@ const CompetitionPage = () => {
                 <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                   1000+
                 </h1>
-                <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
-                  STUDENTS
-                </h3>
+                <div className="flex items-center gap-2">
+                  <h4 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
+                    PAST
+                  </h4>
+                  <h4 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
+                    PARTICIPANTS
+                  </h4>
+                </div>
               </div>
             </li>
             <li>
@@ -98,9 +103,14 @@ const CompetitionPage = () => {
                 <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                   50+
                 </h1>
-                <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
-                  SCHOOLS
-                </h3>
+                <div className="flex items-center gap-2">
+                  <h4 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
+                    SCHOOLS
+                  </h4>
+                  <h4 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
+                    INVOLVED
+                  </h4>
+                </div>
               </div>
             </li>
             <li>
@@ -114,16 +124,24 @@ const CompetitionPage = () => {
                 <h1 className="purpleNeonText font-black text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                   75+
                 </h1>
-                <h3 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
-                  ALUMNI
-                </h3>
+                <div className="flex items-center gap-2">
+                  <h4 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
+                    TEAM
+                  </h4>
+                  <h4 className="text-sm xs:text-lg sm:text-lg lg:text-2xl text-[#d3d3d3]">
+                    ALUMNI
+                  </h4>
+                </div>
               </div>
             </li>
           </ul>
         </div>
 
         {/* Countdown Section */}
+
+        {/* Comment out the countdown section for now
         <CountdownSection />
+        */}
       </div>
     </div>
   );
