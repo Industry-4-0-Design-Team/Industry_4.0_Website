@@ -98,7 +98,10 @@ const LandingPage = () => {
             <h1 className="text-[#EEE6FF] font-900 text-lg md:text-3xl lg:text-4xl lg:text-right">
               GEAR UP TO GO BEYOND
             </h1>
-            <div className="mt-6 flex flex-col items-center md:flex-row gap-5 md:justify-end">
+            <div className="text-secondary font-900 text-xl mt-3 grow-shrink">
+              MARCH 8 - IN-PERSON at the UNIVERSITY OF WATERLOO
+            </div>
+            <div className="flex items-center mt-6 md:flex-row gap-5 md:justify-end">
               <button
                 onClick={() => scrollToSection("competition")}
                 className="text-black font-900 bg-secondary px-4 py-1 rounded-full text-md md:text-lg w-32 h-12 md:w-40 md:h-14 inline-flex items-center justify-center whitespace-nowrap transform transition-transform duration-200 hover:scale-105 active:drop-shadow-xl"
