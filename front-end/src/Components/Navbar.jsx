@@ -95,7 +95,6 @@ const Navbar = () => {
               "SPONSORS",
               "STORIES",
               "COMPETITION",
-              "NEWSLETTER",
               "SIGN&nbsp;UP",
             ]
           : ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION"]
@@ -243,6 +242,13 @@ const Navbar = () => {
 
           {/* Social media icons */}
           <div className="flex justify-evenly gap-8 mt-6">
+            <a
+              href="https://uwindustry4.substack.com"
+              target="blank"
+              className="transform transition-transform duration-300 hover:scale-125"
+            >
+              NEWSLETTER
+            </a>
             <a
               href="https://www.instagram.com/uwindustry4.0/"
               target="blank"
