@@ -87,35 +87,54 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className={isScrolled ? 
-        "navbar-buttons hidden custom-lg:flex gap-3 custom-lg:gap-[6px] xl:gap-3 justify-start items-center flex-grow":
-        "navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow"}>
-          {(isScrolled
-            ? [
-                "ABOUT",
-                "EVENTS",
-                "SPONSORS",
-                "STORIES",
-                "COMPETITION",
-                "NEWSLETTER",
-                "SIGN&nbsp;UP",
-              ]
-            : ["ABOUT", "EVENTS", "SPONSORS", "STORIES", "COMPETITION", "NEWSLETTER"]
-          ).map((item) => {
-            const isSpecialButton = item.includes("SIGN&nbsp;UP");
-            return (
-              <a key={item}  href={item=="NEWSLETTER" ? "https://uwindustry4.substack.com/." : undefined} target={item=="NEWSLETTER" ? "_blank":undefined}>
-                <button
-                  key={item}
-                  onClick={() =>
-                    scrollToSection(
-                      item == "SIGN&nbsp;UP"
-                        ? "competition"
-                        : item
-                            .toLowerCase()
-                            .replace(/&nbsp;/g, "-")
-                            .replace(" ", "-")
-                    )
+      <div
+        className={
+          isScrolled
+            ? "navbar-buttons hidden custom-lg:flex gap-3 custom-lg:gap-[6px] xl:gap-3 justify-start items-center flex-grow"
+            : "navbar-buttons hidden custom-lg:flex gap-7 justify-start items-center flex-grow"
+        }
+      >
+        {(isScrolled
+          ? [
+              "ABOUT",
+              "EVENTS",
+              "SPONSORS",
+              "STORIES",
+              "COMPETITION",
+              "NEWSLETTER",
+              "SIGN&nbsp;UP",
+            ]
+          : [
+              "ABOUT",
+              "EVENTS",
+              "SPONSORS",
+              "STORIES",
+              "COMPETITION",
+              "NEWSLETTER",
+            ]
+        ).map((item) => {
+          const isSpecialButton = item.includes("SIGN&nbsp;UP");
+          return (
+            <a
+              key={item}
+              href={
+                item == "NEWSLETTER"
+                  ? "https://uwindustry4.substack.com/."
+                  : undefined
+              }
+              target={item == "NEWSLETTER" ? "_blank" : undefined}
+            >
+              <button
+                key={item}
+                onClick={() =>
+                  scrollToSection(
+                    item == "SIGN&nbsp;UP"
+                      ? "competition"
+                      : item
+                          .toLowerCase()
+                          .replace(/&nbsp;/g, "-")
+                          .replace(" ", "-")
+                  )
                 }
                 className={`navbar-text transition-colors duration-300 px-4 py-2 ${
                   isSpecialButton
@@ -123,9 +142,10 @@ const Navbar = () => {
                     : "hover:shadow-sm hover:text-secondary rounded-[60px] transform transition-transform duration-200 hover:scale-104"
                 }`}
                 dangerouslySetInnerHTML={{ __html: item }}
-              /></a>
-            );
-          })}
+              />
+            </a>
+          );
+        })}
       </div>
 
       {/* Social Media Icons */}
@@ -226,20 +246,33 @@ const Navbar = () => {
             ].map((item) => {
               return (
                 <li key={item} className="py-4 text-xl">
-                  <a href={item==="NEWSLETTER" ? "https://uwindustry4.substack.com/" : undefined} target={item==="NEWSLETTER" ? "https://uwindustry4.substack.com/":undefined}><button
-                    onClick={() =>
-                      scrollToSection(
-                        item == "SIGN&nbsp;UP"
-                          ? "landing"
-                          : item
-                              .toLowerCase()
-                              .replace(/&nbsp;/g, "-")
-                              .replace(" ", "-")
-                      )
+                  <a
+                    href={
+                      item === "NEWSLETTER"
+                        ? "https://uwindustry4.substack.com/"
+                        : undefined
                     }
-                    className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-101"
-                    dangerouslySetInnerHTML={{ __html: item }}
-                  /></a>
+                    target={
+                      item === "NEWSLETTER"
+                        ? "https://uwindustry4.substack.com/"
+                        : undefined
+                    }
+                  >
+                    <button
+                      onClick={() =>
+                        scrollToSection(
+                          item == "SIGN&nbsp;UP"
+                            ? "landing"
+                            : item
+                                .toLowerCase()
+                                .replace(/&nbsp;/g, "-")
+                                .replace(" ", "-")
+                        )
+                      }
+                      className="navbar-text px-4 py-2 rounded-[60px] hover:shadow-sm hover:text-secondary transform transition-transform duration-300 hover:scale-101"
+                      dangerouslySetInnerHTML={{ __html: item }}
+                    />
+                  </a>
                 </li>
               );
             })}
@@ -247,6 +280,13 @@ const Navbar = () => {
 
           {/* Social media icons */}
           <div className="flex justify-evenly gap-8 mt-6">
+            <a
+              href="https://uwindustry4.substack.com"
+              target="blank"
+              className="transform transition-transform duration-300 hover:scale-125"
+            >
+              NEWSLETTER
+            </a>
             <a
               href="https://www.instagram.com/uwindustry4.0/"
               target="blank"

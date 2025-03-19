@@ -98,6 +98,7 @@ const LandingPage = () => {
             <h1 className="text-[#EEE6FF] font-900 text-lg md:text-3xl lg:text-4xl lg:text-right">
               GEAR UP TO GO BEYOND
             </h1>
+            {/* Comment out competition date, sign up and sponsors buttons
             <div className="text-secondary font-900 text-xl mt-3 grow-shrink">
               MARCH 8 - IN-PERSON at the UNIVERSITY OF WATERLOO
             </div>
@@ -115,6 +116,7 @@ const LandingPage = () => {
                 SPONSORS
               </button>
             </div>
+            */}
           </div>
         </div>
       </div>
