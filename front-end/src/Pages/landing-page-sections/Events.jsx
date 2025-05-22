@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import Button from "../../Components/Button";
+
 const EventsPage = () => {
   useEffect(() => {
     const screenWidth = window.innerWidth;
@@ -58,7 +60,7 @@ const EventsPage = () => {
               connected with us to ensure you don&apos;t miss out on these
               incredible events! 📲
             </h2>
-            {/* <div
+            {/*<div
               className="mt-6 text-center custom-lg:text-left"
               data-aos="fade-up"
               data-aos-offset="80"
@@ -67,7 +69,7 @@ const EventsPage = () => {
               data-aos-once="true"
             >
               <Button text="ALL EVENTS" />
-            </div> */}
+            </div>*/}
           </div>
 
           {/* Right Section - Events Gear */}
