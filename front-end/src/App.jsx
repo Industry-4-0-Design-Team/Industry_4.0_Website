@@ -20,7 +20,7 @@ import Footer from "./Components/Footer";
 import CompetitionPage from "./Pages/landing-page-sections/Competition";
 import Contact from "./Pages/landing-page-sections/Contact.jsx"
 import TeamPage from "./Pages/landing-page-sections/Team";
-import EventPage from "./Pages/EventPage.jsx";
+import EventsPage from "./Pages/EventsPage.jsx";
 // this is so like the images are initially loaded to not cause lag later
 import { preloadImages, teamData } from "./utils/preloadImages.js"; // Import teamData
 
@@ -52,7 +52,7 @@ function App() {
               <TeamPage teamData={teamData} />
               <Footer/>
             </>}/>
-            <Route path='/events' element={<EventPage/>}/>
+            <Route path='/events' element={<EventsPage/>}/>
         </Routes>
         </BrowserRouter>
       </div>

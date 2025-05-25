@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Button from '../../Components/Button';
 import { useNavigate } from 'react-router';
 
-const EventsPage = () => {
+const Events = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -93,4 +93,4 @@ const EventsPage = () => {
   );
 };
 
-export default EventsPage;
+export default Events;

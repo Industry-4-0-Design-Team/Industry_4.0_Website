@@ -84,13 +84,7 @@ const Navbar = () => {
     <div
       className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${
         isScrolled ? "fixed top-0  backdrop-filter backdrop-blur-lg" : "fixed"
-      } transition-all duration-500`}
-      data-aos="fade-down"
-      data-aos-offset="500"
-      data-aos-delay="300"
-      data-aos-duration="800"
-      data-aos-once="true"
-    >
+      } transition-all duration-500`}>
       {/* Logo */}
       <div className="flex items-center pl-2 mr-14">
         <button onClick={() => scrollToSection("landing")}>
