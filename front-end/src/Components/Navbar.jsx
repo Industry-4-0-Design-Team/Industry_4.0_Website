@@ -1,6 +1,12 @@
 import { useState, useEffect, useRef } from "react";
+import { useNavigate, useLocation } from 'react-router';
+
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef(null);
@@ -36,31 +42,41 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [location.pathname]);
 
   // Scroll to the section with the specified ID
   const scrollToSection = (id) => {
-    const section = document.getElementById(id);
+    const scrollAfterNavigate = () =>{
+      const section = document.getElementById(id);
+      // Define offsets for specific sections
+      const offsets = {
+        landing: 90,
+        about: 80, // Custom offset for "about" section
+        events: 140, // Custom offset for "events" section
+        sponsors: 140, // Custom offset for "sponsors" section
+        stories: 70, // Custom offset for "stories" section
+        team: 100, // Custom offset for "team" section
+        competition: 90, // Custom offset for "competition" section
+      };
 
-    // Define offsets for specific sections
-    const offsets = {
-      landing: 90,
-      about: 80, // Custom offset for "about" section
-      events: 140, // Custom offset for "events" section
-      sponsors: 140, // Custom offset for "sponsors" section
-      stories: 70, // Custom offset for "stories" section
-      team: 100, // Custom offset for "team" section
-      competition: 90, // Custom offset for "competition" section
-    };
-
-    if (section) {
-      const offsetTop = section.offsetTop - (offsets[id] || 100); // Default to 100 if no specific offset is defined
-      window.scrollTo({ top: offsetTop, behavior: "smooth" });
-      setIsMenuOpen(false);
+      if (section) {
+        const offsetTop = section.offsetTop - (offsets[id] || 100); // Default to 100 if no specific offset is defined
+        window.scrollTo({ top: offsetTop, behavior: "smooth" });
+        setIsMenuOpen(false);
+      }
+    }
+    
+    if (location.pathname!="/"){
+      navigate("/");
+      setTimeout(scrollAfterNavigate,300);
+    }
+    else{
+      scrollAfterNavigate();
     }
   };
 
@@ -68,13 +84,7 @@ const Navbar = () => {
     <div
       className={`w-full flex items-center py-4 px-16 text-primaryText gap-0 font-medium tracking-wide text-sm z-30 ${
         isScrolled ? "fixed top-0  backdrop-filter backdrop-blur-lg" : "fixed"
-      } transition-all duration-500`}
-      data-aos="fade-down"
-      data-aos-offset="500"
-      data-aos-delay="300"
-      data-aos-duration="800"
-      data-aos-once="true"
-    >
+      } transition-all duration-500`}>
       {/* Logo */}
       <div className="flex items-center pl-2 mr-14">
         <button onClick={() => scrollToSection("landing")}>

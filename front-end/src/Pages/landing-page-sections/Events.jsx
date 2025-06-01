@@ -1,5 +1,10 @@
 import { useEffect } from "react";
-const EventsPage = () => {
+import Button from '../../Components/Button';
+import { useNavigate } from 'react-router';
+
+const Events = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const screenWidth = window.innerWidth;
 
@@ -58,6 +63,7 @@ const EventsPage = () => {
               connected with us to ensure you don&apos;t miss out on these
               incredible events! 📲
             </h2>
+            <Button text='VIEW EVENTS' onClick={()=>navigate('/events')}/>
             {/* <div
               className="mt-6 text-center custom-lg:text-left"
               data-aos="fade-up"
@@ -87,4 +93,4 @@ const EventsPage = () => {
   );
 };
 
-export default EventsPage;
+export default Events;

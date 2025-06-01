@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../Styles/Landing.css";
+import Button from "../Components/Button"
 
 const LandingPage = () => {
   // State for the toast message
@@ -98,6 +99,13 @@ const LandingPage = () => {
             <h1 className="text-[#EEE6FF] font-900 text-lg md:text-3xl lg:text-4xl lg:text-right">
               GEAR UP TO GO BEYOND
             </h1>
+             <div className="mt-6 flex justify-between items-center">
+              <div className="text-secondary font-900 text-xl grow-shrink">
+                WE'RE HIRING!
+              </div>
+              <Button text="SPRING '25 APPLICATIONS" onClick={()=>
+                window.open("https://docs.google.com/forms/d/e/1FAIpQLScvuM89-ki3ALW1_9kOMqvVDORIkn2aQWsMP3-yjAA5RlwHRg/viewform")}/>
+            </div>
             {/* Comment out competition date, sign up and sponsors buttons
             <div className="text-secondary font-900 text-xl mt-3 grow-shrink">
               MARCH 8 - IN-PERSON at the UNIVERSITY OF WATERLOO

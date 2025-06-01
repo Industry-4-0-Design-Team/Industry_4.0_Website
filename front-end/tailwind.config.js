@@ -18,6 +18,9 @@ export default {
       },
       screens: {
         'custom-lg': '1200px', // Custom breakpoint
+        'custom-xl': '1520px', // Custom breakpoint
+        'xxl': '2118px', // Custom breakpoint
+
         'xs': '376px'
     },
     animation: {
