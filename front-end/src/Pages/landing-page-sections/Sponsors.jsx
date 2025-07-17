@@ -56,12 +56,13 @@ const SponsorPage = () => {
               data-aos-duration="800"
               data-aos-once="true"
             >
-              <Button
-                text="BECOME A SPONSOR"
-                onClick={() =>
-                  (window.location.href = "mailto:industry4team@uwaterloo.ca")
-                }
-              />
+              <a
+                href="mailto:industry4team@uwaterloo.ca"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button text="BECOME A SPONSOR" />
+              </a>
             </div>
 
             {/* Sponsors Logos */}
