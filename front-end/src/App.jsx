@@ -21,6 +21,7 @@ import CompetitionPage from "./Pages/landing-page-sections/Competition";
 import Contact from "./Pages/landing-page-sections/Contact.jsx"
 import TeamPage from "./Pages/landing-page-sections/Team";
 import EventsPage from "./Pages/EventsPage.jsx";
+import CountdownSection from "./Components/CompetitionCountdown.jsx";
 // this is so like the images are initially loaded to not cause lag later
 import { preloadImages, teamData } from "./utils/preloadImages.js"; // Import teamData
 
@@ -48,6 +49,7 @@ function App() {
               <StoriesPage />
               <AlumniNetwork />
               <CompetitionPage />
+              <CountdownSection />
               <Contact/>
               <TeamPage teamData={teamData} />
               <Footer/>

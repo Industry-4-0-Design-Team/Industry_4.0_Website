@@ -3,11 +3,15 @@ import React, { useState, useEffect } from "react";
 import Button from "../Components/Button";
 
 const CountdownSection = () => {
-  const targetDate = new Date("2025-03-08T00:00:00").getTime();
+  const targetDate = new Date("2026-03-07T00:00:00").getTime();
 
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
     const difference = targetDate - now;
+
+    if (difference <= 0) {
+      return { months: 0, days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
 
     const months = Math.floor(difference / (1000 * 60 * 60 * 24 * 30));
     const days = Math.floor(
@@ -79,7 +83,7 @@ const CountdownSection = () => {
             data-aos="fade-up"
             className="mt-2"
             rel="noopener noreferrer"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfZNLAafZOhM9HAt3rDsPu88LIOI5Q24T5M9d_sfKqxToWYGg/viewform?usp=sharing"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfdSWsxVts9-b5qhhiaIhzMNgXGaiuNHB90K2EZhRyKxtW6IQ/viewform?usp=sharing&ouid=108302764378337940940"
             target="_blank"
           >
             <Button text="High School Sign Up" />
@@ -88,7 +92,7 @@ const CountdownSection = () => {
             data-aos="fade-up"
             className="mt-2"
             rel="noopener noreferrer"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdFWQfGcwmdqer-224ajgOM-uI07QgKttdFRtfy60_ruzpWbQ/viewform?usp=sf_link"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScHEUQC56hMhlAL6a0sgUnaEWIQq3LyLLS4Po53o5-oN03kjA/viewform?usp=sharing&ouid=108302764378337940940"
             target="_blank"
           >
             <Button text="University Sign Up" />
